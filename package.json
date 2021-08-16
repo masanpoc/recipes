@@ -1,0 +1,59 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "Mario Sancho-Cirer's Portolio",
+  "main": "index.js",
+  "scripts": {
+    "develop": "webpack serve --open --env mode=development",
+    "production": "webpack serve --open --env mode=production",
+    "format": "prettier --write .",
+    "build": "webpack --config webpack.config.js --env mode=development",
+    "build-production": "webpack --config webpack.config.js --env mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masanpoc/myportfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "frontend",
+    "projects",
+    "aboutme"
+  ],
+  "author": "Mario Sancho-Cirer Poczatek",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/masanpoc/myportfolio/issues"
+  },
+  "homepage": "https://github.com/masanpoc/myportfolio#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.7",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime": "^7.14.6",
+    "autoprefixer": "^10.2.6",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.29.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-webpack-plugin": "^2.5.4",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.0.0",
+    "postcss-loader": "^6.1.0",
+    "postcss-nested": "^5.0.5",
+    "postcss-simple-vars": "^6.0.3",
+    "prettier": "2.3.2",
+    "tailwindcss": "^2.2.4",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
