@@ -4,28 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mario Sancho - Portfolio</title>
+    <title>Find your Recipe</title>
     <link rel="icon" type="image/png" href="/images/favicon.ico" />
     <meta
       name="description"
-      content="Mario Sancho - Porfolio - Developer"
+      content="Recipes Search - Api - Cooking"
     />
 
     <meta
       name="keywords"
-      content="Portfolio, Developer, Frontend, Projects, Aboutme"
+      content="Recipes, Search, Api, Edamam, Cooking"
     />
 
     <meta name="author" content="Mario Sancho" />
     <style>
             
       /* spinner */
-            .loader,
-      .loader:before,
-      .loader:after {
+            .loader:empty,
+      .loader:empty:before,
+      .loader:empty:after {
         border-radius: 50%;
       }
-      .loader {
+      .loader:empty {
         color: #05386b;
         font-size: 11px;
         text-indent: -99999em;
@@ -38,12 +38,12 @@
         -ms-transform: translateZ(0);
         transform: translateZ(0);
       }
-      .loader:before,
-      .loader:after {
+      .loader:empty:before,
+      .loader:empty:after {
         position: absolute;
         content: '';
       }
-      .loader:before {
+      .loader:empty:before {
         width: 5.2em;
         height: 10.2em;
         background: #5cdb95;
@@ -55,7 +55,7 @@
         -webkit-animation: load2 2s infinite ease 1.5s;
         animation: load2 2s infinite ease 1.5s;
       }
-      .loader:after {
+      .loader:empty:after {
         width: 5.2em;
         height: 10.2em;
         background: #5cdb95;
@@ -92,5 +92,6 @@
   <script defer src="bundle.js"></script><link href="main.bundle.css" rel="stylesheet"></head>
   <body>
     <div id="app" class='loader'></div>
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
   </body>
 </html>

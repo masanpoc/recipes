@@ -8,7 +8,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = (env) => {
   return {
     mode: env.mode,
-    entry: path.resolve(__dirname, "src", "index.js"),
+    entry: path.resolve(__dirname, "src", "index.tsx"),
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "bundle.js",
@@ -30,6 +30,16 @@ module.exports = (env) => {
           use: [
             {
               loader: "babel-loader",
+            },
+          ],
+        },
+        {
+          test: /\.tsx?$/,
+          include: path.resolve(__dirname, "src"),
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: "ts-loader"
             },
           ],
         },
@@ -59,6 +69,9 @@ module.exports = (env) => {
           type: "asset/resource",
         },
       ],
+    },
+    resolve: {
+      extensions: [".ts", ".tsx", ".js", "..."]
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
