@@ -1,5 +1,6 @@
 import React, {FC, useContext, useState, } from 'react'
-import { SearchContext } from '../App';
+import { SearchContext } from '../../App';
+
 
 // interface InputData {
 //     title: string;
@@ -19,7 +20,7 @@ const Searchbar: FC = () => {
     return (
         <div>
             <input type='text' placeholder='keywords' onChange={(e)=>setSearchValue(e.target.value)}></input>
-            <button onClick={lookForSearchValue}></button>
+            <button onClick={lookForSearchValue}>Change value</button>
         </div>
     )
 }

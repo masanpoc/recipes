@@ -1,7 +1,7 @@
-import React, {FC, useContext} from 'react';
-import { SearchContext } from '../App';
+import React, { useContext} from 'react';
+import { SearchContext } from '../../App';
 
-const RecipesApi: FC = () => {
+const RecipesApi = (): JSX.Element => {
     const {state} = useContext(SearchContext);
     return (
         <div>
