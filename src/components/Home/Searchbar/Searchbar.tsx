@@ -9,7 +9,7 @@ import { SearchContext } from '../../App';
 // }
 // FC<InputData>
 
-const Searchbar: FC = () => {
+const Searchbar = (): JSX.Element => {
 
     const [searchValue, setSearchValue] = useState('')
     const {dispatch} = useContext(SearchContext);

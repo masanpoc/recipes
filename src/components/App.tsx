@@ -1,5 +1,4 @@
-import React, {useState, useEffect, createContext, useReducer, Dispatch  } from "react";
-import Home from "./Home/Home";
+import React, {useState, useEffect, createContext, useReducer, Dispatch, lazy, Suspense  } from "react";
 import Details from "./Details/Details";
 import {searchValueReducer, IState} from '../reducers/searchValueReducer'
 import {
@@ -9,6 +8,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+const Home = lazy(()=>import("./Home/Home"));
 
 interface IContextProps {
   state: IState;
@@ -40,6 +40,7 @@ const App = (): JSX.Element | null  => {
         <div>
           <h2>My portfolio</h2>
           <h3>dd</h3>
+          <Suspense fallback={<div>Loading</div>}>
           <Switch>
             <Route path="/home" component={Home}></Route>
             <Route path="/details">
@@ -47,6 +48,7 @@ const App = (): JSX.Element | null  => {
             </Route>
             <Redirect from="*" to="/home" />
           </Switch>
+          </Suspense>
           <Link to="/details" >Details page</Link>
           <Link to="/home" >Home page</Link>
           <div id="edamam-badge" data-color="white"></div>
