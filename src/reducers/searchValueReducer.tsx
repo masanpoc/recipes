@@ -1,12 +1,12 @@
 export interface IState {
-    inputValue: string
+  inputValue: string;
 }
 
 interface IActions {
-    type: string;
-    value: any
+  type: string;
+  value: any;
 }
 
-export const searchValueReducer = (state:IState, action:IActions):any => {
-    return {...state, inputValue: action.value}
-}
+export const searchValueReducer = (state: IState, action: IActions): any => {
+  return { ...state, inputValue: action.value };
+};

@@ -39,7 +39,7 @@ module.exports = (env) => {
           exclude: /node_modules/,
           use: [
             {
-              loader: "ts-loader"
+              loader: "ts-loader",
             },
           ],
         },
@@ -71,7 +71,7 @@ module.exports = (env) => {
       ],
     },
     resolve: {
-      extensions: [".ts", ".tsx", ".js", "..."]
+      extensions: [".ts", ".tsx", ".js", "..."],
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
@@ -90,19 +90,17 @@ module.exports = (env) => {
           extractComments: false,
         }),
       ],
-      optimization: {
-        splitChunks: {
-          chunks: 'all',
-          minChunks: 2
-        }
-      }
+      splitChunks: {
+        chunks: "all",
+        minChunks: 2,
+      },
     },
   };
-  if(env.mode=='development'){
-    config.devtool="inline-source-map"
+  if (env.mode == "development") {
+    config.devtool = "inline-source-map";
   }
-  if(env.mode=='production'){
+  if (env.mode == "production") {
     // config.plugins.push(new BundleAnalyzerPlugin());
   }
-  return config
+  return config;
 };

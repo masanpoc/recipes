@@ -1,0 +1,1988 @@
+
+{
+    "from": 1,
+    "to": 20,
+    "count": 10000,
+    "_links": {
+      
+    },
+    "hits": [
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/19f/19fb0655163f54ffcf86b1fa5ca1cf98.jpg",
+          "dietLabels": [
+            "Low-Carb",
+            "Low-Sodium"
+          ],
+          "ingredients": [
+            {
+              "text": "1/4 cup fresh raspberries",
+              "weight": 30.75,
+              "foodCategory": "fruit",
+              "foodId": "food_al3e7s2a1lm4i6bga7o0abp399zg",
+              "image": "https://www.edamam.com/food-img/a67/a671e604bed03c27259eab176c781e22.jpg"
+            },
+            {
+              "text": "2 tablespoons rice vinegar",
+              "weight": 29.8,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_axlcd4tack2d20bveizm4ayu0h2w",
+              "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+            },
+            {
+              "text": "1 tablespoon lemon juice",
+              "weight": 15.2499999997422,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "1 clove garlic, chopped, or more to taste",
+              "weight": 3.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "1/2 teaspoon white sugar",
+              "weight": 2.1,
+              "foodCategory": "sugars",
+              "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+              "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+            },
+            {
+              "text": "1 pinch sea salt",
+              "weight": 0.30338541705136723,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "1 pinch ground white pepper",
+              "weight": 0.14791666685672963,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a443px0bncpqa5avv80p3anrp26k",
+              "image": "https://www.edamam.com/food-img/4f0/4f0e35fe6c042996408b337fb550324a.jpg"
+            },
+            {
+              "text": "6 tablespoons avocado oil",
+              "weight": 84.0,
+              "foodCategory": "Oils",
+              "foodId": "food_bilwk0ibiic3g5bwwnqbnbvklgw0",
+              "image": "https://www.edamam.com/food-img/ce2/ce24db634b117a51aa525b29a110a318.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/a913581c7eb3ad39e298a72985ce6f20?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/156/15631ae3127ef79716af2a83d622008a.jpg",
+          "dietLabels": [
+            "High-Fiber"
+          ],
+          "ingredients": [
+            {
+              "text": "2 teaspoons snipped fresh rosemary or 1/2 teaspoon dried rosemary, crushed",
+              "weight": 1.4,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6tm2t2blxi7okaeiv91wb8bmygq",
+              "image": "https://www.edamam.com/food-img/0ac/0ac8f7cf6f2d0ad7b1a2f9900fae44f3.jpg"
+            },
+            {
+              "text": "1 clove garlic, minced",
+              "weight": 3.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "8 ounces boneless lamb leg sirloin chops, cut 1/2 inch thick",
+              "weight": 226.796185,
+              "foodCategory": "meats",
+              "foodId": "food_ap6uwu5ace8jy6b3fnj36aio20j1",
+              "image": "https://www.edamam.com/food-img/78f/78f7516f859c635655f4f125ac0fef8c.jpg"
+            },
+            {
+              "text": "8 cups torn fresh spinach or torn mixed salad greens",
+              "weight": 288.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bqalyxzbzu04hcb8xj930bzar7xg",
+              "image": "https://www.edamam.com/food-img/b6d/b6d9f3052d27a3c71220cfa55c6f0a42.jpg"
+            },
+            {
+              "text": "1 15-ounce can garbanzo beans, rinsed and drained",
+              "weight": 425.242846875,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_a1i3rgdb7qf2nbb6k0d82a27urv5",
+              "image": null
+            },
+            {
+              "text": "1/4 cup chopped, seeded cucumber",
+              "weight": 26.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+              "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+            },
+            {
+              "text": "1/2 cup plain low-fat yogurt",
+              "weight": 122.5,
+              "foodCategory": "yogurt",
+              "foodId": "food_aqv00dwa9mjxm9akeqs79avn1fhk",
+              "image": "https://www.edamam.com/food-img/3de/3de016fbf55ee09cf514658062992852.jpg"
+            },
+            {
+              "text": "1/4 cup chopped green onions",
+              "weight": 25.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
+              "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+            },
+            {
+              "text": "1/8 to 1/4 teaspoon salt",
+              "weight": 1.125,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "1/8 teaspoon pepper",
+              "weight": 0.3625,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "1 clove garlic, minced",
+              "weight": 3.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "1/4 cup dried tart cherries or golden raisins",
+              "weight": 38.75,
+              "foodCategory": "fruit",
+              "foodId": "food_b7r68adakprkpxa1rd3rtb33wvaj",
+              "image": "https://www.edamam.com/food-img/553/553b626901dcbde9a74ee66c85f459bc.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/969c2e9826a4258cc84d3609ca294a19?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/933/933a69bcac217aca2a3be34e77bdc5c4.jpg",
+          "dietLabels": [
+            
+          ],
+          "ingredients": [
+            {
+              "text": "1 full cucumber",
+              "weight": 301.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+              "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+            },
+            {
+              "text": "Vinegar 3 tsp",
+              "weight": 15.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_am3vwadag9arxtadrwyfcau2w3b2",
+              "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+            },
+            {
+              "text": "Olive oil 2 tsp",
+              "weight": 9.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "Greek yoghurt/sour cream (optional)",
+              "weight": 0.0,
+              "foodCategory": "yogurt",
+              "foodId": "food_bllzl82a5fkj4yanmzoztapdyryz",
+              "image": "https://www.edamam.com/food-img/689/6891387401f579242e7303ce8ec00e18.jpg"
+            },
+            {
+              "text": "Greek yoghurt/sour cream (optional)",
+              "weight": 0.0,
+              "foodCategory": "Dairy",
+              "foodId": "food_adp9fcubzl3lr7bcvzn3rbfiiiwq",
+              "image": "https://www.edamam.com/food-img/f9d/f9d6183267b041b0aff9a10b89c9c15f.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/7021b56775a166173accb9077263580a?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/ceb/cebd48cf8bdee72df53214d8c9d6f2f9",
+          "dietLabels": [
+            "High-Fiber",
+            "Low-Sodium"
+          ],
+          "ingredients": [
+            {
+              "text": "1/2 bunch kale, chopped",
+              "weight": 100.5,
+              "foodCategory": "vegetables",
+              "foodId": "food_avmg2xfbv1p91yavoxjg7bddvfaz",
+              "image": "https://www.edamam.com/food-img/8e9/8e9c5417fa012e5ca068fddc5f8d3d6c.jpg"
+            },
+            {
+              "text": "1 small head Romine lettuce, chopped",
+              "weight": 122.25,
+              "foodCategory": "vegetables",
+              "foodId": "food_bf5fxtkbc9alwoajuvsi7amonr5w",
+              "image": "https://www.edamam.com/food-img/719/71996625d0cb47e197093ecd52c97dc2.jpg"
+            },
+            {
+              "text": "1 orange, segmented",
+              "weight": 131.0,
+              "foodCategory": "fruit",
+              "foodId": "food_b0bnl8oayiqhs2at63ifxbm6i3o3",
+              "image": "https://www.edamam.com/food-img/8ea/8ea264a802d6e643c1a340a77863c6ef.jpg"
+            },
+            {
+              "text": "1 yellow pepper, sliced",
+              "weight": 186.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_azxdee4b77a6m1bgwceioa3g8bgc",
+              "image": "https://www.edamam.com/food-img/e1a/e1a4da15c9ebffb004cf36c5c51de9df.jpeg"
+            },
+            {
+              "text": "1 avocado, sliced",
+              "weight": 201.0,
+              "foodCategory": "fruit",
+              "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+              "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+            },
+            {
+              "text": "1 can white beans, drained",
+              "weight": 491.25000000000006,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_bggwvu5a6s0gniamjy6r1aoknilo",
+              "image": "https://www.edamam.com/food-img/a39/a39102018ed39c6008134e0570af8a6c.jpg"
+            },
+            {
+              "text": "3 green onions, sliced",
+              "weight": 45.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
+              "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+            },
+            {
+              "text": "1 small shallot, sliced (optional)",
+              "weight": 40.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bu2ver7a5f52dfap8q9f0bn085qb",
+              "image": "https://www.edamam.com/food-img/d23/d23e3be21df05e9e16c05eadb12341e7.jpeg"
+            },
+            {
+              "text": "2 tbsp tahini",
+              "weight": 30.0,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_aa88tarawf1yl0bu5w3csaucrnx2",
+              "image": "https://www.edamam.com/food-img/eed/eed4bb62c2763575b73a8f05963073fb.jpg"
+            },
+            {
+              "text": "2 tbsp maple syrup",
+              "weight": 40.0,
+              "foodCategory": "sugars",
+              "foodId": "food_bo37p69bopqshvaul0bn4bv0kqni",
+              "image": "https://www.edamam.com/food-img/ced/ced25c45453a118e531c8aaf33e2ee38.jpg"
+            },
+            {
+              "text": "2 tbsp orange juice",
+              "weight": 30.999999999475886,
+              "foodCategory": "100% juice",
+              "foodId": "food_bn7zicravp7kdrb8h9knhadt6kei",
+              "image": "https://www.edamam.com/food-img/011/011c0c3b0f3865bde575f57c556439e4.jpg"
+            },
+            {
+              "text": "1/3 cup olive oil",
+              "weight": 72.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "pinch of salt",
+              "weight": 0.380208333815447,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/70ee08eb8e5e1ab6fba4b4c2a6550a1b?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/ce1/ce19e03f1add20bd3ea897c2e9168344.jpg",
+          "dietLabels": [
+            
+          ],
+          "ingredients": [
+            {
+              "text": "5 tablespoons olive oil, plus extra for brushing",
+              "weight": 67.5,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1 large onion, sliced",
+              "weight": 150.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+              "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+            },
+            {
+              "text": "2 zucchini, sliced",
+              "weight": 392.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avpihljbuwpd8ibbmahcabaros5s",
+              "image": "https://www.edamam.com/food-img/f63/f637280594e4a731eccc1199194a8847.jpg"
+            },
+            {
+              "text": "1 red bell pepper, seeded and quartered",
+              "weight": 119.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_a8g63g7ak6bnmvbu7agxibp4a0dy",
+              "image": "https://www.edamam.com/food-img/4dc/4dc48b1a506d334b4ab6671b9d56a18f.jpeg"
+            },
+            {
+              "text": "1 yellow bell pepper, seeded and quartered",
+              "weight": 186.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_azxdee4b77a6m1bgwceioa3g8bgc",
+              "image": "https://www.edamam.com/food-img/e1a/e1a4da15c9ebffb004cf36c5c51de9df.jpeg"
+            },
+            {
+              "text": "2 long eggplants, sliced crosswise",
+              "weight": 1096.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_ac9n68caswlpggbp7727varlyjk5",
+              "image": "https://www.edamam.com/food-img/da5/da5978d61b89a363147a6d13c36e3b54.jpg"
+            },
+            {
+              "text": "1 large potato, thinly sliced",
+              "weight": 369.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_abiw5baauresjmb6xpap2bg3otzu",
+              "image": "https://www.edamam.com/food-img/651/6512e82417bce15c2899630c1a2799df.jpg"
+            },
+            {
+              "text": "1 garlic clove, finely chopped",
+              "weight": 3.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "4 tablespoons balsamic vinegar",
+              "weight": 64.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b1ic8tzapja8jubas1f8lbhpbn6x",
+              "image": "https://www.edamam.com/food-img/90a/90a1f211768e166ecfff19e8b4747498.jpg"
+            },
+            {
+              "text": "1 teaspoon mixed dried thyme, rosemary and oregano",
+              "weight": 1.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_avsq22zadwyb5cb5sl1byaa4mbo8",
+              "image": "https://www.edamam.com/food-img/89b/89b37a04e46e052671d73addcb84aa51.jpg"
+            },
+            {
+              "text": "1 teaspoon mixed dried thyme, rosemary and oregano",
+              "weight": 0.7,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6tm2t2blxi7okaeiv91wb8bmygq",
+              "image": "https://www.edamam.com/food-img/0ac/0ac8f7cf6f2d0ad7b1a2f9900fae44f3.jpg"
+            },
+            {
+              "text": "1 teaspoon mixed dried thyme, rosemary and oregano",
+              "weight": 1.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bkkw6v3bdf0sqiazmzyuiax7i8jr",
+              "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+            },
+            {
+              "text": "1/2 teaspoon salt",
+              "weight": 3.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "1/4 teaspoon pepper",
+              "weight": 0.725,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "3 1/2 oz. (100g) baby spinach leaves",
+              "weight": 99.22333093750001,
+              "foodCategory": "vegetables",
+              "foodId": "food_aoceuc6bshdej1bbsdammbnj6l6o",
+              "image": "https://www.edamam.com/food-img/e6e/e6e4be375c4554ce01c8ea75232efaa6.jpg"
+            },
+            {
+              "text": "3 1/2 oz. (100g) arugula leaves",
+              "weight": 99.22333093750001,
+              "foodCategory": "vegetables",
+              "foodId": "food_a8z1kzrawhksuzav2g1irb6zf4zc",
+              "image": "https://www.edamam.com/food-img/fa7/fa761a311efc0ec361a5eba4ed71870e.jpeg"
+            },
+            {
+              "text": "1-2 cloves garlic, finely chopped",
+              "weight": 4.5,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "1/4 teaspoon salt",
+              "weight": 1.5,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "4 tablespoons tahini",
+              "weight": 60.0,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_aa88tarawf1yl0bu5w3csaucrnx2",
+              "image": "https://www.edamam.com/food-img/eed/eed4bb62c2763575b73a8f05963073fb.jpg"
+            },
+            {
+              "text": "2-3 tablespoons freshly squeezed lemon juice",
+              "weight": 38.1249999993555,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "Freshly ground white pepper",
+              "weight": 0.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a443px0bncpqa5avv80p3anrp26k",
+              "image": "https://www.edamam.com/food-img/4f0/4f0e35fe6c042996408b337fb550324a.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/6bea268f0824d98d275df4fca8074e39?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/55f/55f16dbdd2709a1a4ae93e4b569e20f1.jpg",
+          "dietLabels": [
+            "High-Fiber",
+            "Low-Carb"
+          ],
+          "ingredients": [
+            {
+              "text": "1 pound boneless, skinless chicken breasts",
+              "weight": 453.59237,
+              "foodCategory": "Poultry",
+              "foodId": "food_bdrxu94aj3x2djbpur8dhagfhkcn",
+              "image": "https://www.edamam.com/food-img/da5/da510379d3650787338ca16fb69f4c94.jpg"
+            },
+            {
+              "text": "2 tablespoons extra virgin olive oil",
+              "weight": 27.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1 tablespoon fresh lemon juice",
+              "weight": 15.2499999997422,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "1 clove garlic minced",
+              "weight": 3.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "1 tablespoon dried oregano",
+              "weight": 2.9999999997971143,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bkkw6v3bdf0sqiazmzyuiax7i8jr",
+              "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+            },
+            {
+              "text": "1 teaspoon salt",
+              "weight": 6.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "1/2 teaspoon ground pepper",
+              "weight": 1.45,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "1 large cucumber",
+              "weight": 301.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+              "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+            },
+            {
+              "text": "2 cloves garlic minced",
+              "weight": 6.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "1/4 cup extra virgin olive oil",
+              "weight": 54.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "17.6 ounces strained Greek yogurt",
+              "weight": 498.95161781448485,
+              "foodCategory": "yogurt",
+              "foodId": "food_bllzl82a5fkj4yanmzoztapdyryz",
+              "image": "https://www.edamam.com/food-img/689/6891387401f579242e7303ce8ec00e18.jpg"
+            },
+            {
+              "text": "1 1/2 tablespoons red wine vinegar",
+              "weight": 22.35,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_ad6iyy1anmzb49a817rgnabnz8c9",
+              "image": "https://www.edamam.com/food-img/dc8/dc8e998b32b8d45ba15c1b1e6711e958.jpg"
+            },
+            {
+              "text": "1/4 teaspoon salt",
+              "weight": 1.5,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "1 tablespoon fresh dill chopped",
+              "weight": 0.556249999990595,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_avhhd2padkkzx8a9swnmlb1km3qb",
+              "image": "https://www.edamam.com/food-img/874/8740aacb8e1a348cd5eead1f0bb552d4.jpg"
+            },
+            {
+              "text": "4 roma tomatoes diced",
+              "weight": 248.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_ab8jymba5i5xv3apgymg7a90bxb5",
+              "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+            },
+            {
+              "text": "1/2 red onion diced",
+              "weight": 62.5,
+              "foodCategory": "vegetables",
+              "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+              "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+            },
+            {
+              "text": "2 tablespoons parsley chopped (measure after chopping)",
+              "weight": 7.6,
+              "foodCategory": "vegetables",
+              "foodId": "food_b244pqdazw24zobr5vqu2bf0uid8",
+              "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+            },
+            {
+              "text": "1/2 tablespoon red wine vinegar",
+              "weight": 7.45,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_ad6iyy1anmzb49a817rgnabnz8c9",
+              "image": "https://www.edamam.com/food-img/dc8/dc8e998b32b8d45ba15c1b1e6711e958.jpg"
+            },
+            {
+              "text": "1 tablespoon extra virgin olive oil",
+              "weight": 13.5,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1/2 teaspoon salt",
+              "weight": 3.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "1/8 teaspoon ground pepper",
+              "weight": 0.3625,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "8 flatbread pitas",
+              "weight": 368.0,
+              "foodCategory": "bread, rolls and tortillas",
+              "foodId": "food_bwqktveb77b6uxbrpvxgcb63ucm7",
+              "image": "https://www.edamam.com/food-img/b8c/b8c2794a59279b7e0553c27e0769fbaf.jpg"
+            },
+            {
+              "text": "2 cups mozzarella cheese shredded",
+              "weight": 519.75,
+              "foodCategory": "Cheese",
+              "foodId": "food_acjhpy7bkl7a9qboztipaa2i9e4m",
+              "image": "https://www.edamam.com/food-img/92d/92d92d4a4dfe8c025cea407c9ce764c3.jpg"
+            },
+            {
+              "text": "1/2 cup feta cheese crumbles",
+              "weight": 75.0,
+              "foodCategory": "Cheese",
+              "foodId": "food_biry7gubtkpad3a7qkz6uba5acn9",
+              "image": "https://www.edamam.com/food-img/37e/37ef3e404b1c02bf4707cb82010732b8.jpg"
+            },
+            {
+              "text": "1 pound cooked greek chicken (recipe above)",
+              "weight": 453.59237,
+              "foodCategory": "Poultry",
+              "foodId": "food_bmyxrshbfao9s1amjrvhoauob6mo",
+              "image": "https://www.edamam.com/food-img/d33/d338229d774a743f7858f6764e095878.jpg"
+            },
+            {
+              "text": "2 tablespoons butter salted",
+              "weight": 28.4,
+              "foodCategory": "Dairy",
+              "foodId": "food_awz3iefajbk1fwahq9logahmgltj",
+              "image": "https://www.edamam.com/food-img/713/71397239b670d88c04faa8d05035cab4.jpg"
+            }
+          ],
+          "dishType": [
+            "main course"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/fe87778d26fb000f14df59401557d7e2?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/d78/d781af2c8b0ab60116f2ea8bc40ae035",
+          "dietLabels": [
+            "High-Fiber",
+            "Low-Carb"
+          ],
+          "ingredients": [
+            {
+              "text": "1 bunch of kale, stems removed, leaves cut into smaller pieces (about 2 handfuls)",
+              "weight": 201.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avmg2xfbv1p91yavoxjg7bddvfaz",
+              "image": "https://www.edamam.com/food-img/8e9/8e9c5417fa012e5ca068fddc5f8d3d6c.jpg"
+            },
+            {
+              "text": "1 cup flat leaf parsley leaves (about ½ a bunch)",
+              "weight": 30.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_b244pqdazw24zobr5vqu2bf0uid8",
+              "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+            },
+            {
+              "text": "¼ cup pumpkin seeds",
+              "weight": 32.25,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_b1o86grabpts6ta6igfy4a2b1x22",
+              "image": "https://www.edamam.com/food-img/fbd/fbd8c30b003fa93777ffaa2bcdd58db0.jpg"
+            },
+            {
+              "text": "½ cup chopped cucumbers",
+              "weight": 52.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+              "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+            },
+            {
+              "text": "8 cherry tomatoes, cut in half",
+              "weight": 120.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_a30b0hpbvavginafe0tocbf6ymje",
+              "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+            },
+            {
+              "text": "¼ cup chopped pitted kalamata olives",
+              "weight": 33.600000000568,
+              "foodCategory": "canned fruit",
+              "foodId": "food_atlv2r9b29ejzeb1o3wgkaxqajcb",
+              "image": "https://www.edamam.com/food-img/822/8221f2141e8dafd469414b20777735ca.jpg"
+            },
+            {
+              "text": "¼ cup sauerkraut (Recommended brands: Rejuvenate Foods or Eden Foods)",
+              "weight": 35.5,
+              "foodCategory": "vegetables",
+              "foodId": "food_arysj9zbwxj534aw7zlhib58ord8",
+              "image": "https://www.edamam.com/food-img/984/9846ab937bdc1208eb71b29709a754c6.jpg"
+            },
+            {
+              "text": "3 tablespoons extra-virgin olive oil",
+              "weight": 40.5,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1 teaspoon sea salt",
+              "weight": 4.854166666912875,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "2-3 edible flowers (Look for calendula, violets or nasturtium in the herb section at your local natural food store)",
+              "weight": 5.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_asozddea5q24uxat4bzeeaqnolt8",
+              "image": "https://www.edamam.com/food-img/e9c/e9cb80ce8d042a1739649a1f975f5ad1.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/a542163e2030c3391040554e16d0cf86?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/03e/03eb14f5157b0ba442b117b6ee0dfbba",
+          "dietLabels": [
+            "High-Fiber",
+            "Low-Carb"
+          ],
+          "ingredients": [
+            {
+              "text": "1 English cucumber, halved lengthwise & sliced",
+              "weight": 301.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+              "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+            },
+            {
+              "text": "1/2 pint grape or cherry tomatoes, halved",
+              "weight": 174.99999999999997,
+              "foodCategory": "vegetables",
+              "foodId": "food_a30b0hpbvavginafe0tocbf6ymje",
+              "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+            },
+            {
+              "text": "3 avocados, peeled & diced",
+              "weight": 603.0,
+              "foodCategory": "fruit",
+              "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
+              "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
+            },
+            {
+              "text": "1/2 c. chopped cilantro",
+              "weight": 8.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_alhzhuwb4lc7jnb5s6f02by60bzp",
+              "image": "https://www.edamam.com/food-img/d57/d57e375b6ff99a90c7ee2b1990a1af36.jpg"
+            },
+            {
+              "text": "3 T. fresh lemon juice",
+              "weight": 15.250000000773497,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "1 1/2 T. fresh lime juice",
+              "weight": 7.700000000390553,
+              "foodCategory": "fruit",
+              "foodId": "food_b0iywbmaujvd4eblrooo9bsvn7e6",
+              "image": "https://www.edamam.com/food-img/8f0/8f0c10eb3dbf476a05e61018e76ea220.jpg"
+            },
+            {
+              "text": "2 or 3 tsp. honey {depending on your personal taste ... we like this with 3 tsp.}",
+              "weight": 17.656250000895543,
+              "foodCategory": null,
+              "foodId": "food_bn6aoj9atkqx8fbkli859bbbxx62",
+              "image": "https://www.edamam.com/food-img/198/198c7b25c23b4235b4cc33818c7b335f.jpg"
+            },
+            {
+              "text": "1/2 tsp. salt",
+              "weight": 3.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "1/4 tsp. pepper",
+              "weight": 0.725,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "3 T. extra-virgin olive oil, such as Pompeian Varietals Collection Koroneiki",
+              "weight": 13.5,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/f7c47e7f630c1e25ccbfd30d9d1b7e39?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/477/477602582334ab232ab0b5655bf95aa6.jpeg",
+          "dietLabels": [
+            "Low-Sodium"
+          ],
+          "ingredients": [
+            {
+              "text": "100g snow peas, trimmed, halved",
+              "weight": 100.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_axypy6pakiktpcb6151czakqj1sd",
+              "image": "https://www.edamam.com/food-img/d69/d6979db01580bcc6b32ad9a83cb5148c.jpg"
+            },
+            {
+              "text": "150g sugar snap peas, trimmed",
+              "weight": 150.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_axypy6pakiktpcb6151czakqj1sd",
+              "image": "https://www.edamam.com/food-img/d69/d6979db01580bcc6b32ad9a83cb5148c.jpg"
+            },
+            {
+              "text": "150g green beans, trimmed",
+              "weight": 150.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_aceucvpau4a8v6atkx5eabxyoqdn",
+              "image": "https://www.edamam.com/food-img/891/89135f10639878a2360e6a33c9af3d91.jpg"
+            },
+            {
+              "text": "1/3 cup fresh mint leaves",
+              "weight": 30.400000000513963,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bxl4xoga4owdkeay51sy8anesxj5",
+              "image": "https://www.edamam.com/food-img/7f0/7f01cc4f71c5c6ad31051ed74b9c058b.jpg"
+            },
+            {
+              "text": "50g baby spinach",
+              "weight": 50.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_aoceuc6bshdej1bbsdammbnj6l6o",
+              "image": "https://www.edamam.com/food-img/e6e/e6e4be375c4554ce01c8ea75232efaa6.jpg"
+            },
+            {
+              "text": "50g baby rocket",
+              "weight": 50.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_a8z1kzrawhksuzav2g1irb6zf4zc",
+              "image": "https://www.edamam.com/food-img/fa7/fa761a311efc0ec361a5eba4ed71870e.jpeg"
+            },
+            {
+              "text": "1/3 cup pepitas, toasted",
+              "weight": 43.0,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_b1o86grabpts6ta6igfy4a2b1x22",
+              "image": "https://www.edamam.com/food-img/fbd/fbd8c30b003fa93777ffaa2bcdd58db0.jpg"
+            },
+            {
+              "text": "1 tablespoon olive oil",
+              "weight": 13.5,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1 tablespoon red wine vinegar",
+              "weight": 14.9,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_ad6iyy1anmzb49a817rgnabnz8c9",
+              "image": "https://www.edamam.com/food-img/dc8/dc8e998b32b8d45ba15c1b1e6711e958.jpg"
+            },
+            {
+              "text": "1 1/2 tablespoons American mustard",
+              "weight": 23.34374999960535,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a34cdj5b0kyuhfbov30xcb50u4dv",
+              "image": "https://www.edamam.com/food-img/e23/e238f2e4cfa6aa1a30f46dc73e7344eb.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/c41fc6a11797610dafa5eebb9151ceb4?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/7fb/7fb5dcdc3692358875a0c6e1e7d5eece.jpg",
+          "dietLabels": [
+            "Balanced"
+          ],
+          "ingredients": [
+            {
+              "text": "8 Medium potatoes",
+              "weight": 1704.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_abiw5baauresjmb6xpap2bg3otzu",
+              "image": "https://www.edamam.com/food-img/651/6512e82417bce15c2899630c1a2799df.jpg"
+            },
+            {
+              "text": "6 Eggs",
+              "weight": 258.0,
+              "foodCategory": "Eggs",
+              "foodId": "food_bhpradua77pk16aipcvzeayg732r",
+              "image": "https://www.edamam.com/food-img/a7e/a7ec7c337cb47c6550b3b118e357f077.jpg"
+            },
+            {
+              "text": "5 Lemons, juiced",
+              "weight": 290.0,
+              "foodCategory": "fruit",
+              "foodId": "food_a6uzc62astrxcgbtzyq59b6fncrr",
+              "image": "https://www.edamam.com/food-img/70a/70acba3d4c734d7c70ef4efeed85dc8f.jpg"
+            },
+            {
+              "text": "1 bunch Fresh parsley, finely chopped",
+              "weight": 60.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_b244pqdazw24zobr5vqu2bf0uid8",
+              "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+            },
+            {
+              "text": "1/2 Yellow onion, finely diced",
+              "weight": 62.5,
+              "foodCategory": "vegetables",
+              "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+              "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+            },
+            {
+              "text": "Olive oil",
+              "weight": 32.2932,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "Sea salt, to taste",
+              "weight": 14.247,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/ff36e4726c925dd4d2d253bc922fef75?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/325/325cfed0968e88a4b88c1f78eaa15524.jpeg",
+          "dietLabels": [
+            "Low-Carb"
+          ],
+          "ingredients": [
+            {
+              "text": "4 cups mache or mixed baby greens",
+              "weight": 144.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bqalyxzbzu04hcb8xj930bzar7xg",
+              "image": "https://www.edamam.com/food-img/b6d/b6d9f3052d27a3c71220cfa55c6f0a42.jpg"
+            },
+            {
+              "text": "1/2 cup flat-leaf parsley leaves",
+              "weight": 30.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_b244pqdazw24zobr5vqu2bf0uid8",
+              "image": "https://www.edamam.com/food-img/46a/46a132e96626d7989b4d6ed8c91f4da0.jpg"
+            },
+            {
+              "text": "1/2 cup basil leaves",
+              "weight": 12.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
+              "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+            },
+            {
+              "text": "1/4 cup strong fresh herbs, such as chives, chervil, tarragon or dill",
+              "weight": 12.000000000202874,
+              "foodCategory": "vegetables",
+              "foodId": "food_btg1uzjak79lawbirsitkaeai60l",
+              "image": "https://www.edamam.com/food-img/f3f/f3f48643a924ba174b894e979cb48620.jpg"
+            },
+            {
+              "text": "2 tablespoons red wine vinegar",
+              "weight": 29.8,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_ad6iyy1anmzb49a817rgnabnz8c9",
+              "image": "https://www.edamam.com/food-img/dc8/dc8e998b32b8d45ba15c1b1e6711e958.jpg"
+            },
+            {
+              "text": "1/4 cup extra-virgin olive oil",
+              "weight": 54.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "Kosher salt and freshly ground black pepper",
+              "weight": 1.8933000000012175,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "Kosher salt and freshly ground black pepper",
+              "weight": 0.9466500000006087,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "1/4 cup pine nuts or slivered almonds, toasted",
+              "weight": 33.75,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_b5d59t6bhqudbqalw7k4fb6ncio8",
+              "image": "https://www.edamam.com/food-img/52f/52fa29cb9d1ab6502f137a98c8a63f09.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/67baa3c4cb44ee6cf2e0428fa458ccb2?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/220/2202af076d0751c080a9f8cea1757f15.jpg",
+          "dietLabels": [
+            "Low-Carb"
+          ],
+          "ingredients": [
+            {
+              "text": "220 grams Greek yogurt",
+              "weight": 220.0,
+              "foodCategory": "yogurt",
+              "foodId": "food_bllzl82a5fkj4yanmzoztapdyryz",
+              "image": "https://www.edamam.com/food-img/689/6891387401f579242e7303ce8ec00e18.jpg"
+            },
+            {
+              "text": "30 grams Dijon mustard",
+              "weight": 30.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a34cdj5b0kyuhfbov30xcb50u4dv",
+              "image": "https://www.edamam.com/food-img/e23/e238f2e4cfa6aa1a30f46dc73e7344eb.jpg"
+            },
+            {
+              "text": "1 1/2 lemons, juice only",
+              "weight": 87.0,
+              "foodCategory": "fruit",
+              "foodId": "food_a6uzc62astrxcgbtzyq59b6fncrr",
+              "image": "https://www.edamam.com/food-img/70a/70acba3d4c734d7c70ef4efeed85dc8f.jpg"
+            },
+            {
+              "text": "1/2 teaspoon honey",
+              "weight": 3.5312500001791087,
+              "foodCategory": null,
+              "foodId": "food_bn6aoj9atkqx8fbkli859bbbxx62",
+              "image": "https://www.edamam.com/food-img/198/198c7b25c23b4235b4cc33818c7b335f.jpg"
+            },
+            {
+              "text": "2 chicken breasts, large",
+              "weight": 435.0,
+              "foodCategory": "Poultry",
+              "foodId": "food_a9hdg97b1sqqs5aj1al75bbo5iyt",
+              "image": "https://www.edamam.com/food-img/093/093749f4c93e448119fc81976d2c3067.jpg"
+            },
+            {
+              "text": "100 grams Bread (gf, wholemeal, your choice), cubed",
+              "weight": 100.0,
+              "foodCategory": "bread, rolls and tortillas",
+              "foodId": "food_a3049hmbqj5wstaeeb3udaz6uaqv",
+              "image": "https://www.edamam.com/food-img/886/886960f6ce6ccec5b9163bacf2996853.jpg"
+            },
+            {
+              "text": "100 grams Bacon, pancetta or prosciutto etc",
+              "weight": 100.0,
+              "foodCategory": "cured meats",
+              "foodId": "food_av0awb0bgs18qub01sd9kbx44b61",
+              "image": "https://www.edamam.com/food-img/d42/d426884a125fa39a70d5a5d7217864ec.jpg"
+            },
+            {
+              "text": "Spray oil",
+              "weight": 21.971225000002434,
+              "foodCategory": "Oils",
+              "foodId": "food_bk9p9aaavhvoq4bqsnprobpsiuxs",
+              "image": "https://www.edamam.com/food-img/07e/07e106ab3536d57428e5c46d009038f8.jpg"
+            },
+            {
+              "text": "3 eggs",
+              "weight": 129.0,
+              "foodCategory": "Eggs",
+              "foodId": "food_bhpradua77pk16aipcvzeayg732r",
+              "image": "https://www.edamam.com/food-img/a7e/a7ec7c337cb47c6550b3b118e357f077.jpg"
+            },
+            {
+              "text": "200 grams green beans, trimmed",
+              "weight": 200.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_aceucvpau4a8v6atkx5eabxyoqdn",
+              "image": "https://www.edamam.com/food-img/891/89135f10639878a2360e6a33c9af3d91.jpg"
+            },
+            {
+              "text": "2 cos lettuce, leaves only",
+              "weight": 10.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bf5fxtkbc9alwoajuvsi7amonr5w",
+              "image": "https://www.edamam.com/food-img/719/71996625d0cb47e197093ecd52c97dc2.jpg"
+            },
+            {
+              "text": "1 Lebanese cucumber, quartered and sliced",
+              "weight": 301.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bv7aggjag9rxsaatklqzobca5fzn",
+              "image": "https://www.edamam.com/food-img/501/5015da0e5fc2b384696b3d949aefef86.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/cf4f1b1d4e59217952a47696aacd094e?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/2a1/2a1a39dd6bcc453975f031b41c8fa435.jpg",
+          "dietLabels": [
+            "Low-Carb"
+          ],
+          "ingredients": [
+            {
+              "text": "Cooking spray or sunflower oil, for greasing",
+              "weight": 7.029783333335594,
+              "foodCategory": "Oils",
+              "foodId": "food_aglc0hqae3alv1biazc6qaiamw2x",
+              "image": null
+            },
+            {
+              "text": "8 free-range eggs",
+              "weight": 344.0,
+              "foodCategory": "Eggs",
+              "foodId": "food_bhpradua77pk16aipcvzeayg732r",
+              "image": "https://www.edamam.com/food-img/a7e/a7ec7c337cb47c6550b3b118e357f077.jpg"
+            },
+            {
+              "text": "8 sun-dried tomatoes, drained well and roughly chopped",
+              "weight": 16.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_aq6acefaz2zqp1anqb7iiatc27q6",
+              "image": "https://www.edamam.com/food-img/023/0231ec1c0873483bd9747d71d57e6215.jpeg"
+            },
+            {
+              "text": "Large handful of baby spinach, roughly chopped (about 2 Tablespoons)",
+              "weight": 1.2499999999788651,
+              "foodCategory": "vegetables",
+              "foodId": "food_aoceuc6bshdej1bbsdammbnj6l6o",
+              "image": "https://www.edamam.com/food-img/e6e/e6e4be375c4554ce01c8ea75232efaa6.jpg"
+            },
+            {
+              "text": "Good pinch of freshly grated nutmeg",
+              "weight": 0.14583333352071937,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_aa8vp2kadkkiiubgpp48fazrqiq2",
+              "image": "https://www.edamam.com/food-img/b9e/b9e54f78ae18cf99a6504b472ba25e7b.jpg"
+            },
+            {
+              "text": "1/2 cup feta cheese, roughly broken into bite-sized pieces",
+              "weight": 75.0,
+              "foodCategory": "Cheese",
+              "foodId": "food_biry7gubtkpad3a7qkz6uba5acn9",
+              "image": "https://www.edamam.com/food-img/37e/37ef3e404b1c02bf4707cb82010732b8.jpg"
+            },
+            {
+              "text": "A few fresh basil leaves",
+              "weight": 0.5,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
+              "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+            },
+            {
+              "text": "Sea salt and freshly ground black pepper",
+              "weight": 3.1013750000009974,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "Sea salt and freshly ground black pepper",
+              "weight": 1.5506875000004987,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "1/2 cup arugula, watercress, or mixed salad leaves",
+              "weight": 23.5,
+              "foodCategory": "vegetables",
+              "foodId": "food_bfmb5cybk1o247bmrmry4a6jvp60",
+              "image": "https://www.edamam.com/food-img/79e/79e8dd0ee229cbc32171ec362ce93a37.jpg"
+            },
+            {
+              "text": "3 tablespoons extra-virgin olive oil",
+              "weight": 40.5,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1 tablespoon balsamic vinegar",
+              "weight": 16.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b1ic8tzapja8jubas1f8lbhpbn6x",
+              "image": "https://www.edamam.com/food-img/90a/90a1f211768e166ecfff19e8b4747498.jpg"
+            },
+            {
+              "text": "Sea salt and freshly ground black pepper",
+              "weight": 3.1013750000009974,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "Sea salt and freshly ground black pepper",
+              "weight": 1.5506875000004987,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            }
+          ],
+          "dishType": [
+            "desserts",
+            "egg"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/659ef90d823b0983d7cb5f3e9649148d?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/7c8/7c8cc7efa56bfab43fe2fa3cecd6eb68.jpg",
+          "dietLabels": [
+            "High-Fiber"
+          ],
+          "ingredients": [
+            {
+              "text": "4 1/2 cups fast-cooking couscous",
+              "weight": 778.5,
+              "foodCategory": "grains",
+              "foodId": "food_ath4mfgbrn9z6gaijwn1wb2pf4oq",
+              "image": "https://www.edamam.com/food-img/b27/b273b8089a4447e46e66d20423b386cb.jpg"
+            },
+            {
+              "text": "2 cups boiling water",
+              "weight": 474.0,
+              "foodCategory": "water",
+              "foodId": "food_a99vzubbk1ayrsad318rvbzr3dh0",
+              "image": "https://www.edamam.com/food-img/5dd/5dd9d1361847b2ca53c4b19a8f92627e.jpg"
+            },
+            {
+              "text": "3 tablespoons olive oil",
+              "weight": 40.5,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "2 tablespoons lemon juice",
+              "weight": 30.4999999994844,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "2 large tomatoes, chopped",
+              "weight": 307.5,
+              "foodCategory": "vegetables",
+              "foodId": "food_a6k79rrahp8fe2b26zussa3wtkqh",
+              "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+            },
+            {
+              "text": "1 zucchini, diced",
+              "weight": 196.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avpihljbuwpd8ibbmahcabaros5s",
+              "image": "https://www.edamam.com/food-img/f63/f637280594e4a731eccc1199194a8847.jpg"
+            },
+            {
+              "text": "1/2 cup chopped green onion",
+              "weight": 50.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_bknlkyzbuzo27pb11whr4bttkuy6",
+              "image": "https://www.edamam.com/food-img/b89/b89986ed6aa466285bdd99bac34b3c46.jpg"
+            },
+            {
+              "text": "1/2 cup fresh basil, cut into strips",
+              "weight": 12.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
+              "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+            },
+            {
+              "text": "1 cup crumbled feta cheese",
+              "weight": 150.0,
+              "foodCategory": "Cheese",
+              "foodId": "food_biry7gubtkpad3a7qkz6uba5acn9",
+              "image": "https://www.edamam.com/food-img/37e/37ef3e404b1c02bf4707cb82010732b8.jpg"
+            },
+            {
+              "text": "salt and freshly ground black pepper to taste",
+              "weight": 12.233999999996906,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "salt and freshly ground black pepper to taste",
+              "weight": 6.116999999998453,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/58bc82b695b7bdd16885c769242b7a34?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/61f/61f1d00e8e609a8e108b8a6a0387496d.jpg",
+          "dietLabels": [
+            "High-Fiber"
+          ],
+          "ingredients": [
+            {
+              "text": "* 1/4 pound extra firm tofu",
+              "weight": 113.3980925,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_bu9fz3paqr6xcebft7onna22v8ve",
+              "image": "https://www.edamam.com/food-img/c44/c44799e4beb77540acad305ac9f9ef7e.jpg"
+            },
+            {
+              "text": "* 2 bunch (2 lb) asparagus",
+              "weight": 907.18474,
+              "foodCategory": "vegetables",
+              "foodId": "food_b7bgzddbqq26mia27xpv7acn083m",
+              "image": "https://www.edamam.com/food-img/159/159dec8bbcabf7ed641a57b40a2d2eb9.jpg"
+            },
+            {
+              "text": "* 1/3 cup diced or thinly sliced red onion",
+              "weight": 38.33333333333333,
+              "foodCategory": "vegetables",
+              "foodId": "food_bmrvi4ob4binw9a5m7l07amlfcoy",
+              "image": "https://www.edamam.com/food-img/205/205e6bf2399b85d34741892ef91cc603.jpg"
+            },
+            {
+              "text": "* 1/2 cup (1 2.25-ounce can) sliced black olive",
+              "weight": 63.78642703125,
+              "foodCategory": "canned fruit",
+              "foodId": "food_atlv2r9b29ejzeb1o3wgkaxqajcb",
+              "image": "https://www.edamam.com/food-img/822/8221f2141e8dafd469414b20777735ca.jpg"
+            },
+            {
+              "text": "* 1 clove garlic, crushed",
+              "weight": 3.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "* 2 tablespoon lemon juice",
+              "weight": 30.4999999994844,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "* 1 -2 tablespoon olive oil",
+              "weight": 20.25,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "* 1/2 teaspoon granulated onion",
+              "weight": 1.2,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bmv8z27b1o25vcbu41ooyawd2zj4",
+              "image": "https://www.edamam.com/food-img/1e7/1e73e6f5dd96bb233abc0fcc05fb0ec8.jpg"
+            },
+            {
+              "text": "* 1/4 teaspoon basil",
+              "weight": 0.12500000000634015,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bfeht3obd58c3gak5ehpibxgbbs6",
+              "image": "https://www.edamam.com/food-img/5f1/5f1b05685ac2b404236a5d1c1f3c8c10.jpg"
+            },
+            {
+              "text": "* 1/4 teaspoon oregano",
+              "weight": 0.25,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bkkw6v3bdf0sqiazmzyuiax7i8jr",
+              "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+            },
+            {
+              "text": "* 1/2 teaspoon salt",
+              "weight": 3.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/c52b7c6f0114135616d4b628e1311e13?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/24c/24c7aff85db7daf160dea719eedc0dfa.jpg",
+          "dietLabels": [
+            "Low-Carb",
+            "Low-Sodium"
+          ],
+          "ingredients": [
+            {
+              "text": "2 tablespoon extra virgin olive oil",
+              "weight": 27.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1 tablespoon balsamic vinegar",
+              "weight": 16.0,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b1ic8tzapja8jubas1f8lbhpbn6x",
+              "image": "https://www.edamam.com/food-img/90a/90a1f211768e166ecfff19e8b4747498.jpg"
+            },
+            {
+              "text": "1 teaspoon sugar",
+              "weight": 4.2,
+              "foodCategory": "sugars",
+              "foodId": "food_axi2ijobrk819yb0adceobnhm1c2",
+              "image": "https://www.edamam.com/food-img/ecb/ecb3f5aaed96d0188c21b8369be07765.jpg"
+            },
+            {
+              "text": "1/4 teaspoon salt (I used sea salt)",
+              "weight": 1.5,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "1 large bowl of lettuce (clean, dry and torn up)",
+              "weight": 137.5,
+              "foodCategory": "vegetables",
+              "foodId": "food_bf5fxtkbc9alwoajuvsi7amonr5w",
+              "image": "https://www.edamam.com/food-img/719/71996625d0cb47e197093ecd52c97dc2.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/26e2bebcd54476f71930a3eeceffe44c?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/192/19216424895c1c7d8749acee2e78a385",
+          "dietLabels": [
+            
+          ],
+          "ingredients": [
+            {
+              "text": "10 oz. shaved brussels sprouts",
+              "weight": 283.49523125,
+              "foodCategory": "vegetables",
+              "foodId": "food_bkr6xbxbvl7pgua0vy4ibblf93qq",
+              "image": "https://www.edamam.com/food-img/28a/28a88a795cd97a3b3b28b65eb8bff5aa.jpg"
+            },
+            {
+              "text": "2 cups of arugula",
+              "weight": 40.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_a8z1kzrawhksuzav2g1irb6zf4zc",
+              "image": "https://www.edamam.com/food-img/fa7/fa761a311efc0ec361a5eba4ed71870e.jpeg"
+            },
+            {
+              "text": "½ cup pomegranate seeds",
+              "weight": 87.0,
+              "foodCategory": "fruit",
+              "foodId": "food_b43po6ubmv934gb4dfd1kaic8fxa",
+              "image": "https://www.edamam.com/food-img/342/342903acce5f863b7683cff3644931a8.jpg"
+            },
+            {
+              "text": "1 granny smith apple, thinly sliced",
+              "weight": 174.6,
+              "foodCategory": "fruit",
+              "foodId": "food_b4m99bgatuhmfybeq0d7xa9uvr1b",
+              "image": "https://www.edamam.com/food-img/288/288a6646dd6bb05a482f4405bf6e2861.jpg"
+            },
+            {
+              "text": "⅓ cup shaved white cheddar cheese",
+              "weight": 44.0,
+              "foodCategory": "Cheese",
+              "foodId": "food_bhppgmha1u27voagb8eptbp9g376",
+              "image": "https://www.edamam.com/food-img/bcd/bcd94dde1fcde1475b5bf0540f821c5d.jpg"
+            },
+            {
+              "text": "¾ cup pecan pieces",
+              "weight": 74.25,
+              "foodCategory": "plant-based protein",
+              "foodId": "food_a9apeypa4rgl7eax9hbjradaa4ry",
+              "image": "https://www.edamam.com/food-img/42f/42ff4c36d4d0b4e8069604c97af1cfef.jpg"
+            },
+            {
+              "text": "1 tablespoon brown sugar",
+              "weight": 9.06249999984678,
+              "foodCategory": "sugars",
+              "foodId": "food_aodgtqwbmeu5f6bxeffn0art3bga",
+              "image": "https://www.edamam.com/food-img/8c6/8c6662bd73900645c6385b51a95d9b03.jpg"
+            },
+            {
+              "text": "1 tablespoon unsalted butter",
+              "weight": 14.2,
+              "foodCategory": "Dairy",
+              "foodId": "food_awz3iefajbk1fwahq9logahmgltj",
+              "image": "https://www.edamam.com/food-img/713/71397239b670d88c04faa8d05035cab4.jpg"
+            },
+            {
+              "text": "2 tablespoons fresh lemon juice",
+              "weight": 30.4999999994844,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "2 tablespoons olive oil",
+              "weight": 27.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1 tablespoon maple syrup",
+              "weight": 20.0,
+              "foodCategory": "sugars",
+              "foodId": "food_bo37p69bopqshvaul0bn4bv0kqni",
+              "image": "https://www.edamam.com/food-img/ced/ced25c45453a118e531c8aaf33e2ee38.jpg"
+            },
+            {
+              "text": "2 tablespoon whole grain mustard",
+              "weight": 31.1249999994738,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a34cdj5b0kyuhfbov30xcb50u4dv",
+              "image": "https://www.edamam.com/food-img/e23/e238f2e4cfa6aa1a30f46dc73e7344eb.jpg"
+            },
+            {
+              "text": "1 garlic clove, minced",
+              "weight": 3.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "salt",
+              "weight": 5.029396387492831,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "pepper",
+              "weight": 2.5146981937464155,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/4aad6a8d880af21a33911a0c0337918a?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/5eb/5ebfd228066f8e9bd3f20862b0a7a704.jpg",
+          "dietLabels": [
+            "Low-Carb"
+          ],
+          "ingredients": [
+            {
+              "text": "1/2 cup olive oil",
+              "weight": 108.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "1/4 cup fresh lemon juice",
+              "weight": 61.0,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "2 shallots, thinly sliced lengthwise",
+              "weight": 118.22222222222223,
+              "foodCategory": "vegetables",
+              "foodId": "food_bu2ver7a5f52dfap8q9f0bn085qb",
+              "image": "https://www.edamam.com/food-img/d23/d23e3be21df05e9e16c05eadb12341e7.jpeg"
+            },
+            {
+              "text": "Kosher salt and black pepper",
+              "weight": 7.0263675245842245,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "Kosher salt and black pepper",
+              "weight": 3.5131837622921123,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "1/4 cup fresh oregano leaves",
+              "weight": 11.99999999939134,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_bkkw6v3bdf0sqiazmzyuiax7i8jr",
+              "image": "https://www.edamam.com/food-img/1b0/1b0eaffb1c261606e0d82fed8e9747a7.jpg"
+            },
+            {
+              "text": "2 bunches watercress (12 ounces), thick stems discarded, coarsely chopped",
+              "weight": 340.1942775,
+              "foodCategory": "vegetables",
+              "foodId": "food_bqj8tvnav5gmivasnvvlea9fnhpv",
+              "image": "https://www.edamam.com/food-img/5bd/5bde2c99df9b69be97523877ffd891b2.jpg"
+            },
+            {
+              "text": "5 ounces mixed salad greens",
+              "weight": 141.747615625,
+              "foodCategory": "vegetables",
+              "foodId": "food_bqalyxzbzu04hcb8xj930bzar7xg",
+              "image": "https://www.edamam.com/food-img/b6d/b6d9f3052d27a3c71220cfa55c6f0a42.jpg"
+            },
+            {
+              "text": "1 cup cherry tomatoes, halved",
+              "weight": 175.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_a30b0hpbvavginafe0tocbf6ymje",
+              "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
+            },
+            {
+              "text": "1/3 cup pitted kalamata olives",
+              "weight": 44.800000000757336,
+              "foodCategory": "canned fruit",
+              "foodId": "food_atlv2r9b29ejzeb1o3wgkaxqajcb",
+              "image": "https://www.edamam.com/food-img/822/8221f2141e8dafd469414b20777735ca.jpg"
+            },
+            {
+              "text": "6 ounces ricotta salata or Feta, thinly sliced",
+              "weight": 170.09713875,
+              "foodCategory": "Cheese",
+              "foodId": "food_biry7gubtkpad3a7qkz6uba5acn9",
+              "image": "https://www.edamam.com/food-img/37e/37ef3e404b1c02bf4707cb82010732b8.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/acd99e0ca93535bda446036aca11b725?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/7c0/7c07b29243f4de9c211c636b4ea42204.jpg",
+          "dietLabels": [
+            "Low-Carb"
+          ],
+          "ingredients": [
+            {
+              "text": "2 anchovy fillets (or to taste)",
+              "weight": 8.0,
+              "foodCategory": "canned seafood",
+              "foodId": "food_awzkfobba3yz6ebfpan4ka2ycs5r",
+              "image": "https://www.edamam.com/food-img/903/903f0e875a690dce724b7f4b6f09f931.jpg"
+            },
+            {
+              "text": "2 fresh garlic cloves (or to taste)",
+              "weight": 6.0,
+              "foodCategory": "vegetables",
+              "foodId": "food_avtcmx6bgjv1jvay6s6stan8dnyp",
+              "image": "https://www.edamam.com/food-img/6ee/6ee142951f48aaf94f4312409f8d133d.jpg"
+            },
+            {
+              "text": "1 cup mayonnaise (not salad dressing)",
+              "weight": 231.0,
+              "foodCategory": "condiments and sauces",
+              "foodId": "food_bu8t61zaplle7dbrzk81dbygq0qj",
+              "image": "https://www.edamam.com/food-img/577/577308a0422357885c94cc9b5f1f1862.jpg"
+            },
+            {
+              "text": "1/4 cup half-and-half cream or milk",
+              "weight": 59.5,
+              "foodCategory": "Dairy",
+              "foodId": "food_bvhbvd7bwy6a7wamfrmvmbmen1sz",
+              "image": "https://www.edamam.com/food-img/484/4848d71f6a14dd5076083f5e17925420.jpg"
+            },
+            {
+              "text": "1/3 cup grated parmesan cheese",
+              "weight": 49.56875,
+              "foodCategory": "Cheese",
+              "foodId": "food_a104ppxa06d3emb272fkcab3cugd",
+              "image": "https://www.edamam.com/food-img/f58/f588658627c59d5041e4664119829aa9.jpg"
+            },
+            {
+              "text": "2 tablespoons fresh squeezed lemon juice",
+              "weight": 30.4999999994844,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "1 tablespoon Dijon mustard",
+              "weight": 15.5624999997369,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a34cdj5b0kyuhfbov30xcb50u4dv",
+              "image": "https://www.edamam.com/food-img/e23/e238f2e4cfa6aa1a30f46dc73e7344eb.jpg"
+            },
+            {
+              "text": "salt and pepper",
+              "weight": 2.4695374999988156,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_btxz81db72hwbra2pncvebzzzum9",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "salt and pepper",
+              "weight": 1.2347687499994078,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            },
+            {
+              "text": "2 teaspoons worcestershire sauce (or to taste) (optional",
+              "weight": 11.458333333914512,
+              "foodCategory": "canned soup",
+              "foodId": "food_ahb8mscbejo58ubexo0itam1i74g",
+              "image": "https://www.edamam.com/food-img/072/072b61dd1ad5bb641f05b14f716ba6d0.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/c582a248ceffb3a1627105d71dc34db3?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "image": "https://www.edamam.com/web-img/36d/36d9f03241dd737a0491ec7c707aa0ee.jpg",
+          "dietLabels": [
+            "Low-Carb",
+            "Low-Sodium"
+          ],
+          "ingredients": [
+            {
+              "text": "* 1/3 cup fresh squeezed lemon juice",
+              "weight": 81.33333333333333,
+              "foodCategory": "100% juice",
+              "foodId": "food_bglm6vxahuauteb0n6ynfbg9eryu",
+              "image": "https://www.edamam.com/food-img/e31/e310952d214e78a4cb8b73f30ceeaaf2.jpg"
+            },
+            {
+              "text": "* 1/4 cup plus 3 tablespoon olive oil",
+              "weight": 54.0,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "* 1/4 cup plus 3 tablespoon olive oil",
+              "weight": 40.5,
+              "foodCategory": "Oils",
+              "foodId": "food_b1d1icuad3iktrbqby0hiagafaz7",
+              "image": "https://www.edamam.com/food-img/4d6/4d651eaa8a353647746290c7a9b29d84.jpg"
+            },
+            {
+              "text": "* 1/4 cup coconut vinegar",
+              "weight": 59.5,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_am3vwadag9arxtadrwyfcau2w3b2",
+              "image": "https://www.edamam.com/food-img/5f6/5f69b84c399d778c4728e9ab4f8065a2.jpg"
+            },
+            {
+              "text": "* 3 tablespoon raw honey",
+              "weight": 63.0,
+              "foodCategory": null,
+              "foodId": "food_bn6aoj9atkqx8fbkli859bbbxx62",
+              "image": "https://www.edamam.com/food-img/198/198c7b25c23b4235b4cc33818c7b335f.jpg"
+            },
+            {
+              "text": "* 1/4 teaspoon sea salt",
+              "weight": 1.2135416667282188,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_a1vgrj1bs8rd1majvmd9ubz8ttkg",
+              "image": "https://www.edamam.com/food-img/694/6943ea510918c6025795e8dc6e6eaaeb.jpg"
+            },
+            {
+              "text": "* 1/4 teaspoon black pepper",
+              "weight": 0.725,
+              "foodCategory": "Condiments and sauces",
+              "foodId": "food_b6ywzluaaxv02wad7s1r9ag4py89",
+              "image": "https://www.edamam.com/food-img/c6e/c6e5c3bd8d3bc15175d9766971a4d1b2.jpg"
+            }
+          ],
+          "dishType": [
+            "salad"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/0a8dc89b039e1fcb05f6c0738951871f?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      }
+    ]
+  }

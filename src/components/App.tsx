@@ -1,14 +1,24 @@
-import React, {useState, useEffect, createContext, useReducer, Dispatch, lazy, Suspense  } from "react";
-import Details from "./Details/Details";
-import {searchValueReducer, IState} from '../reducers/searchValueReducer'
+import React, {
+  useState,
+  useEffect,
+  createContext,
+  useReducer,
+  Dispatch,
+  lazy,
+  Suspense,
+} from "react";
+import { searchValueReducer, IState } from "../reducers/searchValueReducer";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
-  Redirect
+  Redirect,
 } from "react-router-dom";
-const Home = lazy(()=>import("./Home/Home"));
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+const Home = lazy(() => import("./Home/Home"));
+const Details = lazy(()=> import("./Details/Details"));
 
 interface IContextProps {
   state: IState;
@@ -17,12 +27,11 @@ interface IContextProps {
 
 export const SearchContext = createContext({} as IContextProps);
 
-const App = (): JSX.Element | null  => {
-
+const App = (): JSX.Element | null => {
   const [loading, setLoading] = useState(true);
-  
-  const initialSearchValue = {inputValue: 'heyyy'};
-  const [state, dispatch] = useReducer(searchValueReducer, initialSearchValue)
+
+  const initialSearchValue = { inputValue: "heyyy" };
+  const [state, dispatch] = useReducer(searchValueReducer, initialSearchValue);
 
   // const contextValue = useMemo(() => {
   //   return { state, dispatch };
@@ -31,33 +40,29 @@ const App = (): JSX.Element | null  => {
   useEffect(() => {
     // setTimeout(()=>{setLoading(false)}, 2000);
     setLoading(false);
-  }, [])
+  }, []);
 
-
-  return (loading ? (null) : (
+  return loading ? null : (
     <Router>
-      <SearchContext.Provider value={{state, dispatch}}>
+      <SearchContext.Provider value={{ state, dispatch }}>
         <div>
-          <h2>My portfolio</h2>
-          <h3>dd</h3>
+          <Header />
           <Suspense fallback={<div>Loading</div>}>
-          <Switch>
-            <Route path="/home" component={Home}></Route>
-            <Route path="/details">
-              <Details data={state.inputValue} />
-            </Route>
-            <Redirect from="*" to="/home" />
-          </Switch>
+            <Switch>
+              <Route path="/home" component={Home}></Route>
+              <Route path="/details">
+                <Details data={state.inputValue} />
+              </Route>
+              <Redirect from="*" to="/home" />
+            </Switch>
           </Suspense>
-          <Link to="/details" >Details page</Link>
-          <Link to="/home" >Home page</Link>
-          <div id="edamam-badge" data-color="white"></div>
+          <Link to="/details">Details page</Link>
+          <Link to="/home">Home page</Link>
+          <Footer />
         </div>
-      
       </SearchContext.Provider>
     </Router>
-  ));
-
+  );
 };
 
 export default App;
