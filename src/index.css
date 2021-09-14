@@ -2,6 +2,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,3 +22,11 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Exo';
+  src: url('./fonts/Exo-ExtraBold.woff2') format('woff2'),
+      url('./fonts/Exo-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
