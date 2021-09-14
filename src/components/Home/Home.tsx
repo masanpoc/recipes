@@ -6,14 +6,22 @@ import styled from "styled-components";
 
 const StyledHome = styled.div`
   min-height: 100vh;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 `
 
 const Home = (): JSX.Element => {
   return (
     <StyledHome>
-      <Searchbar />
+      
       <Filters />
-      <RecipesApi />
+      <div>
+        <Searchbar />
+        {/* feed with mediterranean desserts etc */}
+        <RecipesApi />
+        {/* resyults from searchbar */}
+      </div>
     </StyledHome>
   );
 };
