@@ -1,0 +1,374 @@
+
+{
+  "from": 1,
+  "to": 20,
+  "count": 188,
+  "_links": {
+    "next": {
+      "href": "https://api.edamam.com/api/recipes/v2?q=polish%20soup&random=false&app_key=ed3ef53124d5aeca35f2143b29cb363d&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime&_cont=CHcVQBtNNQphDmgVQ3tAEX4BYVFtBAQASmVGAWsWZFJ1BwUBUXlSC2BAYwN3AwIPSzdFVmUaYFIlAFIHSmJJVTMWNwR6UQoVLnlSVSBMPkd5BgMbUSYRVTdgMgksRlpSAAcRXTVGcV84SU4%3D&imageSize=REGULAR&type=public&app_id=5c0fb7a3",
+      "title": "Next page"
+    }
+  },
+  "hits": [
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_f31b9fd7e1674ee85e6c8553b7751910",
+        "label": "Polish sausage soup",
+        "image": "https://www.edamam.com/web-img/0a5/0a52351f11881dbe853e120cd07d0098.jpg",
+        "url": "https://www.bbcgoodfood.com/recipes/polish-sausage-soup",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 40.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/f31b9fd7e1674ee85e6c8553b7751910?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_9120b59727225d8e6d947a0e0b12d023",
+        "label": "Polish Potato, Kielbasa, and Cabbage Soup (Kapusniak) Recipe",
+        "image": "https://www.edamam.com/web-img/d6a/d6aeb0348726cae897ffc0931da4abf7.jpg",
+        "url": "http://www.seriouseats.com/recipes/2016/01/polish-potato-kielbasa-cabbage-soup-kapusniak-recipe.html",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 30.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/9120b59727225d8e6d947a0e0b12d023?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_cd37f0f76ed7e978152336124a444951",
+        "label": "Mushroom Barley Soup recipes",
+        "image": "https://www.edamam.com/web-img/6f2/6f2f53a08e81c110cba30a1c0f008175",
+        "url": "http://www.marthastewart.com/349143/mushroom-barley-soup",
+        "dietLabels": [
+          "Balanced"
+        ],
+        "totalTime": 90.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/cd37f0f76ed7e978152336124a444951?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a68bfa77661f51f04729629df33343aa",
+        "label": "Zurek (Polish Hangover Soup)",
+        "image": "https://www.edamam.com/web-img/92a/92a2a6b68059aa997fc6344f4542573d.jpg",
+        "url": "https://food52.com/recipes/81826-zurek-recipe",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 5820.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/a68bfa77661f51f04729629df33343aa?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_f46895b76800ffed9bb73424f48ab08e",
+        "label": "Mushroom Barley Soup",
+        "image": "https://www.edamam.com/web-img/10f/10ff83723b8b050cdeec9dc490dcd51b.jpg",
+        "url": "https://www.epicurious.com/recipes/food/views/mushroom-barley-soup-51186260",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 0.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/f46895b76800ffed9bb73424f48ab08e?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_fc7814948286acb382b33d4787ca615f",
+        "label": "'From A Polish Country House Kitchen's Barszcz",
+        "image": "https://www.edamam.com/web-img/427/42711704c7a483da0e2879a79e012600.jpg",
+        "url": "http://www.seriouseats.com/recipes/2013/02/from-a-polish-country-house-kitchens-barszcz.html",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 120.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/fc7814948286acb382b33d4787ca615f?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_87e576cf23d5c9e08d00f0d3e8552b97",
+        "label": "Mushroom Soup recipes",
+        "image": "https://www.edamam.com/web-img/e51/e51f3e3f63d89fe17b11df45e46cd0cd",
+        "url": "http://www.marthastewart.com/351301/mushroom-soup",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 80.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/87e576cf23d5c9e08d00f0d3e8552b97?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_092b20fafc25fee635a73caf71b9e377",
+        "label": "Smoked Sausage and Cabbage Soup",
+        "image": "https://www.edamam.com/web-img/9e3/9e3dfec028f9e8354be0e90db43ff861.jpeg",
+        "url": "https://www.foodnetwork.com/recipes/robert-irvine/smoked-sausage-and-cabbage-soup-2773768",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 80.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/092b20fafc25fee635a73caf71b9e377?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_bb75c6c92da69771c6eb1ddc77c4b2be",
+        "label": "Chilled Beet Soup with Buttermilk, Cucumbers, and Dill (Chlodnik)",
+        "image": "https://www.edamam.com/web-img/955/95562e969f06cfa635c93d2df56774ef.jpg",
+        "url": "https://www.epicurious.com/recipes/food/views/chilled-beet-soup-with-buttermilk-cucumbers-and-dill-chlodnik",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 0.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/bb75c6c92da69771c6eb1ddc77c4b2be?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0c2c07836698990143bd457818f73564",
+        "label": "Recipe: Baked Potato Soup With Bacon, Scallions & Cheddar",
+        "image": "https://www.edamam.com/web-img/30f/30f04bc7af54ea117e4b65d8fd960218",
+        "url": "http://www.thekitchn.com/recipe-baked-potato-soup-with-bacon-scallions-cheddar-136303",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 0.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/0c2c07836698990143bd457818f73564?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_da312ee8d6b4c2af28f4d2d44d21c5ff",
+        "label": "From A Polish Country House Kitchen's Twice-Cooked Wild Mushrooms",
+        "image": "https://www.edamam.com/web-img/966/9667357f87391ebbbcfc11352a671b04.jpg",
+        "url": "http://www.seriouseats.com/recipes/2013/02/from-a-polish-country-house-kitchens-twice-co.html",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 45.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/da312ee8d6b4c2af28f4d2d44d21c5ff?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a0b6d4e0d43f8ed112badb5eb9fb4ca0",
+        "label": "Soba noodle soup with carrot tempura, arugula and leek",
+        "image": "https://www.edamam.com/web-img/0e5/0e592a91b995c5b4029aa597208a6c15.jpg",
+        "url": "https://food52.com/recipes/26536-soba-noodle-soup-with-carrot-tempura-arugula-and-leek",
+        "dietLabels": [
+          "Low-Fat"
+        ],
+        "totalTime": 0.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/a0b6d4e0d43f8ed112badb5eb9fb4ca0?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e6b75329c987284c8e24a58624cfb6fd",
+        "label": "Kielbasa Mac & Cheese",
+        "image": "https://www.edamam.com/web-img/256/256b642ae8afe811c8be61e9e73c2704.jpg",
+        "url": "http://www.myrecipes.com/recipe/kielbasa-mac-cheese",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 0.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/e6b75329c987284c8e24a58624cfb6fd?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b4de30d14ce809ea914be452352efc0e",
+        "label": "Chilled Buttermilk Soup",
+        "image": "https://www.edamam.com/web-img/172/17208249ed54ef6b9ec0449c4beeee7b.jpg",
+        "url": "https://www.epicurious.com/recipes/food/views/chilled-buttermilk-soup-106734",
+        "dietLabels": [
+          "Balanced"
+        ],
+        "totalTime": 0.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/b4de30d14ce809ea914be452352efc0e?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_891220a7c83bc17fc8b1e82ba5fb8d4a",
+        "label": "Hangover Soup",
+        "image": "https://www.edamam.com/web-img/d93/d93ae2d89e2ed32288c977bf19c197f3.jpeg",
+        "url": "https://www.foodnetwork.com/recipes/hangover-soup-recipe-1976037",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 100.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/891220a7c83bc17fc8b1e82ba5fb8d4a?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_49de4752570795880a513c12b982152c",
+        "label": "Not Exactly Aunt Lil's Matzo Ball Soup",
+        "image": "https://www.edamam.com/web-img/b85/b85ff1ef3c3c8df8ab01fc1f82ce53cc.jpg",
+        "url": "http://www.cookstr.com/recipes/not-exactly-aunt-lils-matzo-ball-soup",
+        "dietLabels": [
+          "High-Fiber"
+        ],
+        "totalTime": 0.5
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/49de4752570795880a513c12b982152c?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_6120e10bc20e15c31f0bca1cf7bc83e0",
+        "label": "Cook the Book: Slovak Sauerkraut Soup",
+        "image": "https://www.edamam.com/web-img/c0c/c0c2d4a4a695dfe6b189f7a943a929e3.jpg",
+        "url": "http://www.seriouseats.com/recipes/2010/01/slovak-sauerkraut-soup-recipe.html",
+        "dietLabels": [
+          "High-Fiber"
+        ],
+        "totalTime": 0.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/6120e10bc20e15c31f0bca1cf7bc83e0?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a669114917295e56438f2aff629fe931",
+        "label": "Mulligatawny Carrots",
+        "image": "https://www.edamam.com/web-img/547/5472ca97c80822ac11feae6f749d85fe.jpg",
+        "url": "https://food52.com/recipes/9945-mulligatawny-carrots",
+        "dietLabels": [
+          "High-Fiber"
+        ],
+        "totalTime": 0.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/a669114917295e56438f2aff629fe931?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_8dfc67d0a3a293419f98c1658bcc2bf4",
+        "label": "Simple Version of Borscht",
+        "image": "https://www.edamam.com/web-img/b48/b4860861c7d2fc9527285f7fb8389ca7.jpg",
+        "url": "http://www.cookstr.com/recipes/simple-version-of-borscht",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 60.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/8dfc67d0a3a293419f98c1658bcc2bf4?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_cbc557862ec29896b30116b5be84de9b",
+        "label": "Easy Creamy Potato, Leek, and Sauerkraut Soup Recipe",
+        "image": "https://www.edamam.com/web-img/cad/cada634aa8e3abe1e4304882932f76a2.jpg",
+        "url": "http://www.seriouseats.com/recipes/2016/01/potato-leek-cabbage-sauerkraut-soup-recipe.html",
+        "dietLabels": [
+          
+        ],
+        "totalTime": 30.0
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/cbc557862ec29896b30116b5be84de9b?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+          "title": "Self"
+        }
+      }
+    }
+  ]
+}

@@ -12,7 +12,7 @@ const Searchbar = (): JSX.Element => {
   const [searchValue, setSearchValue] = useState("");
   const { dispatch } = useContext(SearchContext);
   function lookForSearchValue() {
-    dispatch({ type: "update searchValue", value: "new value" });
+    dispatch({ type: "SEARCH", value: searchValue });
   }
 
   return (
@@ -21,6 +21,7 @@ const Searchbar = (): JSX.Element => {
         type="text"
         placeholder="keywords"
         onChange={(e) => setSearchValue(e.target.value)}
+        onKeyDown={(e)=>{if(e.code=='Enter'){lookForSearchValue()}}}
       ></input>
       <button onClick={lookForSearchValue}>Change value</button>
     </div>

@@ -1,5 +1,6 @@
 export interface IState {
   inputValue: string;
+  filters: any
 }
 
 interface IActions {
@@ -8,5 +9,10 @@ interface IActions {
 }
 
 export const searchValueReducer = (state: IState, action: IActions): any => {
-  return { ...state, inputValue: action.value };
+  if(action.type=='SEARCH'){
+    return { ...state, inputValue: action.value };
+  }
+  if(action.type=='FILTERS'){
+    return { ...state, filters: action.value }
+  }
 };

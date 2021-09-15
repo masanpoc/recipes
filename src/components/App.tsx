@@ -30,7 +30,7 @@ export const SearchContext = createContext({} as IContextProps);
 const App = (): JSX.Element | null => {
   const [loading, setLoading] = useState(true);
 
-  const initialSearchValue = { inputValue: "heyyy" };
+  const initialSearchValue = { inputValue: "" };
   const [state, dispatch] = useReducer(searchValueReducer, initialSearchValue);
 
   // const contextValue = useMemo(() => {

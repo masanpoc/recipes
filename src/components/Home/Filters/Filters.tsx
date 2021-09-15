@@ -20,9 +20,7 @@ const Filters = (): JSX.Element => {
                     <CheckboxList list={el.options} name={el.filter} key={el.filter}/>
                 )
             })}
-            time double slider range
-            calories double slider range
-            glycemic index radio
+            <button>Apply Filters</button>
         </StyledFilters> 
     )
 }
