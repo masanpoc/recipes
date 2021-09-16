@@ -1,4 +1,4 @@
-type Recipe = {
+export type Recipe = {
     id: string;
     title: string;
     image: string;
@@ -6,7 +6,7 @@ type Recipe = {
     time: number;
 }
 
-export interface IResults {
+export interface IData {
     nextPage?: string | null;
-    recipes: Recipe[]
+    recipes: Recipe[];
 }

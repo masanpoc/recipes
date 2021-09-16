@@ -1,0 +1,314 @@
+
+{
+    "from": 1,
+    "to": 20,
+    "count": 3513,
+    "_links": {
+      "next": {
+        "href": "https://api.edamam.com/api/recipes/v2?q=cake&app_key=ed3ef53124d5aeca35f2143b29cb363d&field=uri&field=label&field=image&field=url&field=totalTime&dishType=Desserts&_cont=CHcVQBtNNQphDmgVQntAEX4Bakt3AQsOSmZHC2sVZFd7AQIVX3dIAWUSZQAhV1ZVR2dDBTRBYlQmDFYAETASAmVGYl1zURFqX3cWQT1OcV9xBB8VADQWVhFCPwoxXVZEITQeVDcBaR4-SQ%3D%3D&cuisineType=French&imageSize=SMALL&type=public&app_id=5c0fb7a3",
+        "title": "Next page"
+      }
+    },
+    "hits": [
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e7e22b5f9afdae010472f2084a76fd6c",
+          "label": "Easter Egg Cake Recipe",
+          "image": "https://www.edamam.com/web-img/5f3/5f3533ac235884d386289ca3078f2082.jpg",
+          "url": "http://www.seriouseats.com/recipes/2013/03/easter-egg-cake-recipe.html",
+          "totalTime": 120.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/e7e22b5f9afdae010472f2084a76fd6c?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e4d0e1d726400d23da3cff1389d69f68",
+          "label": "Champagne Cake",
+          "image": "https://www.edamam.com/web-img/8b3/8b39dc1e00d86176339d7c4e8f6a9a21.jpg",
+          "url": "http://food52.com/recipes/25586-champagne-cake",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/e4d0e1d726400d23da3cff1389d69f68?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e9a2f2e514635dcd3e1f30b792c95ab2",
+          "label": "Ginger Berry Compote with Angel Food Cake recipes",
+          "image": "https://www.edamam.com/web-img/502/50266113a25f5fd65aa2f5171011cd26",
+          "url": "http://www.marthastewart.com/338800/ginger-berry-compote-with-angel-food-cak",
+          "totalTime": 20.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/e9a2f2e514635dcd3e1f30b792c95ab2?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_7dde6a491b69144a5d8b3dcc0ab5b9b0",
+          "label": "Mont Blanc (Chestnut Cream Cake)",
+          "image": "https://www.edamam.com/web-img/e1c/e1c34b798b1b58f1f4f48ee4d542603e.jpg",
+          "url": "http://norecipes.com/blog/2009/01/15/mont-blanc-chestnut-cream-cake/",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/7dde6a491b69144a5d8b3dcc0ab5b9b0?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_8d47b6a424446d389b46ef23e2c0269f",
+          "label": "Pistachio Petit-Four Cake",
+          "image": "https://www.edamam.com/web-img/a50/a5047e961efb3e146e4faaa04eea793f.jpg",
+          "url": "http://smittenkitchen.com/2008/06/pistachio-petit-four-cake/",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/8d47b6a424446d389b46ef23e2c0269f?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_624e1829fb5f15483eb3f16e86443289",
+          "label": "Piedmontese Hazelnut, Pear And Marsala Cake",
+          "image": "https://www.edamam.com/web-img/36f/36ffdc373e25b8191ec703fc5c39fbcc.jpg",
+          "url": "http://www.travelerslunchbox.com/journal/2006/10/6/fall-natures-gift-to-appetites.html",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/624e1829fb5f15483eb3f16e86443289?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_55e880818729633ec03ec5b2cc0a18f3",
+          "label": "Pound Cake With Oranges, Honey, and Rosemary",
+          "image": "https://www.edamam.com/web-img/9a3/9a347660b42c050c7a21f16c7d48eddb.jpg",
+          "url": "https://www.realsimple.com/food-recipes/browse-all-recipes/pound-cake-oranges-honey-rosemary",
+          "totalTime": 10.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/55e880818729633ec03ec5b2cc0a18f3?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_116e6cc29418f76ebbcf7dd117e5730a",
+          "label": "Brown Sugar–Ginger Cream Cake",
+          "image": "https://www.edamam.com/web-img/f9d/f9d8f24a83f2d37f850b8f549f99cc76.jpg",
+          "url": "https://www.epicurious.com/recipes/food/views/brown-sugar-ginger-cream-cake-363475",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/116e6cc29418f76ebbcf7dd117e5730a?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_5529b8d7f1aa274eb3f7634af25684ea",
+          "label": "Angelic Cake And Berries",
+          "image": "https://www.edamam.com/web-img/c9b/c9b0b3e2acff91789f0655dc45c2c00f.jpg",
+          "url": "http://www.rachaelray.com/recipe.php?recipe_id=765",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/5529b8d7f1aa274eb3f7634af25684ea?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_d48ff77eaec272866cbb12b3d4ea683c",
+          "label": "Mini Baked Alaska",
+          "image": "https://www.edamam.com/web-img/5bb/5bbf2c82bb0dc6bdd99bc80799191259.jpg",
+          "url": "http://www.bbcgoodfood.com/recipes/4345/",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/d48ff77eaec272866cbb12b3d4ea683c?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_756e23f89f3962af6461f8640d0ccc54",
+          "label": "Grilled Pound Cake Recipe",
+          "image": "https://www.edamam.com/web-img/a49/a49e8bab06fef0403fa79c565affcd3e.jpg",
+          "url": "http://www.seriouseats.com/recipes/2012/06/grilled-pound-cake-with-berry-compote-recipe.html",
+          "totalTime": 25.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/756e23f89f3962af6461f8640d0ccc54?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0e140ab9230b7046d99b8996792c1179",
+          "label": "Red Velvet Cake Balls recipes",
+          "image": "https://www.edamam.com/web-img/369/369276b89763bc92a53a970a62245901",
+          "url": "http://www.myrecipes.com/recipe/red-velvet-cake-balls",
+          "totalTime": 50.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/0e140ab9230b7046d99b8996792c1179?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_6ffccb6790094fe9dd65347b533f3a2e",
+          "label": "Grilled Peaches & Angel Food Cake With Red-Wine Sauce",
+          "image": "https://www.edamam.com/web-img/2c7/2c73e09bd785c1e6a08d7a851df0ef95.jpg",
+          "url": "http://www.eatingwell.com/recipes/grilled_peaches_angel_food_cake_with_red_wine_sauce.html",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/6ffccb6790094fe9dd65347b533f3a2e?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_fdbbd4bdbd590ea0c6afc65b687ad026",
+          "label": "Coconut-Mint Cream Cake",
+          "image": "https://www.edamam.com/web-img/a7c/a7c73cb0197f34508ffe845bee61dc66.jpg",
+          "url": "http://www.bonappetit.com/recipes/2008/09/coconut_mint_cream_cake",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/fdbbd4bdbd590ea0c6afc65b687ad026?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_c0b2d63a8427e235557b6696eec7c94c",
+          "label": "Rustic Chocolate Easter Cake, from Brazil with Love",
+          "image": "https://www.edamam.com/web-img/a29/a294fc00abe961580fb9d45f8f4a1c26.jpg",
+          "url": "http://honestcooking.com/nega-maluca-brazilian-chocolate-cake/",
+          "totalTime": 105.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/c0b2d63a8427e235557b6696eec7c94c?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b31c1e314cdfe95df59cc8b0abbdc320",
+          "label": "Easy Baked Alaska Recipe",
+          "image": "https://www.edamam.com/web-img/5b1/5b1fe4aa89e6fd1e351e4f4eeb3660f6.jpg",
+          "url": "https://www.chowhound.com/recipes/easy-baked-alaska-31902",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/b31c1e314cdfe95df59cc8b0abbdc320?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a449c27ed1f6bac0a903a7d970dfa818",
+          "label": "Cake Batter French Toast",
+          "image": "https://www.edamam.com/web-img/0fc/0fc06cf87e3c586669fa900889afecad.jpg",
+          "url": "http://www.thedailymeal.com/recipes/cake-batter-french-toast-recipe",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/a449c27ed1f6bac0a903a7d970dfa818?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_24e2c2e659f91cad0d02967118d676d8",
+          "label": "Angel Food Cake with Three-Berry Compote recipes",
+          "image": "https://www.edamam.com/web-img/9c5/9c5c3144da658884724fc1669eac6911",
+          "url": "http://www.foodandwine.com/recipes/angel-food-cake-three-berry-compote",
+          "totalTime": 60.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/24e2c2e659f91cad0d02967118d676d8?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_d3563487ee4ef8b917f81894a0131b54",
+          "label": "Chocolate Espresso Fudge Cake",
+          "image": "https://www.edamam.com/web-img/02e/02ebf4814d16df034b21e1c57abecdb2.jpg",
+          "url": "http://userealbutter.com/2008/09/18/chocolate-espresso-fudge-cake-recipe/",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/d3563487ee4ef8b917f81894a0131b54?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b74412a657ab24c60133c1cd39bf42ea",
+          "label": "Pistachio Marzipan Petit-Four Cake recipes",
+          "image": "https://www.edamam.com/web-img/f75/f759f64e3c1137a840e6e23fde8e8846",
+          "url": "http://www.loveandoliveoil.com/2008/08/pistachio-marzipan-petit-four-cake.html",
+          "totalTime": 105.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/b74412a657ab24c60133c1cd39bf42ea?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      }
+    ]
+  }
