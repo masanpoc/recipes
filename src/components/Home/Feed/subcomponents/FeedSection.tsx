@@ -5,7 +5,6 @@ import { Recipe } from '../../../../types/types'
 
 const FlexyDiv = styled.div`
   display: flex;
-  flex-direction: column;
 `
 
 type Props = {

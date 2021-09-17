@@ -15,6 +15,7 @@ const FlexyDiv = styled.div`
 const Results = (): JSX.Element => {
   const { state } = useContext(SearchContext);
   const [results, setResults] = useState< IData | undefined >(undefined);
+  const [url, setUrl] = useState<string>('');
   
   useEffect(() => {
     if(state.inputValue){
@@ -34,14 +35,22 @@ const Results = (): JSX.Element => {
             nextPage: null
           })
         }
+        // const urls = ['', data._links.next.href]
       }
       getData()
     }
-  }, [state.inputValue, state.filters])
+  }, [state.inputValue, state.filters, url])
 
   // useEffect(() => {
   //   console.log(results)
   // }, [results])
+  function handlePreviousButton() {
+    // setUrl()
+  }
+
+  function handleNextButton() {
+    // if there is a next url
+  }
 
   return <FlexyDiv>
     {results?.recipes.map((recipe)=> {
@@ -54,6 +63,10 @@ const Results = (): JSX.Element => {
         </div>
       )
     })}
+    <div>
+      <button onClick={handlePreviousButton}>Previous</button>
+      <button onClick={handleNextButton}>Next</button>
+    </div>
   </FlexyDiv>;
 };
 

@@ -7,7 +7,7 @@ import React, {
   lazy,
   Suspense,
 } from "react";
-import { searchValueReducer, IState } from "../reducers/searchValueReducer";
+import { resultsReducer, IState } from "../reducers/resultsReducer";
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,7 +31,7 @@ const App = (): JSX.Element | null => {
   const [loading, setLoading] = useState(true);
 
   const initialSearchValue = { inputValue: "" };
-  const [state, dispatch] = useReducer(searchValueReducer, initialSearchValue);
+  const [state, dispatch] = useReducer(resultsReducer, initialSearchValue);
 
   // const contextValue = useMemo(() => {
   //   return { state, dispatch };

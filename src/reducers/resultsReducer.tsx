@@ -1,6 +1,7 @@
 export interface IState {
   inputValue: string;
-  filters: any
+  filters: any;
+  links: string[];
 }
 
 interface IActions {
@@ -8,11 +9,17 @@ interface IActions {
   value: any;
 }
 
-export const searchValueReducer = (state: IState, action: IActions): any => {
+export const resultsReducer = (state: IState, action: IActions): any => {
   if(action.type=='SEARCH'){
     return { ...state, inputValue: action.value };
   }
   if(action.type=='FILTERS'){
     return { ...state, filters: action.value }
+  }
+  if(action.type=='UPDATE_NEXT_AND_PREVIOUS_PAGE_LINK'){
+    return { ...state, links: {
+      previous: action.value[0],
+      next: action.value[1]
+    }}
   }
 };

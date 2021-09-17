@@ -1,0 +1,314 @@
+
+{
+    "from": 1,
+    "to": 20,
+    "count": 10000,
+    "_links": {
+      "next": {
+        "href": "https://api.edamam.com/api/recipes/v2?q=salad&app_key=ed3ef53124d5aeca35f2143b29cb363d&field=uri&field=label&field=image&field=url&field=totalTime&dishType=Salad&_cont=CHcVQBtNNQphDmgVQntAEX4BYlFtBAAOR2VCAmEUZFB1BwcPUXlSB2VFMVVwAlZTSjARAGUXNlBzBwEEEWBDADNGMFd3BwYVLnlSVSBMPkd5BgMbUSYRVTdgMgksRlpSAAcRXTVGcV84SU4%3D&cuisineType=Mediterranean&imageSize=SMALL&type=public&app_id=5c0fb7a3",
+        "title": "Next page"
+      }
+    },
+    "hits": [
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b20815eac65ee2fa5f848f56c16056dd",
+          "label": "Zuni-Inspired Grilled Chicken Salad",
+          "image": "https://www.edamam.com/web-img/3ac/3accba1eeb5ac38d902d056050c05ead.jpg",
+          "url": "https://food52.com/recipes/82361-zuni-inspired-grilled-chicken-salad-recipe",
+          "totalTime": 20.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/b20815eac65ee2fa5f848f56c16056dd?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b325d3e5b60105178419a313d764cdb4",
+          "label": "Nutty chicken grain salad",
+          "image": "https://www.edamam.com/web-img/0fd/0fd167d3fbafce06c477deb5bc673058.jpg",
+          "url": "https://www.bbcgoodfood.com/recipes/nutty-chicken-grain-salad",
+          "totalTime": 8.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/b325d3e5b60105178419a313d764cdb4?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b9c11549074ec4e53b8a4656d59cb1dc",
+          "label": "Dinner Tonight: Grape And Feta Salad With Rosemary",
+          "image": "https://www.edamam.com/web-img/5c9/5c9e6b4594119aebe0b43c53f7f72eac.jpg",
+          "url": "http://www.seriouseats.com/recipes/2008/04/grape-and-feta-salad-with-rosemary-recipe.html",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/b9c11549074ec4e53b8a4656d59cb1dc?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_02e846b9fa040f220cfcadb99a448484",
+          "label": "Beet and Feta Salad",
+          "image": "https://www.edamam.com/web-img/4cb/4cb647cf465859481c7ae62c76b177bd.jpg",
+          "url": "https://www.epicurious.com/recipes/food/views/beet-and-feta-salad-230739",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/02e846b9fa040f220cfcadb99a448484?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_ce6b0299ece2cd64868f7b1db5f98829",
+          "label": "Strawberry Hazelnut Salad",
+          "image": "https://www.edamam.com/web-img/832/832af8392d347d88705dedc503410ad7.jpg",
+          "url": "http://userealbutter.com/2009/05/08/strawberry-hazelnut-salad-recipe/",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/ce6b0299ece2cd64868f7b1db5f98829?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_3e42a20faaf67e07ec9f95b9a2ef6b82",
+          "label": "Chicken and Greens Salad with Tahini Dressing",
+          "image": "https://www.edamam.com/web-img/73b/73b6b36462aabdd59d519c88080230c7.jpg",
+          "url": "https://www.chowhound.com/recipes/chicken-greens-salad-tahini-dressing-31356",
+          "totalTime": 15.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/3e42a20faaf67e07ec9f95b9a2ef6b82?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_3abffa587abb91c3ce9956da629448ee",
+          "label": "Chicken Salad-Stuffed Tomatoes",
+          "image": "https://www.edamam.com/web-img/86c/86c21bdb5ea3e2868b5ce9761a31ebc5.jpg",
+          "url": "http://www.eatingwell.com/recipes/chicken_salad_stuffed_tomatoes.html",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/3abffa587abb91c3ce9956da629448ee?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_af6176f4ddf57e471537a303490af4bb",
+          "label": "Heart-Shaped Salad",
+          "image": "https://www.edamam.com/web-img/a1d/a1d996360fbe7f5c074b16783a99f223.jpg",
+          "url": "http://www.delish.com/cooking/recipe-ideas/recipes/a36367/heart-shaped-salad-recipe-ghk0214/",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/af6176f4ddf57e471537a303490af4bb?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_584a385efea21d611fd4197b83f8ad04",
+          "label": "Chipotle Steak Salad",
+          "image": "https://www.edamam.com/web-img/fec/fec5db086001a8b6bad73b8e5ce4f98c.jpg",
+          "url": "http://thepioneerwoman.com/cooking/2011/08/chipotle-steak-salad/",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/584a385efea21d611fd4197b83f8ad04?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_74442befd18925dabab46babb83ff271",
+          "label": "Lamb Chops with Citrus Sauce and Baby Mache Salad",
+          "image": "https://www.edamam.com/web-img/539/53977d5d6cf38214b1170c31c93aaf04.jpg",
+          "url": "http://www.marthastewart.com/318643/lamb-chops-with-citrus-sauce-and-baby-ma",
+          "totalTime": 140.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/74442befd18925dabab46babb83ff271?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_64b33e4e3c5f899af30d6638596b3dff",
+          "label": "Lemony Scallop Salad",
+          "image": "https://www.edamam.com/web-img/c0c/c0c5d297b0c825ee8b4e8bbd99c77b62.jpg",
+          "url": "http://www.cookstr.com/recipes/lemony-scallop-salad",
+          "totalTime": 30.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/64b33e4e3c5f899af30d6638596b3dff?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_2242f895856ecb0b13600f7346e5b907",
+          "label": "Cobb Salad recipes",
+          "image": "https://www.edamam.com/web-img/45a/45a9180a227e4352f242eaa1494d13b3",
+          "url": "http://www.biggirlssmallkitchen.com/2011/08/small-kitchen-gluten-free-cobb-salad-redux.html",
+          "totalTime": 30.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/2242f895856ecb0b13600f7346e5b907?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_e474f2cc82c7f67bdc5646924cea6135",
+          "label": "Grilled Steak and Vegetable Salad",
+          "image": "https://www.edamam.com/web-img/cc0/cc0b62d29877671cc4117c5698c75bf5.jpeg",
+          "url": "https://www.foodnetwork.com/recipes/grilled-steak-and-vegetable-salad-3416561",
+          "totalTime": 30.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/e474f2cc82c7f67bdc5646924cea6135?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4d96c270441ada91f3147de3ed9e3055",
+          "label": "Watermelon & Avocado Salad",
+          "image": "https://www.edamam.com/web-img/4ba/4ba1dd8fce98660a401c5ed80e334851.jpg",
+          "url": "http://www.sfgate.com/food/recipes/detail.html?rid=17122&sorig=qs",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/4d96c270441ada91f3147de3ed9e3055?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_4f4205f0c5af1a36498bb97bac67246e",
+          "label": "Swordfish Paillard with Citrus Salad",
+          "image": "https://www.edamam.com/web-img/30b/30b661dd002713c08218de3817996da7.jpg",
+          "url": "http://www.frenchrevolutionfood.com/2011/01/french-in-a-flash-swordfish-paillard-with-citrus-salad/",
+          "totalTime": 94.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/4f4205f0c5af1a36498bb97bac67246e?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_807a9503ee9abeaa79935d89a5667257",
+          "label": "Green Salad with Hazelnut Vinaigrette",
+          "image": "https://www.edamam.com/web-img/262/262e45305accd188e0a46c1bcc23ca0d.jpg",
+          "url": "http://www.myrecipes.com/recipe/green-salad-with-hazelnut",
+          "totalTime": 8.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/807a9503ee9abeaa79935d89a5667257?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a81dafa93cd41cf71ad0c3dd49f76e81",
+          "label": "Mediterranean sardine salad",
+          "image": "https://www.edamam.com/web-img/e85/e85e960e837b22f32fd32b249f402ed6.jpg",
+          "url": "http://www.bbcgoodfood.com/recipes/1648653/mediterranean-sardine-salad",
+          "totalTime": 15.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/a81dafa93cd41cf71ad0c3dd49f76e81?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_3d9ae648deb316ea3a6575e7b932aded",
+          "label": "Butter Lettuce Salad with Peaches and Feta Recipe",
+          "image": "https://www.edamam.com/web-img/5bb/5bb97f0a91652d0a8598f8bf1891c50c.jpg",
+          "url": "http://www.seriouseats.com/recipes/2011/07/butter-lettuce-salad-with-peaches-and-feta-recipe.html",
+          "totalTime": 10.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/3d9ae648deb316ea3a6575e7b932aded?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_89b78497d91d1a220d09af516841ea5b",
+          "label": "Summer Strawberry Peach Salad With Goat Cheese",
+          "image": "https://www.edamam.com/web-img/abd/abd6d7318c0ab9a6e6d447a99cb6072f.jpg",
+          "url": "http://www.thedailymeal.com/recipes/summer-strawberry-peach-salad-goat-cheese-recipe",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/89b78497d91d1a220d09af516841ea5b?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_8ff508ba78eb7a6c6f8a9cdc2115e7d0",
+          "label": "Lentil, Beet and Goat Cheese Salad",
+          "image": "https://www.edamam.com/web-img/d89/d89e8dcba8ae081a579759912fe8b03c.jpg",
+          "url": "https://www.self.com/recipe/lentil-beet-goat-cheese-salad",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/8ff508ba78eb7a6c6f8a9cdc2115e7d0?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      }
+    ]
+  }

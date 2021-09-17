@@ -1,0 +1,314 @@
+
+{
+    "from": 1,
+    "to": 20,
+    "count": 65,
+    "_links": {
+      "next": {
+        "href": "https://api.edamam.com/api/recipes/v2?q=polish&app_key=ed3ef53124d5aeca35f2143b29cb363d&field=uri&field=label&field=image&field=url&field=totalTime&dishType=Soup&_cont=CHcWQT1OcV9xBB8VADQWVhFCPwoxXVZEITQeVDcBaR4-SQ%3D%3D&cuisineType=Eastern%20Europe&imageSize=SMALL&type=public&app_id=5c0fb7a3",
+        "title": "Next page"
+      }
+    },
+    "hits": [
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_f31b9fd7e1674ee85e6c8553b7751910",
+          "label": "Polish sausage soup",
+          "image": "https://www.edamam.com/web-img/0a5/0a52351f11881dbe853e120cd07d0098.jpg",
+          "url": "https://www.bbcgoodfood.com/recipes/polish-sausage-soup",
+          "totalTime": 40.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/f31b9fd7e1674ee85e6c8553b7751910?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_9120b59727225d8e6d947a0e0b12d023",
+          "label": "Polish Potato, Kielbasa, and Cabbage Soup (Kapusniak) Recipe",
+          "image": "https://www.edamam.com/web-img/d6a/d6aeb0348726cae897ffc0931da4abf7.jpg",
+          "url": "http://www.seriouseats.com/recipes/2016/01/polish-potato-kielbasa-cabbage-soup-kapusniak-recipe.html",
+          "totalTime": 30.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/9120b59727225d8e6d947a0e0b12d023?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_b00da831a02fe0e849c635f06fa6e970",
+          "label": "Bialy Barszcz (Polish White Borscht)",
+          "image": "https://www.edamam.com/web-img/d4d/d4d530195e6b8e142836b0ca4225aaf2.jpg",
+          "url": "http://www.saveur.com/article/Recipes/Polish-White-Borscht",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/b00da831a02fe0e849c635f06fa6e970?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_3240fa07ea7708ef6eef27c1702f08f7",
+          "label": "Polish White Borscht",
+          "image": "https://www.edamam.com/web-img/a2d/a2d7915b0d5c88e76e287eeda2ce6b6d.jpg",
+          "url": "http://www.latimes.com/features/food/la-fo-borscht-rec2-20110210,0,3096272.story",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/3240fa07ea7708ef6eef27c1702f08f7?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a68bfa77661f51f04729629df33343aa",
+          "label": "Zurek (Polish Hangover Soup)",
+          "image": "https://www.edamam.com/web-img/92a/92a2a6b68059aa997fc6344f4542573d.jpg",
+          "url": "https://food52.com/recipes/81826-zurek-recipe",
+          "totalTime": 5820.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/a68bfa77661f51f04729629df33343aa?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_6120e10bc20e15c31f0bca1cf7bc83e0",
+          "label": "Cook the Book: Slovak Sauerkraut Soup",
+          "image": "https://www.edamam.com/web-img/c0c/c0c2d4a4a695dfe6b189f7a943a929e3.jpg",
+          "url": "http://www.seriouseats.com/recipes/2010/01/slovak-sauerkraut-soup-recipe.html",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/6120e10bc20e15c31f0bca1cf7bc83e0?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_8dfc67d0a3a293419f98c1658bcc2bf4",
+          "label": "Simple Version of Borscht",
+          "image": "https://www.edamam.com/web-img/b48/b4860861c7d2fc9527285f7fb8389ca7.jpg",
+          "url": "http://www.cookstr.com/recipes/simple-version-of-borscht",
+          "totalTime": 60.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/8dfc67d0a3a293419f98c1658bcc2bf4?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_49de4752570795880a513c12b982152c",
+          "label": "Not Exactly Aunt Lil's Matzo Ball Soup",
+          "image": "https://www.edamam.com/web-img/b85/b85ff1ef3c3c8df8ab01fc1f82ce53cc.jpg",
+          "url": "http://www.cookstr.com/recipes/not-exactly-aunt-lils-matzo-ball-soup",
+          "totalTime": 0.5
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/49de4752570795880a513c12b982152c?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_dcababc665a653c1f1a563b2a05f4fbe",
+          "label": "Polish(ish) Soup recipes",
+          "image": "https://www.edamam.com/web-img/266/2661ca8d02634410a3d83192e8e1dfa0",
+          "url": "http://www.cookistry.com/2012/03/polishish-soup-its-whats-for-dinner.html",
+          "totalTime": 45.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/dcababc665a653c1f1a563b2a05f4fbe?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_988b1849adb451558a8fcc05184b4bc4",
+          "label": "Polish Potato Cheese Soup",
+          "image": "https://www.edamam.com/web-img/3e9/3e922f3cfa248697d372d01b1bff1d22.jpg",
+          "url": "http://www.landolakes.com/recipe/1901/polish-potato-cheese-soup",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/988b1849adb451558a8fcc05184b4bc4?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_953eb58edb89a8545735889c26fb3a61",
+          "label": "Polish Kraut Soup",
+          "image": "https://www.edamam.com/web-img/1dd/1dd8adbf7c02a79a4e559e11f8cbdc21.jpg",
+          "url": "http://www.food.com/recipe/polish-kraut-soup-358904",
+          "totalTime": 55.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/953eb58edb89a8545735889c26fb3a61?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_75bcb76550d299c6bcc14e5eb0281b3c",
+          "label": "Polish Pea Soup",
+          "image": "https://www.edamam.com/web-img/e79/e79e433668193008c267da8c619230ea.jpg",
+          "url": "https://eatsmarter.com/recipes/polish-pea-soup",
+          "totalTime": 75.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/75bcb76550d299c6bcc14e5eb0281b3c?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a45e3a3e3eb50428a665d0ce614cfe8f",
+          "label": "Polish Sausage and Sauerkraut Soup",
+          "image": "https://www.edamam.com/web-img/de0/de031791270b960e6859edc1baac15e5.jpg",
+          "url": "http://www.wordsofdeliciousness.com/2015/03/polish-sausage-and-sauerkraut-soup.html/",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/a45e3a3e3eb50428a665d0ce614cfe8f?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_40c95de45702b275e6a77060169c4b2d",
+          "label": "Crock Pot Polish Sausage and Cabbage Soup recipes",
+          "image": "https://www.edamam.com/web-img/7af/7af78a7ff698b210cf623a4d55c476bb",
+          "url": "https://www.recipesthatcrock.com/crock-pot-polish-sausage-cabbage-soup/",
+          "totalTime": 430.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/40c95de45702b275e6a77060169c4b2d?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_11edcf829c5d6dafea78f0be668b2ecd",
+          "label": "Polish Kielbasa Sauerkraut Soup",
+          "image": "https://www.edamam.com/web-img/886/886a058ed67f3b27a459b214dcb9a2f4",
+          "url": "https://www.justapinch.com/recipes/soup/vegetable-soup/polish-kielbasa-sauerkraut-soup.html",
+          "totalTime": 35.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/11edcf829c5d6dafea78f0be668b2ecd?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_1e80fed2c46b9daec215825918a58c14",
+          "label": "Polish Borscht",
+          "image": "https://www.edamam.com/web-img/ff7/ff746f8a7feae2dac094f56224236f10.jpg",
+          "url": "https://www.allrecipes.com/recipe/262725/polish-borscht/",
+          "totalTime": 75.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/1e80fed2c46b9daec215825918a58c14?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_0c22c52cea74deb47159f3e70637596a",
+          "label": "Polish Sausage and Cabbage Soup",
+          "image": "https://www.edamam.com/web-img/063/063985d7fa7bb57d017858bda54afc23.jpg",
+          "url": "http://www.food.com/recipe/polish-sausage-and-cabbage-soup-80679",
+          "totalTime": 735.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/0c22c52cea74deb47159f3e70637596a?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_a88455f2856abc689bab3fc4dba246c2",
+          "label": "Sauerkraut Soup - Bigos (Polish Hunter's Stew) (serving is 23 oz)",
+          "image": "https://www.edamam.com/web-img/721/721eb094de771058dc1d283efb8161b5.jpg",
+          "url": "https://recipes.sparkpeople.com/recipe-detail.asp?recipe=3316054",
+          "totalTime": 0.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/a88455f2856abc689bab3fc4dba246c2?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_30bb22f2a470eb1c88fc716e07555932",
+          "label": "Zosia's Polish Dill Pickle Soup Recipe",
+          "image": "https://www.edamam.com/web-img/590/590731313b6889e8724ab28d1a04e686.jpg",
+          "url": "http://recipeofhealth.com/recipe/zosias-polish-dill-pickle-soup-114032rb",
+          "totalTime": 90.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/30bb22f2a470eb1c88fc716e07555932?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      },
+      {
+        "recipe": {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_6b3edab1121b287caa9d3e1fb41c98fb",
+          "label": "Polish Potato Soup",
+          "image": "https://www.edamam.com/web-img/1e4/1e45e69026dbb686df94df828cc61454.jpg",
+          "url": "http://www.mashed-potatoes-recipe.com/polish-potato-soup/",
+          "totalTime": 60.0
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.edamam.com/api/recipes/v2/6b3edab1121b287caa9d3e1fb41c98fb?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d",
+            "title": "Self"
+          }
+        }
+      }
+    ]
+  }
