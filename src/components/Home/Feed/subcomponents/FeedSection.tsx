@@ -1,10 +1,16 @@
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import { Recipe } from '../../../../types/types'
+import RecipeCard from '../../../RecipeCard/RecipeCard'
 
 
 const FlexyDiv = styled.div`
   display: flex;
+  flex-direction: column;
+`
+
+const List = styled.ul`
+    flex-direction: row;
 `
 
 type Props = {
@@ -18,17 +24,14 @@ const FeedSection = ({title, content}:Props):JSX.Element => {
     // }, [])
     return (
         <FlexyDiv>
-            <h2>title</h2>
+            <h2>{title}</h2>
+            <List>
             {content.map((recipe)=> {
                 return (
-                    <div key={recipe.id}>
-                    <h3>{recipe.title}</h3>
-                    <img src={recipe.image}></img>
-                    <a href={recipe.source} rel='noreferrer' target='_blank' >Go to Recipe</a>
-                    <h5>{recipe.time}</h5>
-                    </div>
+                    <RecipeCard key={recipe.id} title={recipe.title} image={recipe.image} source={recipe.source} time={recipe.time} />
                 )
             })}
+            </List>
         </FlexyDiv>
     )
 }

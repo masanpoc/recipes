@@ -7,6 +7,36 @@ export type Recipe = {
 }
 
 export interface IData {
-    nextPage?: string | null;
-    recipes: Recipe[];
+    nextPage?: string | undefined;
+    previousPage: string | undefined;
+    recipes: Recipe[] | undefined;
+}
+
+export interface IPrevious {
+    [key: string]: string
+}
+
+type RecipeStored = {
+    recipe: {
+        uri: string;
+        label: string;
+        image: string;
+        url: string;
+        dietLabels: string[] | [],
+        totalTime: number
+    };
+    _links: {
+        self: {
+            href: string;
+        }
+    }
+}
+export interface Response {
+    from: number;
+    _links: {
+        next?: {
+            href: string
+        }
+    };
+    hits: RecipeStored[]
 }
