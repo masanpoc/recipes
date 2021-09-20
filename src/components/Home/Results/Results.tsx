@@ -36,8 +36,8 @@ const Results = (): JSX.Element => {
   useEffect(() => {
       const getData = async () => {
         // const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${getFormattedQuery(state.inputValue)}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`;
-        const data = await getFetchedData(currentUrl)
-        // const data = mockResponse;
+        // const data = await getFetchedData(currentUrl)
+        const data = await mockResponse;
         const recipesArr = getRecipesArrFromResponse(data);
         // if we have next link --> set nextpage to url provided 
         if(data._links.next) {
@@ -84,19 +84,18 @@ const Results = (): JSX.Element => {
   useEffect(() => {
     setCurrentUrl(`https://api.edamam.com/api/recipes/v2?type=public&q=${getFormattedQuery(state.inputValue)}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`)
   }, [state.inputValue, state.filters])
+
   useEffect(() => {
     setResults({
-      recipes: results.recipes,
-      nextPage: results.nextPage,
+      ...results,
       previousPage: previousLinks[currentUrl]
     })
-    // console.log(previousLinks, 'previous links')
-    // console.log(currentUrl, 'currenturl')
   }, [previousLinks])
 
   // useEffect(() => {
   //   console.log(results)
   // }, [results])
+
 
   function handlePreviousButton() {
     if(typeof results?.previousPage == 'string'){

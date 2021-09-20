@@ -8,8 +8,20 @@ import styled from "styled-components";
 
 const StyledHome = styled.div`
   min-height: 100vh;
+  width: 100%;
+  background: rgba(220,220,220,0.28);
   @media (min-width: 768px) {
     display: flex;
+    justify-content: space-evenly;
+  }
+`
+
+const Wrapper = styled.div`
+  @media (min-width: 768px) { 
+    width: 70%;
+    overflow-x: hidden;
+    
+  border: 5px solid black;
   }
 `
 
@@ -18,9 +30,9 @@ const Home = (): JSX.Element => {
   return (
     <StyledHome>
       
-      <Filters />
-      <div>
-        <Searchbar />
+      {/* <Filters /> */}
+      <Wrapper>
+        {/* <Searchbar /> */}
         {state.inputValue == '' 
           ? 
           /* feed with mediterranean desserts etc */
@@ -29,7 +41,7 @@ const Home = (): JSX.Element => {
           /* resyults from searchbar */
           <Results />
         }   
-      </div>
+      </Wrapper>
     </StyledHome>
   );
 };

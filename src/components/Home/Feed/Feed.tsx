@@ -21,22 +21,22 @@ const Feed = ():JSX.Element => {
     useEffect(() => {
         const getFeed = async () => {
             
-            // const saladUrl = 'https://api.edamam.com/api/recipes/v2?type=public&q=salad&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&cuisineType=Mediterranean&dishType=Salad&imageSize=SMALL&field=uri&field=label&field=image&field=url&field=totalTime';
+            // const saladUrl = 'https://api.edamam.com/api/recipes/v2?type=public&q=salad&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&cuisineType=Mediterranean&dishType=Salad&time=1-300&imageSize=SMALL&field=uri&field=label&field=image&field=url&field=totalTime';
             // const saladData = await getFetchedData(saladUrl);
             const saladData = mediterraneanSalads;
             const recipesArrSalad = getRecipesArrFromResponse(saladData)
 
-            // const soupUrl = 'https://api.edamam.com/api/recipes/v2?type=public&q=polish&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&cuisineType=Eastern%20Europe&dishType=Soup&imageSize=SMALL&field=uri&field=label&field=image&field=url&field=totalTime';
+            // const soupUrl = 'https://api.edamam.com/api/recipes/v2?type=public&q=polish&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&cuisineType=Eastern%20Europe&dishType=Soup&time=1-300&imageSize=SMALL&field=uri&field=label&field=image&field=url&field=totalTime';
             // const soupData = await getFetchedData(soupUrl);
             const soupData = polishSoups;
             const recipesArrSoup = getRecipesArrFromResponse(soupData)
         
-            // const pizzaUrl = 'https://api.edamam.com/api/recipes/v2?type=public&q=pizza&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&cuisineType=Italian&dishType=Main%20course&imageSize=SMALL&field=uri&field=label&field=image&field=url&field=totalTime';
+            // const pizzaUrl = 'https://api.edamam.com/api/recipes/v2?type=public&q=pizza&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&cuisineType=Italian&dishType=Main%20course&time=1-300&imageSize=SMALL&field=uri&field=label&field=image&field=url&field=totalTime';
             // const pizzaData = await getFetchedData(pizzaUrl);
             const pizzaData = italianPizzas;
             const recipesArrPizza = getRecipesArrFromResponse(pizzaData)
 
-            // const cakeUrl = 'https://api.edamam.com/api/recipes/v2?type=public&q=cake&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&cuisineType=French&dishType=Desserts&imageSize=SMALL&field=uri&field=label&field=image&field=url&field=totalTime';
+            // const cakeUrl = 'https://api.edamam.com/api/recipes/v2?type=public&q=cake&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&cuisineType=French&dishType=Desserts&time=1-300&imageSize=SMALL&field=uri&field=label&field=image&field=url&field=totalTime';
             // const cakeData = await getFetchedData(cakeUrl);
             const cakeData = frenchCakes;
             const recipesArrCake = getRecipesArrFromResponse(cakeData)

@@ -13,6 +13,10 @@ const List = styled.ul`
     flex-direction: row;
 `
 
+const StyledTitle = styled.h2`
+    font-family: 'MerriWeather';
+`
+
 type Props = {
     title: string;
     content: Recipe[]
@@ -24,7 +28,7 @@ const FeedSection = ({title, content}:Props):JSX.Element => {
     // }, [])
     return (
         <FlexyDiv>
-            <h2>{title}</h2>
+            <StyledTitle>{title}</StyledTitle>
             <List>
             {content.map((recipe)=> {
                 return (

@@ -56,8 +56,8 @@ const App = (): JSX.Element | null => {
               <Redirect from="*" to="/home" />
             </Switch>
           </Suspense>
-          <Link to="/details">Details page</Link>
-          <Link to="/home">Home page</Link>
+          {/* <Link to="/details">Details page</Link>
+          <Link to="/home">Home page</Link> */}
           <Footer />
         </div>
       </SearchContext.Provider>

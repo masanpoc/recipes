@@ -6,7 +6,13 @@ import optionsList from './lists/optionsList';
 const StyledFilters = styled('form')<{isActive: boolean}>`
     display: flex;
     flex-direction: column;
+    height: fit-content;
     background: ${props => props.isActive ? "palevioletred" : "white"};
+    @media (min-width: 768px) {
+        
+    border: 5px solid green;
+        width: 20%;
+    }
 `
 
 
