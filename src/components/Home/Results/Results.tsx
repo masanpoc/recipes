@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import RecipeCard from '../../RecipeCard/RecipeCard'
 import { SearchContext } from "../../App";
 import mockResponse from '../../../data/searchResponse.json';
 import { IData, IPrevious } from "../../../types/types";
@@ -112,12 +113,7 @@ const Results = (): JSX.Element => {
   return <FlexyDiv>
     {results.recipes && results?.recipes.map((recipe)=> {
       return (
-        <div key={recipe.id}>
-          <h3>{recipe.title}</h3>
-          <img src={recipe.image}></img>
-          <a href={recipe.source} rel='noreferrer' target='_blank' >Go to Recipe</a>
-          <h5>{recipe.time}</h5>
-        </div>
+        <RecipeCard key={recipe.id} title={recipe.title} image={recipe.image} source={recipe.source} time={recipe.time} />
       )
     })}
     <div>
