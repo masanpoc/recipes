@@ -23,11 +23,15 @@ export const flexRowBox = ({height, width} : flexColProps) => css`
     align-items: center;
 `
 
-export const alignTwoStart = (gap  ?: string) => css`
+type alignStartProps = {
+    gap?: string;
+}
+
+export const alignTwoStart = ({gap}: alignStartProps) => css`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* :first-child {
+    & *:first-child {
         margin-right: ${gap};
-    } */
+    }
 `

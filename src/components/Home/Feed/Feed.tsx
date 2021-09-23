@@ -12,8 +12,25 @@ import { Recipe } from "../../../types/types";
 
 
 const FlexyDiv = styled.div`
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin: 30% 0 50% 0;
+  
+    & > * {
+        margin-bottom: 40%;
+    }
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+    @media (min-width: 768px) {
+        margin: 10% 0;
+        & > * {
+            margin-bottom: 10%;
+        }
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
 `
 
 const Feed = ():JSX.Element => {

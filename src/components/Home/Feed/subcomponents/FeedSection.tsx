@@ -9,20 +9,42 @@ const StyledFeedSection = styled.div`
   ${flexColumnBox({})}
   border: 1px solid black;
   background: white;
-  margin-top: 10%;
 `
 
 const StyledList = styled.ul`
-    width: 90%;
+    --w: 90;
+    --mb: 0.25;
+    width: calc(var(--w)*1%);
+    & > * {
+            margin-bottom:  calc(var(--mb)*var(--w) * 1vw);
+            /* margin-bottom: 25%; */
+        }
+        & > *:last-child {
+            margin-bottom: 0;
+        }
     @media (min-width: 768px){
         flex-direction: row;
+        overflow-x: hidden;
+        border: 5px solid black;
+        height: fit-content;
+        margin-bottom:  calc(var(--mb)/6*var(--w) * 1vw);
+        & > * {
+            margin-bottom: 0;
+        }
     }
 `
 
 const StyledTitle = styled.h2`
     font-family: 'MerriWeather';
     border: 1px solid black;
-    width: 90%;
+    font-size: 2em;
+    --w: 90;
+    --mb: 0.10;
+    width: calc(var(--w)*1%);
+    margin: calc(var(--mb)*var(--w) * 1vw) 0;
+    @media (min-width: 768px) {
+        margin: calc(var(--mb)/5*var(--w) * 1vw) 0; 
+    }
 `
 
 const StyledButton = styled('button')<{isActive:boolean}>`
@@ -35,7 +57,11 @@ const StyledButton = styled('button')<{isActive:boolean}>`
     background: white;
     border: 1px solid #787878;
     padding: 10px 15px;
-`
+    margin: 17.5% 0 27.5% 0;
+    @media (min-width: 768px) {
+        display:none;
+    }
+`   
 
 type Props = {
     title: string;

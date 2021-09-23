@@ -17,11 +17,12 @@ const StyledHome = styled.div`
 `
 
 const Wrapper = styled.div`
+border: 2px solid black;
   @media (min-width: 768px) { 
     width: 70%;
     overflow-x: hidden;
-    
-  border: 5px solid black;
+    margin: 10% 0;
+    border: 5px solid black;
   }
 `
 
@@ -30,9 +31,9 @@ const Home = (): JSX.Element => {
   return (
     <StyledHome>
       
-      {/* <Filters /> */}
+      <Filters />
       <Wrapper>
-        {/* <Searchbar /> */}
+        <Searchbar />
         {state.inputValue == '' 
           ? 
           /* feed with mediterranean desserts etc */
