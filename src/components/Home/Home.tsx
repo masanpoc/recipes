@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { SearchContext } from "../App";
 import Searchbar from "./Searchbar/Searchbar";
 import Feed from "./Feed/Feed";
@@ -28,16 +28,25 @@ border: 2px solid black;
 
 const Home = (): JSX.Element => {
   const { state } = useContext(SearchContext);
+
+  const [width, setWidth] = useState<number>(window.innerWidth);
+  useEffect(() => {
+      window.addEventListener('resize', ()=>setWidth(window.innerWidth))
+      return () => {
+          window.removeEventListener('resize', ()=>setWidth(window.innerWidth))
+      }
+  }, [])
+
   return (
     <StyledHome>
       
-      <Filters />
+      <Filters width={width} />
       <Wrapper>
         <Searchbar />
         {state.inputValue == '' 
           ? 
           /* feed with mediterranean desserts etc */
-          <Feed />
+          <Feed width={width} />
           :
           /* resyults from searchbar */
           <Results />

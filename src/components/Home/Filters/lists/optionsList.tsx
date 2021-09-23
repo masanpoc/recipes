@@ -6,7 +6,7 @@ interface Filters {
 
 const optionsList: Filters[] = [
     {
-        filter: 'mealtype',
+        filter: 'mealType',
         options: ['Breakfast', 'Lunch', 'Dinner', 'Snack', 'Teatime']
     },
     {

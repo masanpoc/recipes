@@ -6,6 +6,7 @@ import React, {
   Dispatch,
   lazy,
   Suspense,
+  useMemo
 } from "react";
 import { resultsReducer, IState } from "../reducers/resultsReducer";
 import {
@@ -44,7 +45,7 @@ const App = (): JSX.Element | null => {
 
   return loading ? null : (
     <Router>
-      <SearchContext.Provider value={{ state, dispatch }}>
+      <SearchContext.Provider value={{state, dispatch}}>
         <div>
           <Header />
           <Suspense fallback={<div>Loading</div>}>

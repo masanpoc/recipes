@@ -33,7 +33,11 @@ const FlexyDiv = styled.div`
     }
 `
 
-const Feed = ():JSX.Element => {
+type Props = {
+    width: number;
+}
+
+const Feed = ({width}:Props):JSX.Element => {
     const [feedUI, setFeedUI] = useState<{title: string, recipes: Recipe[]}[]>([]);
     useEffect(() => {
         const getFeed = async () => {
@@ -86,7 +90,7 @@ const Feed = ():JSX.Element => {
         <FlexyDiv>
             {feedUI ? feedUI.map((feedEl) => {
                     return (
-                        <FeedSection key={feedEl.title} title={feedEl.title} content={feedEl.recipes} />
+                        <FeedSection key={feedEl.title} width={width} title={feedEl.title} content={feedEl.recipes} />
                     )
                 }) : <div>Loading</div>
             }

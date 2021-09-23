@@ -40,3 +40,11 @@ export interface Response {
     };
     hits: RecipeStored[]
 }
+
+export interface IForm {
+    mealType: string[];
+    dishType: string[];
+    health: string[];
+    cuisineType: string[];
+    diet: string[];
+}

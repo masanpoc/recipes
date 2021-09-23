@@ -14,6 +14,7 @@ export const resultsReducer = (state: IState, action: IActions): any => {
     return { ...state, inputValue: action.value };
   }
   if(action.type=='FILTERS'){
+    console.log(action.value, 'form submitted')
     return { ...state, filters: action.value }
   }
   if(action.type=='UPDATE_NEXT_AND_PREVIOUS_PAGE_LINK'){

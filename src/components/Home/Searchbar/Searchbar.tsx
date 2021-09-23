@@ -1,4 +1,4 @@
-import React, { FC, useContext, useState } from "react";
+import React, { useContext, useState } from "react";
 import { SearchContext } from "../../App";
 
 // interface InputData {

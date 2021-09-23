@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import { Recipe } from '../../../../types/types'
 import RecipeCard from '../../../RecipeCard/RecipeCard'
@@ -24,11 +24,13 @@ const StyledList = styled.ul`
         }
     @media (min-width: 768px){
         flex-direction: row;
-        overflow-x: hidden;
+        width: 200vw;
         border: 5px solid black;
         height: fit-content;
-        margin-bottom:  calc(var(--mb)/6*var(--w) * 1vw);
+        /* margin-bottom:  calc(var(--mb)/6*var(--w) * 1vw); */
         & > * {
+            position: absolute;
+            background: white;
             margin-bottom: 0;
         }
     }
@@ -58,38 +60,94 @@ const StyledButton = styled('button')<{isActive:boolean}>`
     border: 1px solid #787878;
     padding: 10px 15px;
     margin: 17.5% 0 27.5% 0;
-    @media (min-width: 768px) {
-        display:none;
-    }
 `   
+
+const StyledWrapperDiv = styled.div`
+    border: 8px solid green;
+    position: relative;
+    --w: 90;
+    --mb: 0.25;
+    width: calc(var(--w)*1%);
+    height: 70vh;
+    overflow: hidden;
+    
+    margin-bottom:  calc(var(--mb)/6*var(--w) * 1vw);
+`
+const StyledPreviousButton = styled.button`
+    ${flexColumnBox({})}
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 2px solid grey;
+    border-radius: 50%;
+    transform: translate(0, -50%);
+`
+
+const StyledNextButton = styled(StyledPreviousButton)`
+    right: 0;
+`
+
+const StyledSVG = styled.svg`
+    height: 25px;
+    width: 25px;
+`
 
 type Props = {
     title: string;
-    content: Recipe[]
+    content: Recipe[];
+    width: number;
 }
 
-const FeedSection = ({title, content}:Props):JSX.Element => {
+const FeedSection = ({title, content, width}:Props):JSX.Element => {
     const [loadMore, setLoadMore] = useState<boolean>(false);
+    
     return (
+        
         <StyledFeedSection>
+            
             <StyledTitle>{title}</StyledTitle>
-            <StyledList>
-            {loadMore 
-                ? 
-                content.map((recipe)=> {
-                    return (
-                        <RecipeCard key={recipe.id} title={recipe.title} image={recipe.image} source={recipe.source} time={recipe.time} />
-                    )
-                })
-                :
-                content.slice(0, 3).map((recipe)=> {
-                    return (
-                        <RecipeCard key={recipe.id} title={recipe.title} image={recipe.image} source={recipe.source} time={recipe.time} />
-                    )
-                })
+            {
+                width < 768 
+                ? <StyledList>
+                {loadMore 
+                    ? 
+                    content.map((recipe)=> {
+                        return (
+                            <RecipeCard key={recipe.id} title={recipe.title} image={recipe.image} source={recipe.source} time={recipe.time} />
+                        )
+                    })
+                    :
+                    content.slice(0, 3).map((recipe)=> {
+                        return (
+                            <RecipeCard key={recipe.id} title={recipe.title} image={recipe.image} source={recipe.source} time={recipe.time} />
+                        )
+                    })
+                }
+                </StyledList>
+                : <StyledWrapperDiv>
+                    <StyledPreviousButton>
+                    <StyledSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></StyledSVG>
+                    </StyledPreviousButton>
+                    <StyledList>
+                    {content.map((recipe)=> {
+                        return (
+                            <RecipeCard key={recipe.id} title={recipe.title} image={recipe.image} source={recipe.source} time={recipe.time} />
+                        )
+                    })}
+                    <StyledNextButton>
+                    <StyledSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></StyledSVG>
+
+                    </StyledNextButton>
+                    </StyledList>
+                </StyledWrapperDiv>
             }
-            </StyledList>
-            <StyledButton isActive={loadMore} onClick={()=>setLoadMore(true)}>LOAD MORE</StyledButton>
+            
+            {
+                width < 768 &&    <StyledButton isActive={loadMore} onClick={()=>setLoadMore(true)}>LOAD MORE</StyledButton>
+            }
+            
         </StyledFeedSection>
     )
 }

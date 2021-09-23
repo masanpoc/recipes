@@ -19,8 +19,8 @@ const StyledCard = styled.div`
         font-family: 'Odibee Sans'
     }
     @media (min-width: 768px){
-        width: 25vw;
-        height: 75vh;
+        width: 17.5vw;
+        height: 70vh;
         overflow: hidden;
     }
 `
