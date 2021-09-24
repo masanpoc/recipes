@@ -21,7 +21,11 @@ const Searchbar = (): JSX.Element => {
         type="text"
         placeholder="keywords"
         onChange={(e) => setSearchValue(e.target.value)}
-        onKeyDown={(e)=>{if(e.code=='Enter'){lookForSearchValue()}}}
+        onKeyDown={(e) => {
+          if (e.code == "Enter") {
+            lookForSearchValue();
+          }
+        }}
       ></input>
       <button onClick={lookForSearchValue}>Change value</button>
     </div>

@@ -6,7 +6,7 @@ import React, {
   Dispatch,
   lazy,
   Suspense,
-  useMemo
+  useMemo,
 } from "react";
 import { resultsReducer, IState } from "../reducers/resultsReducer";
 import {
@@ -16,10 +16,10 @@ import {
   Link,
   Redirect,
 } from "react-router-dom";
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
 const Home = lazy(() => import("./Home/Home"));
-const Details = lazy(()=> import("./Details/Details"));
+const Details = lazy(() => import("./Details/Details"));
 
 interface IContextProps {
   state: IState;
@@ -31,15 +31,17 @@ export const SearchContext = createContext({} as IContextProps);
 const App = (): JSX.Element | null => {
   const [loading, setLoading] = useState(true);
 
-  const initialSearchValue = { 
+  const initialSearchValue = {
     inputValue: "",
-    filters: {mealType: [],
-    dishType: [],
-    health: ['vegan'],
-    cuisineType: [],
-    diet: [],},
-    links: []
-  }; 
+    filters: {
+      mealType: [],
+      dishType: [],
+      health: ["vegan"],
+      cuisineType: [],
+      diet: [],
+    },
+    links: [],
+  };
   const [state, dispatch] = useReducer(resultsReducer, initialSearchValue);
 
   // const contextValue = useMemo(() => {
@@ -53,7 +55,7 @@ const App = (): JSX.Element | null => {
 
   return loading ? null : (
     <Router>
-      <SearchContext.Provider value={{state, dispatch}}>
+      <SearchContext.Provider value={{ state, dispatch }}>
         <div>
           <Header />
           <Suspense fallback={<div>Loading</div>}>
