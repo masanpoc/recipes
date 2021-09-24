@@ -1,6 +1,8 @@
+
+import {IForm} from '../types/types'
 export interface IState {
   inputValue: string;
-  filters: any;
+  filters:  { [key: string]: any };
   links: string[];
 }
 

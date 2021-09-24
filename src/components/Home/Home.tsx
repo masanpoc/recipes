@@ -38,17 +38,25 @@ const Home = (): JSX.Element => {
   }, [])
 
   return (
+    // we could be moving the searchcontext here as we dont need it wrapping details.tsx as we can just pass the id through route params and it can fetch the info needed
+    // wrong? => how do we fetch back the info? when user leaves details and goes back to home (results), we could go back through params url but we loose every filter checked!, 
+    // it is easier to have the context and mantain previous/next links + filters applied + search value than to exctract those from route params
+    // BUT, we can't use searchcontext in filters for example (it results in memory leak), so we do need to mantain the page as it was between routes
+    // so we could look for a solution with searchcontext inside wrapper and then it wont rerender between routs and details just uses the recipe id and fetches info
     <StyledHome>
       
       <Filters width={width} />
       <Wrapper>
+        {/* I could have here the searchcontext */}
         <Searchbar />
         {state.inputValue == '' 
           ? 
           /* feed with mediterranean desserts etc */
           <Feed width={width} />
           :
-          /* resyults from searchbar */
+          /* results from searchbar */
+          // but if we have searchcontext excluding
+          //  Filters.tsx =>  it would not be able to share the users filters with searchbar as we are passing the filters state through searchcontext dispatch to searchbar
           <Results />
         }   
       </Wrapper>

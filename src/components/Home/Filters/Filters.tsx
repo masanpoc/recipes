@@ -1,4 +1,4 @@
-import React, {createContext, useState, Dispatch, useReducer, useContext, useMemo} from 'react'
+import React, {createContext, useState, Dispatch, useReducer, useContext, useEffect} from 'react'
 import styled from 'styled-components'
 import CheckboxList from './subcomponents/CheckboxList';
 import optionsList from './lists/optionsList';
@@ -24,7 +24,7 @@ type Props = {
 
 
 interface IContextProps {
-    state: IForm;
+    state:  { [key: string]: any };
     dispatch: Dispatch<any>;
 }
   
@@ -33,6 +33,7 @@ interface IContextProps {
 const Filters = ({width}:Props): JSX.Element => {
 
     
+
     const [isActive, setIsActive] = useState(false);
 
     
@@ -41,7 +42,9 @@ const Filters = ({width}:Props): JSX.Element => {
         dishType: [],
         health: [],
         cuisineType: [],
-        diet: [], };
+        diet: [], 
+    };
+
     const [state, dispatch] = useReducer(formReducer, initialFormValues);
 
     // const contextValue = useMemo(() => {
@@ -49,7 +52,12 @@ const Filters = ({width}:Props): JSX.Element => {
     //   }, [state, dispatch]);
 
     const searchCntxt = useContext(SearchContext);
-    function logg(event: any) {
+    
+    useEffect(() => {
+        console.log(searchCntxt.state.filters['mealType'])
+    }, [])
+    
+    function updateFilters(event: any) {
         event.preventDefault();
         // console.log(state);
         searchCntxt.dispatch({type: 'FILTERS', value: state})
@@ -60,12 +68,15 @@ const Filters = ({width}:Props): JSX.Element => {
             <h1>Filters</h1>
             <FormContext.Provider value={{state, dispatch}}>
             {optionsList.map(el=>{
-                return (
-                    <CheckboxList list={el.options} name={el.filter} key={el.filter}/>
-                )
+                if(typeof el.filter == 'string'){
+                    return (
+                        <CheckboxList 
+                        checkedList={searchCntxt.state.filters[el.filter]} list={el.options} name={el.filter} key={el.filter}/>
+                    )
+                }
             })}
             </FormContext.Provider>
-            <button type='submit' onClick={logg}>Apply Filters</button>
+            <button type='submit' onClick={updateFilters}>Apply Filters</button>
         </StyledFilters> 
     )
 }

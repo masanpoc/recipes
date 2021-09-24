@@ -31,7 +31,15 @@ export const SearchContext = createContext({} as IContextProps);
 const App = (): JSX.Element | null => {
   const [loading, setLoading] = useState(true);
 
-  const initialSearchValue = { inputValue: "" };
+  const initialSearchValue = { 
+    inputValue: "",
+    filters: {mealType: [],
+    dishType: [],
+    health: [],
+    cuisineType: [],
+    diet: [],},
+    links: []
+  };
   const [state, dispatch] = useReducer(resultsReducer, initialSearchValue);
 
   // const contextValue = useMemo(() => {

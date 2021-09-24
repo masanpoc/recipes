@@ -1,10 +1,21 @@
 import React, {useContext, useState, useEffect} from 'react'
 import { FormContext } from '../Filters';
 
-const CheckboxList = ({list, name}: {list:string[], name:string}) :JSX.Element => {
+type Props = {
+  list:string[]; 
+  name:string;
+  checkedList: string[];
+}
+
+const CheckboxList = ({list, name, checkedList}: Props) :JSX.Element => {
     const [inputValues, setInputValues] = useState<string[]>([]);
+    const [notClicked, setNotClicked] = useState<boolean>(true);
 
     const { dispatch } = useContext(FormContext);
+
+    useEffect(() => {
+      setInputValues(checkedList);
+    }, [])
 
     useEffect(() => {
       dispatch({ type: "UPDATE_INPUT", value: {input: name, selected: inputValues} });
@@ -24,6 +35,24 @@ const CheckboxList = ({list, name}: {list:string[], name:string}) :JSX.Element =
         <h3>{name}</h3>
         <ul>
           {list.map((option:string) => {
+              if(checkedList.includes(option)){
+                return <li
+                  key={option}
+                >
+                  <input
+                    type="checkbox"
+                    id={option}
+                    name={option}
+                    value={option}
+                    onChange={handleInputCheckbox}
+                    onClick={()=>setNotClicked(!notClicked)}
+                    checked={notClicked && true}
+                  />
+                  <label htmlFor={option} className="text-left w-full">
+                    {option}
+                  </label>
+              </li>
+              }
               return (
                 <li
                   key={option}

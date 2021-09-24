@@ -8,7 +8,7 @@ interface IActions {
     };
   }
   
-  export const formReducer = (state: IForm, action: IActions): any => {
+  export const formReducer = (state:  { [key: string]: any }, action: IActions): any => {
     if(action.type=='UPDATE_INPUT'){
       return { ...state, [action.value.input]: action.value.selected };
     }
