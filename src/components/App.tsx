@@ -35,11 +35,11 @@ const App = (): JSX.Element | null => {
     inputValue: "",
     filters: {mealType: [],
     dishType: [],
-    health: [],
+    health: ['vegan'],
     cuisineType: [],
     diet: [],},
     links: []
-  };
+  }; 
   const [state, dispatch] = useReducer(resultsReducer, initialSearchValue);
 
   // const contextValue = useMemo(() => {

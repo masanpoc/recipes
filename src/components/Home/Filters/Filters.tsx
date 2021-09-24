@@ -2,7 +2,7 @@ import React, {createContext, useState, Dispatch, useReducer, useContext, useEff
 import styled from 'styled-components'
 import CheckboxList from './subcomponents/CheckboxList';
 import optionsList from './lists/optionsList';
-import { IForm } from '../../../types/types';
+// import { IForm } from '../../../types/types';
 import {formReducer} from '../../../reducers/formReducer'
 import { SearchContext } from '../../App';
 
@@ -36,14 +36,9 @@ const Filters = ({width}:Props): JSX.Element => {
 
     const [isActive, setIsActive] = useState(false);
 
+    const searchCntxt = useContext(SearchContext);
     
-    const initialFormValues = { 
-        mealType: [],
-        dishType: [],
-        health: [],
-        cuisineType: [],
-        diet: [], 
-    };
+    const initialFormValues = searchCntxt.state.filters;
 
     const [state, dispatch] = useReducer(formReducer, initialFormValues);
 
@@ -51,15 +46,14 @@ const Filters = ({width}:Props): JSX.Element => {
     //     return { state, dispatch };
     //   }, [state, dispatch]);
 
-    const searchCntxt = useContext(SearchContext);
     
-    useEffect(() => {
-        console.log(searchCntxt.state.filters['mealType'])
-    }, [])
+    // useEffect(() => {
+    //     console.log(searchCntxt.state.filters['mealType'])
+    // }, [])
     
     function updateFilters(event: any) {
         event.preventDefault();
-        // console.log(state);
+        console.log(state);
         searchCntxt.dispatch({type: 'FILTERS', value: state})
     }
 

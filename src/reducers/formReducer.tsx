@@ -5,11 +5,20 @@ interface IActions {
     value: {
       input: string;
       selected: string[];
+      checked: boolean;
     };
   }
   
   export const formReducer = (state:  { [key: string]: any }, action: IActions): any => {
     if(action.type=='UPDATE_INPUT'){
-      return { ...state, [action.value.input]: action.value.selected };
+      const newState= {...state};
+      if(action.value.checked){
+        newState[action.value.input].push(action.value.selected)
+      } else {
+        const indexEl = newState[action.value.input].indexOf(action.value.selected);
+        newState[action.value.input].splice(indexEl, 1);
+      }
+      console.log(newState)
+      return newState;
     }
   };
