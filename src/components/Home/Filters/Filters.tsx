@@ -13,12 +13,12 @@ import optionsList from "./lists/optionsList";
 // import { IForm } from '../../../types/types';
 import { formReducer } from "../../../reducers/formReducer";
 import { SearchContext } from "../../App";
+import ModalFilter from "./Modal/ModalFilter";
 
-const StyledFilters = styled("form")<{ isActive: boolean }>`
+const StyledFilters = styled.form`
   display: flex;
   flex-direction: column;
   height: fit-content;
-  background: ${(props) => (props.isActive ? "palevioletred" : "white")};
   @media (min-width: 768px) {
     border: 5px solid green;
     width: 20%;
@@ -45,19 +45,6 @@ const StyledClearButton = styled.button`
     
 `
 
-const StyledCloseSVG = styled.svg`
-    height: 15px;
-    width: 15px;
-    /* fill: #787878; */
-`
-
-const StyledMobileTitleDiv = styled.div`
-    display: flex;
-    justify-content: space-between;
-    height: max-content;
-    width: 100%;
-    height: 20%;
-`
 
 const StyledDesktopTitleDiv = styled.div`
     display: flex;
@@ -84,61 +71,26 @@ const StyledApplyButton = styled.button`
     }
 `
 
-const StyledMobileModalDiv = styled.div`
-  background-color: rgba(0,0,0,0.5);
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* overflow: scroll; */
-  justify-content: center;
-  
-`
-
-const StyledWrapperModal = styled.div`
-    background: white;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    height: 60vh;
-    width: 100%;
-    transform: translateY(50%);
-`
-
-const StyledMask = styled.div`
-  overflow: scroll;
-  height: 60%;
-  width: 100%;
-`
-
-const StyledFilterFooterDiv = styled.div`
-  background: yellow;
-  display: flex;
-  height: 20%;
-  justify-content: flex-end;
-`
 
 type Props = {
   width: number;
 };
 
 interface IContextProps {
-  state: { [key: string]: any };
+  state: { 
+    filters: {[key: string]: any}
+    isActive: boolean;
+  };
   dispatch: Dispatch<any>;
 }
 
 export const FormContext = createContext({} as IContextProps);
 
 const Filters = ({ width }: Props): JSX.Element => {
-  const [isActive, setIsActive] = useState(false);
 
   const searchCntxt = useContext(SearchContext);
 
-  const initialFormValues = searchCntxt.state.filters;
+  const initialFormValues = {filters: searchCntxt.state.filters, isActive: false};
 
   const [state, dispatch] = useReducer(formReducer, initialFormValues);
 
@@ -150,24 +102,26 @@ const Filters = ({ width }: Props): JSX.Element => {
   //     console.log(searchCntxt.state.filters['mealType'])
   // }, [])
 
+
   function updateFilters(event: any) {
     event.preventDefault();
     console.log(state);
-    searchCntxt.dispatch({ type: "FILTERS", value: state });
+    searchCntxt.dispatch({ type: "FILTERS", value: state.filters });
   }
 
   return (
-    <StyledFilters isActive={isActive} onClick={() => setIsActive(!isActive)}>
+    <StyledFilters>
+      
+      
+
+      <FormContext.Provider value={{ state, dispatch }}>
       {width<768 && <StyledDropdownDiv>
             <StyledMobileTitleH2>Filters</StyledMobileTitleH2>
-            <button>
+            <button type='button' onClick={ ()=>dispatch({type: "UPDATE_DISPLAY", value: {input: '', selected: [], checked: false, isActive: true}})}>
             <StyledDropdownSVG xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></StyledDropdownSVG>
             </button>
         </StyledDropdownDiv>  
       }
-      
-
-      <FormContext.Provider value={{ state, dispatch }}>
         {/* clear all button */}
         {
             width>767 &&
@@ -196,38 +150,8 @@ const Filters = ({ width }: Props): JSX.Element => {
       </StyledApplyButton>}
       {/* Typescript also has a non-null assertion that you can use when you are sure that the value is never null by adding the ! operator to the end of your statement: */}
       {
-        width<768 && createPortal(<StyledMobileModalDiv>
-
-          <StyledWrapperModal>
-            <StyledMobileTitleDiv> 
-                <StyledClearButton>Clear All</StyledClearButton>
-                <StyledCloseSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></StyledCloseSVG>
-            </StyledMobileTitleDiv>
-            <StyledMask>
-            {optionsList.map((el) => {
-              if (typeof el.filter == "string") {
-                return (
-                  <CheckboxList
-                    checkedList={searchCntxt.state.filters[el.filter]}
-                    list={el.options}
-                    name={el.filter}
-                    key={el.filter}
-                  />
-                );
-              }
-            })}
-            </StyledMask>
-            
-            <StyledFilterFooterDiv>
-              <StyledApplyButton type="submit" onClick={updateFilters}>
-                Show Results
-              </StyledApplyButton>
-            </StyledFilterFooterDiv>
-
-        </StyledWrapperModal>
-        </StyledMobileModalDiv>, document.getElementById('modal')!)
+        width<768 &&  <ModalFilter isActive={state.isActive} />
       }
-      
       </FormContext.Provider> 
     </StyledFilters>
   );

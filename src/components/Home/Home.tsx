@@ -31,6 +31,7 @@ const Home = (): JSX.Element => {
 
   const [width, setWidth] = useState<number>(window.innerWidth);
   useEffect(() => {
+    console.log("rerendered");
     window.addEventListener("resize", () => setWidth(window.innerWidth));
     return () => {
       window.removeEventListener("resize", () => setWidth(window.innerWidth));

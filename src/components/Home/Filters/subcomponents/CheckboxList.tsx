@@ -5,7 +5,7 @@ import capitalizeFirstLetter from "../../../../functions/capitalizeFirstLetter";
 import styled from "styled-components";
 
 const StyledUl = styled.ul`
-flex-direction: row;
+  flex-direction: row;
   flex-wrap: wrap;
   & > * {
     margin-right: 5%;
@@ -15,13 +15,13 @@ flex-direction: row;
     margin-right: 0;
   }
   @media (min-width: 768px) {
-  display: flex;
-  flex-direction: column;
-  & > * {
-    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    & > * {
+      margin-right: 0;
+    }
   }
-  }
-`
+`;
 
 type Props = {
   list: string[];

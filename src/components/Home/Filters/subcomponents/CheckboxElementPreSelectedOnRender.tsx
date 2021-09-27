@@ -2,32 +2,31 @@ import React, { useState, useContext } from "react";
 import { FormContext } from "../Filters";
 import styled from "styled-components";
 
-
 const StyledItem = styled.li`
   position: relative;
   width: max-content;
-  background: #F5F5F5;
-  box-shadow: 3px 3px 10px -6px  rgba(0,0,0,0.75) ;
+  background: #f5f5f5;
+  box-shadow: 3px 3px 10px -6px rgba(0, 0, 0, 0.75);
   border-radius: 20px;
   padding: 3% 5%;
-  @media (min-width:768px){
+  @media (min-width: 768px) {
     display: flex;
-        flex-direction: row;
-        padding: 0;
-        background: none;
-        box-shadow: none;
-        border-radius: 0%;
+    flex-direction: row;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0%;
   }
-`
+`;
 
 const StyledInput = styled.input`
-    opacity: 0;
-    position: absolute;
-    @media (min-width:768px){
-        opacity: 1;
-        position: relative;
-    }
-`
+  opacity: 0;
+  position: absolute;
+  @media (min-width: 768px) {
+    opacity: 1;
+    position: relative;
+  }
+`;
 
 const StyledLabel = styled.label`
   /* border: 0.1px solid black; */
@@ -35,18 +34,17 @@ const StyledLabel = styled.label`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   font-size: 1.2em;
   /* position: absolute; */
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     position: relative;
     background: none;
     box-shadow: none;
     padding: 0;
     font-size: 1em;
   }
-`
-
+`;
 
 const CheckboxElement = ({
   option,

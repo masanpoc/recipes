@@ -6,24 +6,32 @@ interface IActions {
     input: string;
     selected: string[];
     checked: boolean;
+    isActive: boolean;
   };
 }
 
+
 export const formReducer = (
   state: { [key: string]: any },
-  action: IActions
+  action: IActions 
 ): any => {
   if (action.type == "UPDATE_INPUT") {
     const newState = { ...state };
     if (action.value.checked) {
-      newState[action.value.input].push(action.value.selected);
+      newState.filters[action.value.input].push(action.value.selected);
     } else {
-      const indexEl = newState[action.value.input].indexOf(
+      const indexEl = newState.filters[action.value.input].indexOf(
         action.value.selected
       );
-      newState[action.value.input].splice(indexEl, 1);
+      newState.filters[action.value.input].splice(indexEl, 1);
     }
-    console.log(newState);
+    console.log(newState.filters);
     return newState;
+  }
+  if(action.type == "UPDATE_DISPLAY") {
+    const newState = {...state};
+    newState.isActive=action.value.isActive;
+    console.log(newState);
+    return newState
   }
 };
