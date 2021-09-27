@@ -6,6 +6,7 @@ import React, {
   useContext,
   useEffect,
 } from "react";
+import { createPortal } from "react-dom";
 import styled from "styled-components";
 import CheckboxList from "./subcomponents/CheckboxList";
 import optionsList from "./lists/optionsList";
@@ -47,12 +48,15 @@ const StyledClearButton = styled.button`
 const StyledCloseSVG = styled.svg`
     height: 15px;
     width: 15px;
-    fill: #787878;
+    /* fill: #787878; */
 `
 
 const StyledMobileTitleDiv = styled.div`
     display: flex;
     justify-content: space-between;
+    height: max-content;
+    width: 100%;
+    height: 20%;
 `
 
 const StyledDesktopTitleDiv = styled.div`
@@ -78,6 +82,44 @@ const StyledApplyButton = styled.button`
   @media (min-width:768px){
       width: 80%;
     }
+`
+
+const StyledMobileModalDiv = styled.div`
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* overflow: scroll; */
+  justify-content: center;
+  
+`
+
+const StyledWrapperModal = styled.div`
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 60vh;
+    width: 100%;
+    transform: translateY(50%);
+`
+
+const StyledMask = styled.div`
+  overflow: scroll;
+  height: 60%;
+  width: 100%;
+`
+
+const StyledFilterFooterDiv = styled.div`
+  background: yellow;
+  display: flex;
+  height: 20%;
+  justify-content: flex-end;
 `
 
 type Props = {
@@ -116,29 +158,27 @@ const Filters = ({ width }: Props): JSX.Element => {
 
   return (
     <StyledFilters isActive={isActive} onClick={() => setIsActive(!isActive)}>
-      {/* {width<768 && <StyledDropdownDiv>
+      {width<768 && <StyledDropdownDiv>
             <StyledMobileTitleH2>Filters</StyledMobileTitleH2>
             <button>
             <StyledDropdownSVG xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></StyledDropdownSVG>
             </button>
         </StyledDropdownDiv>  
-      } */}
+      }
+      
 
       <FormContext.Provider value={{ state, dispatch }}>
         {/* clear all button */}
         {
-            width>767 ? 
+            width>767 &&
             <StyledDesktopTitleDiv>
                 <StyledDesktopTitleH2>Filters</StyledDesktopTitleH2>
                 <StyledClearButton>Clear All</StyledClearButton>
             </StyledDesktopTitleDiv>
-            : 
-            <StyledMobileTitleDiv> 
-                <StyledClearButton>Clear All</StyledClearButton>
-                <StyledCloseSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></StyledCloseSVG>
-            </StyledMobileTitleDiv>
+            
         }
-        {optionsList.map((el) => {
+
+        {width > 767  && optionsList.map((el) => {
           if (typeof el.filter == "string") {
             return (
               <CheckboxList
@@ -150,10 +190,45 @@ const Filters = ({ width }: Props): JSX.Element => {
             );
           }
         })}
-      </FormContext.Provider>
+        {width>767 && 
       <StyledApplyButton type="submit" onClick={updateFilters}>
-        Apply Filters
-      </StyledApplyButton>
+        Show Results
+      </StyledApplyButton>}
+      {/* Typescript also has a non-null assertion that you can use when you are sure that the value is never null by adding the ! operator to the end of your statement: */}
+      {
+        width<768 && createPortal(<StyledMobileModalDiv>
+
+          <StyledWrapperModal>
+            <StyledMobileTitleDiv> 
+                <StyledClearButton>Clear All</StyledClearButton>
+                <StyledCloseSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></StyledCloseSVG>
+            </StyledMobileTitleDiv>
+            <StyledMask>
+            {optionsList.map((el) => {
+              if (typeof el.filter == "string") {
+                return (
+                  <CheckboxList
+                    checkedList={searchCntxt.state.filters[el.filter]}
+                    list={el.options}
+                    name={el.filter}
+                    key={el.filter}
+                  />
+                );
+              }
+            })}
+            </StyledMask>
+            
+            <StyledFilterFooterDiv>
+              <StyledApplyButton type="submit" onClick={updateFilters}>
+                Show Results
+              </StyledApplyButton>
+            </StyledFilterFooterDiv>
+
+        </StyledWrapperModal>
+        </StyledMobileModalDiv>, document.getElementById('modal')!)
+      }
+      
+      </FormContext.Provider> 
     </StyledFilters>
   );
 };

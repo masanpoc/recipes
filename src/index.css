@@ -30,6 +30,11 @@ a {
   color: black;
 }
 
+#modal {
+  position: relative;
+  z-index: 999;
+}
+
 ::placeholder {
   color: gray;
 }
