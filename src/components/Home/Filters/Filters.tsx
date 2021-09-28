@@ -19,6 +19,7 @@ const StyledFilters = styled.form`
   display: flex;
   flex-direction: column;
   height: fit-content;
+  background: white;
   @media (min-width: 768px) {
     border: 5px solid green;
     width: 20%;
@@ -90,7 +91,7 @@ const Filters = ({ width }: Props): JSX.Element => {
 
   const searchCntxt = useContext(SearchContext);
 
-  const initialFormValues = {filters: searchCntxt.state.filters, isActive: false};
+  const initialFormValues = {filters: searchCntxt.state.filters, isActive: true};
 
   const [state, dispatch] = useReducer(formReducer, initialFormValues);
 

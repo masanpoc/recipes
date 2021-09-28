@@ -1,41 +1,50 @@
 
 import React, {
-  createContext,
-  useState,
-  Dispatch,
-  useReducer,
-  useContext,
-  useEffect,
+  useContext
 } from "react";
 import { createPortal } from "react-dom";
 import styled from "styled-components";
 import CheckboxList from "../subcomponents/CheckboxList";
 import optionsList from "../lists/optionsList";
-import { formReducer } from "../../../../reducers/formReducer";
 import { SearchContext } from "../../../App";
 import { FormContext } from "../Filters";
 
 const StyledCloseSVG = styled.svg`
-    height: 15px;
-    width: 15px;
-    /* fill: #787878; */
+    height: 17.5px;
+    width: 17.5px;
+    fill: #787878;
 `
 
 const StyledClearButton = styled.button`
     width: fit-content;
-    height: auto;
+    height: max-content;
     background: white;
-    color: #4B4B4B;
-    border: 1px solid grey;
-    
+    font-size: 1em;
+    padding: 1.5% 3%;
+    /* color: #4B4B4B; */
+    margin-left: 5%;
+    border: none;
+    box-shadow: 0 0 1px 0px black;
+    border-radius: 6px;
+`
+
+const StyledCloseButton = styled.button`
+    background: none;
+    border: none;
+    height: min-content;
+    margin-left: 61%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 const StyledMobileTitleDiv = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
     height: max-content;
-    width: 100%;
-    height: 20%;
+    height: 11.25%;
+    box-shadow: 0px 0.01px 0px 0px rgb(0 0 0 / 75%);
 `
 
 const StyledMobileModalDiv = styled.div`
@@ -58,34 +67,44 @@ const StyledWrapperModal = styled.div`
     display: flex;
     flex-direction: column;
     position: absolute;
-    height: 60vh;
+    height: 70vh;
     width: 100%;
-    transform: translateY(50%);
+    transform: translateY(22%);
 `
 
 const StyledMask = styled.div`
   overflow: scroll;
-  height: 60%;
+  height: 73.75%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 const StyledFilterFooterDiv = styled.div`
-  background: yellow;
+  /* background: yellow; */
   display: flex;
-  height: 20%;
+  height: 15%;
   justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0px -0.3px 0px 0px rgb(0 0 0 / 75%)
 `
 
 const StyledApplyButton = styled.button`
   color: #2C2C2C;
-  background: #F5F5F5;
-  border: 1px solid #6E6E6E;
-  font-size: 1.6em;
-  padding: 4% 0;
+  border: none;
+  font-size: 1em;
+  padding: 2.5% 4%;
+  border-radius: 6px;
+
+  height: max-content;
+  width: max-content;
+  margin-right: 4%;
+
+  /* padding: 4% 0; */
   box-shadow: inset 3px 3px 10px -6px  #faf0f0bf ;
-  @media (min-width:768px){
-      width: 80%;
-    }
+  background: #989898;
+  color: white;
 `
 
 type Props = {
@@ -111,9 +130,9 @@ createPortal(<StyledMobileModalDiv>
      <StyledWrapperModal>
       <StyledMobileTitleDiv> 
           <StyledClearButton>Clear All</StyledClearButton>
-          <button type='button' onClick={ ()=>formCntxt.dispatch({type: "UPDATE_DISPLAY", value: {input: '', selected: [], checked: false, isActive: false}}) }>
+          <StyledCloseButton type='button' onClick={ ()=>formCntxt.dispatch({type: "UPDATE_DISPLAY", value: {input: '', selected: [], checked: false, isActive: false}}) }>
             <StyledCloseSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></StyledCloseSVG>
-          </button>
+          </StyledCloseButton>
       </StyledMobileTitleDiv>
       <StyledMask>
       {optionsList.map((el) => {
