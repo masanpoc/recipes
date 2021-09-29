@@ -1,11 +1,16 @@
 import React, { useState, useContext } from "react";
 import { FormContext } from "../Filters";
 import styled from "styled-components";
-import { ItemCss, InputCss, LabelCss } from "./CheckboxElement";
+import { ItemCss, InputCss, LabelCss } from "../../../../styles/mixins";
 
 const StyledItem = styled.li`
     ${ItemCss()}
-
+    background: #989898;
+    color: white;
+    @media(min-width:768px){
+      color: black;
+      background: none;
+    }
 `;
 
 const StyledInput = styled.input`
@@ -32,6 +37,8 @@ const CheckboxElement = ({
   function handleInputCheckbox(e: {
     target: { type: string; checked: boolean; value: string };
   }) {
+    // console.log(e.target.type, e.target.checked)
+
     if (e.target.type === "checkbox" && e.target.checked) {
       dispatch({
         type: "UPDATE_INPUT",
@@ -53,7 +60,7 @@ const CheckboxElement = ({
         value={option}
         onChange={handleInputCheckbox}
         onClick={() => setNotClicked(!notClicked)}
-        checked={notClicked && true}
+        checked={true}
       />
       <StyledLabel htmlFor={option}>{option}</StyledLabel>
     </StyledItem>

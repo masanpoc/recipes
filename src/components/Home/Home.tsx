@@ -19,7 +19,7 @@ const StyledHome = styled.div`
 const Wrapper = styled.div`
   border: 2px solid black;
   @media (min-width: 768px) {
-    width: 70%;
+    width: 66%;
     overflow-x: hidden;
     margin: 10% 0;
     border: 5px solid black;

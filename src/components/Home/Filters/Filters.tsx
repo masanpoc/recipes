@@ -14,6 +14,7 @@ import optionsList from "./lists/optionsList";
 import { formReducer } from "../../../reducers/formReducer";
 import { SearchContext } from "../../App";
 import ModalFilter from "./Modal/ModalFilter";
+import { flexColumnBox } from "../../../styles/mixins";
 
 const StyledFilters = styled.form`
   display: flex;
@@ -23,13 +24,15 @@ const StyledFilters = styled.form`
   @media (min-width: 768px) {
     border: 5px solid green;
     width: 20%;
-    
+    padding: 2%;
   }
 `;
 
 const StyledDropdownDiv = styled.div`
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    height: 6vh;
 `
 
 const StyledDropdownSVG = styled.svg`
@@ -53,7 +56,12 @@ const StyledDesktopTitleDiv = styled.div`
 `
 
 const StyledMobileTitleH2 = styled.h2`
+  margin-right: 5%;
+`
 
+const StyledDropdownButton = styled.button`
+  ${flexColumnBox({})}
+  margin-right: 4%;
 `
 
 const StyledDesktopTitleH2 = styled.h2`
@@ -91,7 +99,7 @@ const Filters = ({ width }: Props): JSX.Element => {
 
   const searchCntxt = useContext(SearchContext);
 
-  const initialFormValues = {filters: searchCntxt.state.filters, isActive: true};
+  const initialFormValues = {filters: searchCntxt.state.filters, isActive: false};
 
   const [state, dispatch] = useReducer(formReducer, initialFormValues);
 
@@ -118,9 +126,9 @@ const Filters = ({ width }: Props): JSX.Element => {
       <FormContext.Provider value={{ state, dispatch }}>
       {width<768 && <StyledDropdownDiv>
             <StyledMobileTitleH2>Filters</StyledMobileTitleH2>
-            <button type='button' onClick={ ()=>dispatch({type: "UPDATE_DISPLAY", value: {input: '', selected: [], checked: false, isActive: true}})}>
-            <StyledDropdownSVG xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></StyledDropdownSVG>
-            </button>
+            <StyledDropdownButton type='button' onClick={ ()=>dispatch({type: "UPDATE_DISPLAY", value: {input: '', selected: [], checked: false, isActive: true}})}>
+              <StyledDropdownSVG xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></StyledDropdownSVG>
+            </StyledDropdownButton>
         </StyledDropdownDiv>  
       }
         {/* clear all button */}
@@ -128,7 +136,7 @@ const Filters = ({ width }: Props): JSX.Element => {
             width>767 &&
             <StyledDesktopTitleDiv>
                 <StyledDesktopTitleH2>Filters</StyledDesktopTitleH2>
-                <StyledClearButton>Clear All</StyledClearButton>
+                <StyledClearButton type='button' onClick={ ()=>dispatch({type: "CLEAR_FILTERS", value: {input: '', selected: [], checked: false, isActive: false}})}>Clear All</StyledClearButton>
             </StyledDesktopTitleDiv>
             
         }

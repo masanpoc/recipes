@@ -25,13 +25,21 @@ export const formReducer = (
       );
       newState.filters[action.value.input].splice(indexEl, 1);
     }
-    console.log(newState.filters);
+    // console.log(newState);
     return newState;
   }
   if(action.type == "UPDATE_DISPLAY") {
     const newState = {...state};
     newState.isActive=action.value.isActive;
-    console.log(newState);
+    // console.log(newState);
+    return newState
+  }
+  if(action.type == "CLEAR_FILTERS"){
+    const newState = {...state};
+    // eslint-disable-next-line prefer-const
+    for(let key in newState.filters){
+      newState.filters[key]=[];
+    }
     return newState
   }
 };

@@ -1,67 +1,25 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FormContext } from "../Filters";
 import styled, {css} from "styled-components";
-
-export const ItemCss = () => css`
- position: relative;
-  width: max-content;
-  background: #f5f5f5;
-  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.18);
-  border-radius: 20px;
-  padding: 3% 5%;
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    background: none;
-    box-shadow: none;
-    border-radius: 0%;
-  }
-`
+import { ItemCss, InputCss, LabelCss } from "../../../../styles/mixins";
 
 const StyledItem = styled.li`
-  ${ItemCss()}
- 
-`;
 
-export const InputCss = () => css`
-  opacity: 0;
-  position: absolute;
-  @media (min-width: 768px) {
-    opacity: 1;
-    position: relative;
-  }
-`
+  ${ItemCss()}
+   
+`;
 
 const StyledInput = styled.input`
   ${InputCss()}
+  &:checked {
+    background: blue;
+  }
 `;
 
-export const LabelCss = () => css`
-  /* border: 0.1px solid black; */
-  /* position: absolute; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-  font-size: 1.05em;
-  /* position: absolute; */
-  @media (min-width: 768px) {
-    position: relative;
-    background: none;
-    box-shadow: none;
-    padding: 0;
-    font-size: 1em;
-  }
-`
-
-const StyledLabel = styled('label')<{selected: boolean}>`
+const StyledLabel = styled.label`
     ${LabelCss()}
-    /* ${(props) =>
-    props.selected &&
-    `
-        background: blue;
-    `}; */
+    
 `;
 
 const CheckboxElement = ({
@@ -76,6 +34,7 @@ const CheckboxElement = ({
   function handleInputCheckbox(e: {
     target: { type: string; checked: boolean; value: string };
   }) {
+    // console.log(e.target.type, e.target.checked)
     if (e.target.type === "checkbox" && e.target.checked) {
       dispatch({
         type: "UPDATE_INPUT",
@@ -89,13 +48,8 @@ const CheckboxElement = ({
     }
   }
 
-  function checkInput () {
-    const el = document.getElementById(option) as HTMLInputElement;
-    return el.checked
-  }
-
   return (
-    <StyledItem key={option}>
+    <StyledItem key={option} >
       <StyledInput
         type="checkbox"
         id={option}
@@ -103,7 +57,7 @@ const CheckboxElement = ({
         value={option}
         onChange={handleInputCheckbox}
       />
-      <StyledLabel selected={checkInput()} htmlFor={option}>{option}</StyledLabel>
+      <StyledLabel  htmlFor={option}>{option}</StyledLabel>
     </StyledItem>
   );
 };
