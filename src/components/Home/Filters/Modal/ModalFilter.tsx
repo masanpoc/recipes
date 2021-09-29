@@ -44,7 +44,7 @@ const StyledMobileTitleDiv = styled.div`
     align-items: center;
     height: max-content;
     height: 11.25%;
-    box-shadow: 0px 0.01px 0px 0px rgb(0 0 0 / 75%);
+    box-shadow: 0px 0.1px 0px 0px rgb(0 0 0 / 45%);
 `
 
 const StyledMobileModalDiv = styled.div`
@@ -67,15 +67,17 @@ const StyledWrapperModal = styled.div`
     display: flex;
     flex-direction: column;
     position: absolute;
-    height: 70vh;
+    /* increase size */
+    height: 71vh;
     width: 100%;
-    transform: translateY(22%);
+    transform: translateY(21%);
 `
 
 const StyledMask = styled.div`
   overflow: scroll;
-  height: 73.75%;
+  height: 67%;
   width: 100%;
+  padding: 1% 0 5.75% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +89,7 @@ const StyledFilterFooterDiv = styled.div`
   height: 15%;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: 0px -0.3px 0px 0px rgb(0 0 0 / 75%)
+  box-shadow: 0px -0.6px 0px 0px rgb(0 0 0 / 90%)
 `
 
 const StyledApplyButton = styled.button`

@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { FormContext } from "../Filters";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
-const StyledItem = styled.li`
-  position: relative;
+export const ItemCss = () => css`
+ position: relative;
   width: max-content;
   background: #f5f5f5;
-  box-shadow: 3px 3px 10px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.18);
   border-radius: 20px;
   padding: 3% 5%;
   @media (min-width: 768px) {
@@ -17,25 +17,34 @@ const StyledItem = styled.li`
     box-shadow: none;
     border-radius: 0%;
   }
+`
+
+const StyledItem = styled.li`
+  ${ItemCss()}
+ 
 `;
 
-const StyledInput = styled.input`
+export const InputCss = () => css`
   opacity: 0;
   position: absolute;
   @media (min-width: 768px) {
     opacity: 1;
     position: relative;
   }
+`
+
+const StyledInput = styled.input`
+  ${InputCss()}
 `;
 
-const StyledLabel = styled.label`
+export const LabelCss = () => css`
   /* border: 0.1px solid black; */
   /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  font-size: 1.2em;
+  font-size: 1.05em;
   /* position: absolute; */
   @media (min-width: 768px) {
     position: relative;
@@ -44,6 +53,15 @@ const StyledLabel = styled.label`
     padding: 0;
     font-size: 1em;
   }
+`
+
+const StyledLabel = styled('label')<{selected: boolean}>`
+    ${LabelCss()}
+    /* ${(props) =>
+    props.selected &&
+    `
+        background: blue;
+    `}; */
 `;
 
 const CheckboxElement = ({
@@ -71,6 +89,11 @@ const CheckboxElement = ({
     }
   }
 
+  function checkInput () {
+    const el = document.getElementById(option) as HTMLInputElement;
+    return el.checked
+  }
+
   return (
     <StyledItem key={option}>
       <StyledInput
@@ -80,7 +103,7 @@ const CheckboxElement = ({
         value={option}
         onChange={handleInputCheckbox}
       />
-      <StyledLabel htmlFor={option}>{option}</StyledLabel>
+      <StyledLabel selected={checkInput()} htmlFor={option}>{option}</StyledLabel>
     </StyledItem>
   );
 };
