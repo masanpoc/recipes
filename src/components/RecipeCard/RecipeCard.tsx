@@ -1,29 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
-import { alignTwoStart } from "../../styles/mixins";
+import { alignTwoStart, CardStyle } from "../../styles/mixins";
+import { motion } from "framer-motion";
 
-type Props = {
-  image: string;
-  title: string;
-  time: number;
-  source: string;
-};
 
 const StyledCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 1px solid gray;
-  box-shadow: 1px 1px 2px 0 gray;
-  * {
-    font-family: "Odibee Sans";
-  }
-  @media (min-width: 768px) {
-    width: 17.5vw;
-    height: 70vh;
-    overflow: hidden;
-  }
+  ${CardStyle()}
 `;
+
 
 const StyledImg = styled.img`
   width: 100%;
@@ -77,9 +61,20 @@ const StyledTitle = styled.h3`
   font-size: 2em;
 `;
 
+
+
+type Props = {
+  image: string;
+  title: string;
+  time: number;
+  source: string;
+};
+
+
 const RecipeCard = ({ image, title, time, source }: Props): JSX.Element => {
+
   return (
-    <StyledCard>
+     <StyledCard>
       <StyledImg src={image}></StyledImg>
       <Wrapper>
         <StyledTitle>{title}</StyledTitle>
@@ -98,6 +93,8 @@ const RecipeCard = ({ image, title, time, source }: Props): JSX.Element => {
         </StyledLinksDiv>
       </Wrapper>
     </StyledCard>
+      
+      
   );
 };
 

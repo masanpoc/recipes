@@ -7,15 +7,15 @@ import styled from "styled-components";
 const StyledCheckBoxListDiv = styled.div`
   width: 85%;
   /* border: 1px solid green; */
-  padding: 7% 0 3% 0 ;
+  padding: 7% 0 3% 0;
   & > *:first-child {
     margin-bottom: 6%;
   }
-`
+`;
 
 const StyledTitleH3 = styled.h3`
   font-size: 1.15em;
-`
+`;
 
 const StyledUl = styled.ul`
   flex-direction: row;
@@ -45,7 +45,9 @@ type Props = {
 const CheckboxList = ({ list, name, checkedList }: Props): JSX.Element => {
   return (
     <StyledCheckBoxListDiv>
-      <StyledTitleH3>{capitalizeFirstLetter(name).replace(/([A-Z])/g, " $1")}</StyledTitleH3>
+      <StyledTitleH3>
+        {capitalizeFirstLetter(name).replace(/([A-Z])/g, " $1")}
+      </StyledTitleH3>
       <StyledUl>
         {list.map((option: string) => {
           if (checkedList.includes(option)) {

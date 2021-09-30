@@ -1,12 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { FormContext } from "../Filters";
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { ItemCss, InputCss, LabelCss } from "../../../../styles/mixins";
 
 const StyledItem = styled.li`
-
   ${ItemCss()}
-   
 `;
 
 const StyledInput = styled.input`
@@ -16,10 +14,8 @@ const StyledInput = styled.input`
   }
 `;
 
-
 const StyledLabel = styled.label`
-    ${LabelCss()}
-    
+  ${LabelCss()}
 `;
 
 const CheckboxElement = ({
@@ -43,13 +39,18 @@ const CheckboxElement = ({
     } else {
       dispatch({
         type: "UPDATE_INPUT",
-        value: { input: name, selected: option, checked: false, isActive: true },
+        value: {
+          input: name,
+          selected: option,
+          checked: false,
+          isActive: true,
+        },
       });
     }
   }
 
   return (
-    <StyledItem key={option} >
+    <StyledItem key={option}>
       <StyledInput
         type="checkbox"
         id={option}
@@ -57,7 +58,7 @@ const CheckboxElement = ({
         value={option}
         onChange={handleInputCheckbox}
       />
-      <StyledLabel  htmlFor={option}>{option}</StyledLabel>
+      <StyledLabel htmlFor={option}>{option}</StyledLabel>
     </StyledItem>
   );
 };

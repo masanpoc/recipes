@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+import {motion, AnimatePresence} from 'framer-motion';
 import { Recipe } from "../../../../types/types";
 import RecipeCard from "../../../RecipeCard/RecipeCard";
-import { flexColumnBox } from "../../../../styles/mixins";
+import { flexColumnBox, UnorderedFeedList } from "../../../../styles/mixins";
+
 
 const StyledFeedSection = styled.div`
   ${flexColumnBox({})}
@@ -11,29 +13,13 @@ const StyledFeedSection = styled.div`
 `;
 
 const StyledList = styled.ul`
-  --w: 90;
-  --mb: 0.25;
-  width: calc(var(--w) * 1%);
-  & > * {
-    margin-bottom: calc(var(--mb) * var(--w) * 1vw);
-    /* margin-bottom: 25%; */
-  }
-  & > *:last-child {
-    margin-bottom: 0;
-  }
-  @media (min-width: 768px) {
-    flex-direction: row;
-    width: 200vw;
-    border: 5px solid black;
-    height: fit-content;
-    /* margin-bottom:  calc(var(--mb)/6*var(--w) * 1vw); */
-    & > * {
-      position: absolute;
-      background: white;
-      margin-bottom: 0;
-    }
-  }
+  ${UnorderedFeedList()}
+
 `;
+
+const StyledMotionList =styled(motion.div)`
+  ${UnorderedFeedList()}
+`
 
 const StyledTitle = styled.h2`
   font-family: "MerriWeather";
@@ -64,7 +50,7 @@ const StyledButton = styled("button")<{ isActive: boolean }>`
 `;
 
 const StyledWrapperDiv = styled.div`
-  border: 8px solid green;
+  /* border: 8px solid green; */
   position: relative;
   --w: 90;
   --mb: 0.25;
@@ -95,6 +81,42 @@ const StyledSVG = styled.svg`
   width: 25px;
 `;
 
+
+const containerVariants = {
+  entered: (flowDirection:number) => {
+    if(flowDirection>0){
+      return {
+        opacity: 0,
+        x:100
+      }
+    } else {
+      return {
+        opacity: 0,
+        x:100
+      }
+    }
+  },
+  target: {
+    opacity: 1,
+    x:0
+  },
+  exit: (flowDirection:number) => {
+    if(flowDirection>0){
+      console.log('moving left')
+      return {
+        opacity: 0,
+        x:-100
+      }
+    } else {
+      console.log('moving right')
+      return {
+        opacity: 0,
+        x:100
+      }
+    }
+  },
+}
+
 type Props = {
   title: string;
   content: Recipe[];
@@ -103,6 +125,44 @@ type Props = {
 
 const FeedSection = ({ title, content, width }: Props): JSX.Element => {
   const [loadMore, setLoadMore] = useState<boolean>(false);
+  const [count, setCount] = useState<number>(0);
+  const [flow, setFlow] = useState<number>(0);
+
+  useEffect(() => {
+    if(flow>0){
+      if(count<15){
+        setCount(count+3);
+      }
+      if(count==15){
+        setCount(count+2)
+      }
+    }
+    if(flow<0) {
+      if(count>0){
+        setCount(count-3);
+      }
+      if(count==17){
+        setCount(count-2);
+      }
+    }
+
+  }, [flow])
+
+  function handlePrevious() {
+    if(flow>0){
+      setFlow(-1)
+    } else {
+      setFlow(flow-1)
+    }
+  }
+
+  function handleNext(){
+    if(flow<0){
+      setFlow(1)
+    } else {
+      setFlow(flow+1)
+    }
+  }
 
   return (
     <StyledFeedSection>
@@ -135,29 +195,43 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
         </StyledList>
       ) : (
         <StyledWrapperDiv>
-          <StyledPreviousButton>
+          <StyledPreviousButton onClick={handlePrevious}>
             <StyledSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
             </StyledSVG>
           </StyledPreviousButton>
-          <StyledList>
-            {content.map((recipe) => {
-              return (
-                <RecipeCard
-                  key={recipe.id}
-                  title={recipe.title}
-                  image={recipe.image}
-                  source={recipe.source}
-                  time={recipe.time}
-                />
-              );
-            })}
-            <StyledNextButton>
+          
+          <AnimatePresence>
+          <StyledMotionList key={count} as={motion.div} 
+            variants={containerVariants}
+            initial="entered"
+            custom={flow}
+            animate="target"
+            exit="exit"
+            transition={{
+              type: 'easeIn',
+              duration: 0.5
+            }}>
+              {content.slice(count,count+3).map((recipe) => {
+                return (
+                  <RecipeCard
+                    key={recipe.id}
+                    title={recipe.title}
+                    image={recipe.image}
+                    source={recipe.source}
+                    time={recipe.time}
+                  />
+                );
+              })}
+            
+            
+          </StyledMotionList>
+          </AnimatePresence>
+          <StyledNextButton onClick={handleNext}>
               <StyledSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
               </StyledSVG>
             </StyledNextButton>
-          </StyledList>
         </StyledWrapperDiv>
       )}
 

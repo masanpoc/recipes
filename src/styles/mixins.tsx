@@ -35,9 +35,8 @@ export const alignTwoStart = ({ gap }: alignStartProps) => css`
   }
 `;
 
-
 export const ItemCss = () => css`
- position: relative;
+  position: relative;
   width: max-content;
   background: #f5f5f5;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.18);
@@ -51,8 +50,7 @@ export const ItemCss = () => css`
     box-shadow: none;
     border-radius: 0%;
   }
-`
-
+`;
 
 export const InputCss = () => css`
   opacity: 0;
@@ -61,8 +59,7 @@ export const InputCss = () => css`
     opacity: 1;
     position: relative;
   }
-`
-
+`;
 
 export const LabelCss = () => css`
   /* border: 0.1px solid black; */
@@ -79,5 +76,48 @@ export const LabelCss = () => css`
     box-shadow: none;
     padding: 0;
     font-size: 1em;
+  }
+`;
+
+export const CardStyle = ()=>css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px 0 gray;
+  * {
+    font-family: "Odibee Sans";
+  }
+  @media (min-width: 768px) {
+    width: 17.5vw;
+    height: 70vh;
+    overflow: hidden;
+  }
+`;
+
+export const UnorderedFeedList = () => css`
+  --w: 90;
+  --mb: 0.25;
+  width: calc(var(--w) * 1%);
+  & > * {
+    margin-bottom: calc(var(--mb) * var(--w) * 1vw);
+    /* margin-bottom: 25%; */
+  }
+  & > *:last-child {
+    margin-bottom: 0;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    /* border: 5px solid black; */
+    height: fit-content;
+    /* margin-bottom:  calc(var(--mb)/6*var(--w) * 1vw); */
+    & > * {
+      /* position: absolute; */
+      background: white;
+      margin-bottom: 0;
+    }
   }
 `

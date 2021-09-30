@@ -4,23 +4,21 @@ import styled from "styled-components";
 import { ItemCss, InputCss, LabelCss } from "../../../../styles/mixins";
 
 const StyledItem = styled.li`
-    ${ItemCss()}
-    background: #989898;
-    color: white;
-    @media(min-width:768px){
-      color: black;
-      background: none;
-    }
+  ${ItemCss()}
+  background: #989898;
+  color: white;
+  @media (min-width: 768px) {
+    color: black;
+    background: none;
+  }
 `;
 
 const StyledInput = styled.input`
-    ${InputCss()}
-
+  ${InputCss()}
 `;
 
 const StyledLabel = styled.label`
-      ${LabelCss()}
-
+  ${LabelCss()}
 `;
 
 const CheckboxElement = ({

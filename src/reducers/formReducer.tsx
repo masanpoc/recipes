@@ -10,10 +10,9 @@ interface IActions {
   };
 }
 
-
 export const formReducer = (
   state: { [key: string]: any },
-  action: IActions 
+  action: IActions
 ): any => {
   if (action.type == "UPDATE_INPUT") {
     const newState = { ...state };
@@ -28,18 +27,18 @@ export const formReducer = (
     // console.log(newState);
     return newState;
   }
-  if(action.type == "UPDATE_DISPLAY") {
-    const newState = {...state};
-    newState.isActive=action.value.isActive;
+  if (action.type == "UPDATE_DISPLAY") {
+    const newState = { ...state };
+    newState.isActive = action.value.isActive;
     // console.log(newState);
-    return newState
+    return newState;
   }
-  if(action.type == "CLEAR_FILTERS"){
-    const newState = {...state};
+  if (action.type == "CLEAR_FILTERS") {
+    const newState = { ...state };
     // eslint-disable-next-line prefer-const
-    for(let key in newState.filters){
-      newState.filters[key]=[];
+    for (let key in newState.filters) {
+      newState.filters[key] = [];
     }
-    return newState
+    return newState;
   }
 };
