@@ -13,8 +13,8 @@ const StyledFeedSection = styled.div`
 `;
 
 const StyledList = styled.ul`
-  ${UnorderedFeedList()}
-
+  ${UnorderedFeedList()};
+  
 `;
 
 const StyledMotionList =styled(motion.div)`
@@ -70,6 +70,7 @@ const StyledPreviousButton = styled.button`
   border: 2px solid grey;
   border-radius: 50%;
   transform: translate(0, -50%);
+  z-index: 2;
 `;
 
 const StyledNextButton = styled(StyledPreviousButton)`
@@ -83,35 +84,17 @@ const StyledSVG = styled.svg`
 
 
 const containerVariants = {
-  entered: (flowDirection:number) => {
-    if(flowDirection>0){
+  
+  target: (countFlow:number):any => {
+    if(countFlow<0 || countFlow>0){
+      // we change the x sign because we are moving the slider to that side
       return {
-        opacity: 0,
-        x:100
+        x:-58.5*countFlow+'vw'
       }
-    } else {
+    } 
+    if(countFlow==0) {
       return {
-        opacity: 0,
-        x:100
-      }
-    }
-  },
-  target: {
-    opacity: 1,
-    x:0
-  },
-  exit: (flowDirection:number) => {
-    if(flowDirection>0){
-      console.log('moving left')
-      return {
-        opacity: 0,
-        x:-100
-      }
-    } else {
-      console.log('moving right')
-      return {
-        opacity: 0,
-        x:100
+        x:0
       }
     }
   },
@@ -126,41 +109,27 @@ type Props = {
 const FeedSection = ({ title, content, width }: Props): JSX.Element => {
   const [loadMore, setLoadMore] = useState<boolean>(false);
   const [count, setCount] = useState<number>(0);
-  const [flow, setFlow] = useState<number>(0);
 
   useEffect(() => {
-    if(flow>0){
-      if(count<15){
-        setCount(count+3);
-      }
-      if(count==15){
-        setCount(count+2)
-      }
-    }
-    if(flow<0) {
-      if(count>0){
-        setCount(count-3);
-      }
-      if(count==17){
-        setCount(count-2);
-      }
-    }
-
-  }, [flow])
+    console.log(count)
+  }, [count])
 
   function handlePrevious() {
-    if(flow>0){
-      setFlow(-1)
-    } else {
-      setFlow(flow-1)
+    // we are defining count as 5.667 when reaching the limit of the list because we have slides of 3 els and at the end we dont want to leave a gap so we move the slide only 2 els instead of for each 3
+    if(count>0 && count!=5.667){
+      setCount(count-1)
+    }
+    if(count==5.667){
+      setCount(5);
     }
   }
 
   function handleNext(){
-    if(flow<0){
-      setFlow(1)
-    } else {
-      setFlow(flow+1)
+    if(count<5){
+      setCount(count+1)
+    }
+    if(count==5){
+      setCount(5.667)
     }
   }
 
@@ -201,18 +170,18 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
             </StyledSVG>
           </StyledPreviousButton>
           
-          <AnimatePresence>
-          <StyledMotionList key={count} as={motion.div} 
+          <StyledMotionList as={motion.div} 
             variants={containerVariants}
-            initial="entered"
-            custom={flow}
+            initial={false}
+            custom={count}
             animate="target"
-            exit="exit"
             transition={{
-              type: 'easeIn',
+              type: 'tween',
+              ease: 'easeInOut',
               duration: 0.5
-            }}>
-              {content.slice(count,count+3).map((recipe) => {
+            }}
+            >
+              {content.map((recipe) => {
                 return (
                   <RecipeCard
                     key={recipe.id}
@@ -226,7 +195,6 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
             
             
           </StyledMotionList>
-          </AnimatePresence>
           <StyledNextButton onClick={handleNext}>
               <StyledSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />

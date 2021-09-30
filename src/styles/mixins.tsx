@@ -107,10 +107,12 @@ export const UnorderedFeedList = () => css`
     margin-bottom: 0;
   }
   @media (min-width: 768px) {
+    margin: 0 1vw;
+    --w: 19.5;
+    width: calc((var(--w)*20+1*2) * 1vw);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: flex-start;
     /* border: 5px solid black; */
     height: fit-content;
     /* margin-bottom:  calc(var(--mb)/6*var(--w) * 1vw); */
@@ -118,6 +120,7 @@ export const UnorderedFeedList = () => css`
       /* position: absolute; */
       background: white;
       margin-bottom: 0;
+      margin-right: 2vw;
     }
   }
 `
