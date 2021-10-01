@@ -5,13 +5,53 @@ import mockResponse from "../../../data/searchResponse.json";
 import { IData, IPrevious } from "../../../types/types";
 import styled from "styled-components";
 import { getFormattedQuery } from "../../../functions/getFormattedQuery";
+import getFormattedQueryOfFilters from "../../../functions/getFormattedQueryOfFilters";
 import { getRecipesArrFromResponse } from "../../../functions/getRecipesArrFromResponse";
 import getFetchedData from "../../../functions/getFetchedData";
 
-const FlexyDiv = styled.div`
+const StyledWrapperDiv = styled.div`
   display: flex;
   flex-direction: column;
+  background: white;
+  box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
+  width: 100%;
+  @media(min-width: 768px){
+    
+  }
+`
+
+const StyledTitle = styled.h2`
+  @media(min-width: 768px){
+    font-size: 2em;
+    margin: 4% 5% 6% 5%;
+    overflow: hidden;
+    width: max-content;
+    box-shadow: 0 4px 0px 0px black;
+  }
+`
+
+const StyledResultsDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media(min-width: 768px){
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-columns: repeat(auto-fit,minmax(min-content,17.5vw));
+    justify-content: center;
+    padding: 0;
+  }
 `;
+
+const StyledButtonsDiv = styled.div`
+  @media(min-width: 768px){
+    margin: 9% 0 12.5% 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+`
 
 const PreviousButton = styled("button")<{ isActive: boolean }>`
   display: ${(props) => (props.isActive ? "" : "none")};
@@ -29,9 +69,7 @@ const initialResults = {
 const Results = (): JSX.Element => {
   const { state } = useContext(SearchContext);
   const [currentUrl, setCurrentUrl] = useState<string>(
-    `https://api.edamam.com/api/recipes/v2?type=public&q=${getFormattedQuery(
-      state.inputValue
-    )}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`
+    `https://api.edamam.com/api/recipes/v2?type=public&q=${getFormattedQuery(state.inputValue)}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300${getFormattedQueryOfFilters(state.filters)}&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`
   );
   const [results, setResults] = useState<IData>(initialResults);
   const [previousLinks, setPreviousLinks] = useState<
@@ -40,7 +78,7 @@ const Results = (): JSX.Element => {
 
   useEffect(() => {
     const getData = async () => {
-      // const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${getFormattedQuery(state.inputValue)}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`;
+      // console.log(currentUrl);
       // const data = await getFetchedData(currentUrl)
       const data = await mockResponse;
       const recipesArr = getRecipesArrFromResponse(data);
@@ -90,10 +128,10 @@ const Results = (): JSX.Element => {
   }, [currentUrl]);
 
   useEffect(() => {
+    const keyword = getFormattedQuery(state.inputValue);
+    const filterString = getFormattedQueryOfFilters(state.filters);
     setCurrentUrl(
-      `https://api.edamam.com/api/recipes/v2?type=public&q=${getFormattedQuery(
-        state.inputValue
-      )}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`
+      `https://api.edamam.com/api/recipes/v2?type=public&q=${keyword}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300${filterString}&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`
     );
   }, [state.inputValue, state.filters]);
 
@@ -121,7 +159,9 @@ const Results = (): JSX.Element => {
   }
 
   return (
-    <FlexyDiv>
+    <StyledWrapperDiv>
+      <StyledTitle>Results for &#34;<i>{state.inputValue}</i>&#34;:</StyledTitle>
+    <StyledResultsDiv>
       {results.recipes &&
         results?.recipes.map((recipe) => {
           return (
@@ -134,7 +174,9 @@ const Results = (): JSX.Element => {
             />
           );
         })}
-      <div>
+      
+    </StyledResultsDiv>
+    <StyledButtonsDiv>
         <PreviousButton
           isActive={results?.previousPage ? true : false}
           onClick={handlePreviousButton}
@@ -147,8 +189,8 @@ const Results = (): JSX.Element => {
         >
           Next
         </NextButton>
-      </div>
-    </FlexyDiv>
+      </StyledButtonsDiv>
+    </StyledWrapperDiv>
   );
 };
 

@@ -102,7 +102,7 @@ const StyledApplyButton = styled.button`
 
   /* padding: 4% 0; */
   box-shadow: inset 3px 3px 10px -6px #faf0f0bf;
-  background: #989898;
+  background: black;
   color: white;
 `;
 

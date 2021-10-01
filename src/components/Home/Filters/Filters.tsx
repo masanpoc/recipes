@@ -24,7 +24,7 @@ const StyledFilters = styled.form`
   @media (min-width: 768px) {
     /* border: 5px solid green; */
     margin-top: 2.5%;
-    box-shadow: 0px 0px 1px 0px rgb(0 0 0 / 75%);
+    box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 50%);
     width: 15%;
     padding: 2%;
     position: relative;
@@ -93,7 +93,6 @@ const StyledDesktopTitleH2 = styled.h2`
 const StyledApplyButton = styled.button`
   
   @media (min-width: 768px) {
-    color: #2c2c2c;
     font-size: 1em;
     padding: 4% 7%;
     width: 80%;
@@ -102,7 +101,7 @@ const StyledApplyButton = styled.button`
     height: max-content;
     width: max-content;
     box-shadow: inset 3px 3px 10px -6px #faf0f0bf;
-    background: #989898;
+    background: black;
     color: white;
     margin-top: 10%;
     margin-bottom: 5%;

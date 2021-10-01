@@ -6,7 +6,7 @@ import capitalizeFirstLetter from "../../../../functions/capitalizeFirstLetter";
 
 const StyledItem = styled.li`
   ${ItemCss()}
-  background: #989898;
+  background: black;
   color: white;
   @media (min-width: 768px) {
     color: black;
