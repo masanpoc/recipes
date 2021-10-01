@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import {motion, AnimatePresence} from 'framer-motion';
+import {motion} from 'framer-motion';
 import { Recipe } from "../../../../types/types";
 import RecipeCard from "../../../RecipeCard/RecipeCard";
 import { flexColumnBox, UnorderedFeedList } from "../../../../styles/mixins";
@@ -8,8 +8,9 @@ import { flexColumnBox, UnorderedFeedList } from "../../../../styles/mixins";
 
 const StyledFeedSection = styled.div`
   ${flexColumnBox({})}
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background: white;
+  box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
 `;
 
 const StyledList = styled.ul`
@@ -23,7 +24,7 @@ const StyledMotionList =styled(motion.div)`
 
 const StyledTitle = styled.h2`
   font-family: "MerriWeather";
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 2em;
   --w: 90;
   --mb: 0.1;
@@ -46,10 +47,10 @@ const StyledButton = styled("button")<{ isActive: boolean }>`
   background: white;
   border: 1px solid #787878;
   padding: 10px 15px;
-  margin: 17.5% 0 27.5% 0;
+  margin: -20% 0 27.5% 0;
 `;
 
-const StyledWrapperDiv = styled.div`
+const StyledWrapperDiv = styled(motion.div)`
   /* border: 8px solid green; */
   position: relative;
   --w: 90;
@@ -63,13 +64,14 @@ const StyledWrapperDiv = styled.div`
 const StyledPreviousButton = styled.button`
   ${flexColumnBox({})}
   position: absolute;
+  cursor: pointer;
   top: 50%;
   width: 40px;
   height: 40px;
   background: white;
   border: 2px solid grey;
   border-radius: 50%;
-  transform: translate(0, -50%);
+  transform: translate(0, -100%);
   z-index: 2;
 `;
 
@@ -110,9 +112,9 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
   const [loadMore, setLoadMore] = useState<boolean>(false);
   const [count, setCount] = useState<number>(0);
 
-  useEffect(() => {
-    console.log(count)
-  }, [count])
+  // useEffect(() => {
+  //   console.log(count)
+  // }, [count])
 
   function handlePrevious() {
     // we are defining count as 5.667 when reaching the limit of the list because we have slides of 3 els and at the end we dont want to leave a gap so we move the slide only 2 els instead of for each 3
@@ -163,8 +165,12 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
               })}
         </StyledList>
       ) : (
-        <StyledWrapperDiv>
-          <StyledPreviousButton onClick={handlePrevious}>
+        <StyledWrapperDiv
+          initial={{ '--opacity': 0.2 } as any}
+          whileHover={{ '--opacity': 1 } as any}
+          // transition={{ duration: 2, type: 'tween' }}
+        >
+          <StyledPreviousButton style={{opacity: 'var(--opacity)', transition: 'opacity 0.5s'}} onClick={handlePrevious}>
             <StyledSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
             </StyledSVG>
@@ -195,7 +201,7 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
             
             
           </StyledMotionList>
-          <StyledNextButton onClick={handleNext}>
+          <StyledNextButton style={{opacity: 'var(--opacity)', transition: 'opacity 0.5s'}} onClick={handleNext}>
               <StyledSVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
               </StyledSVG>

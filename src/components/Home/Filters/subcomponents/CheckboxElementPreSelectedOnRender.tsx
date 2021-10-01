@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { FormContext } from "../Filters";
 import styled from "styled-components";
 import { ItemCss, InputCss, LabelCss } from "../../../../styles/mixins";
+import capitalizeFirstLetter from "../../../../functions/capitalizeFirstLetter";
 
 const StyledItem = styled.li`
   ${ItemCss()}
@@ -60,7 +61,7 @@ const CheckboxElement = ({
         onClick={() => setNotClicked(!notClicked)}
         checked={true}
       />
-      <StyledLabel htmlFor={option}>{option}</StyledLabel>
+      <StyledLabel htmlFor={option}>{capitalizeFirstLetter(option)}</StyledLabel>
     </StyledItem>
   );
 };

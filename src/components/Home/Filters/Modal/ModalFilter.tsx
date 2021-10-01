@@ -42,7 +42,7 @@ const StyledMobileTitleDiv = styled.div`
   align-items: center;
   height: max-content;
   height: 11.25%;
-  box-shadow: 0px 0.1px 0px 0px rgb(0 0 0 / 45%);
+  box-shadow: 0px 0.5px 0px 0px rgb(0 0 0 / 45%);
 `;
 
 const StyledMobileModalDiv =styled.div`
@@ -86,7 +86,7 @@ const StyledFilterFooterDiv = styled.div`
   height: 15%;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: 0px -0.6px 0px 0px rgb(0 0 0 / 90%);
+  box-shadow: 0px -0.5px 0px 0px rgb(0 0 0 / 45%);
 `;
 
 const StyledApplyButton = styled.button`

@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { FormContext } from "../Filters";
 import styled, { css } from "styled-components";
 import { ItemCss, InputCss, LabelCss } from "../../../../styles/mixins";
+import capitalizeFirstLetter from "../../../../functions/capitalizeFirstLetter";
 
 const StyledItem = styled.li`
   ${ItemCss()}
@@ -9,9 +10,7 @@ const StyledItem = styled.li`
 
 const StyledInput = styled.input`
   ${InputCss()}
-  &:checked {
-    background: blue;
-  }
+  
 `;
 
 const StyledLabel = styled.label`
@@ -58,7 +57,7 @@ const CheckboxElement = ({
         value={option}
         onChange={handleInputCheckbox}
       />
-      <StyledLabel htmlFor={option}>{option}</StyledLabel>
+      <StyledLabel htmlFor={option}>{capitalizeFirstLetter(option)}</StyledLabel>
     </StyledItem>
   );
 };

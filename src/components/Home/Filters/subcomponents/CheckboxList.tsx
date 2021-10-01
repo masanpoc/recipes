@@ -4,12 +4,22 @@ import CheckboxElement from "./CheckboxElement";
 import capitalizeFirstLetter from "../../../../functions/capitalizeFirstLetter";
 import styled from "styled-components";
 
-const StyledCheckBoxListDiv = styled.div`
+const StyledCheckBoxListDiv = styled('div')<{index:number}>`
   width: 85%;
-  /* border: 1px solid green; */
+  
   padding: 7% 0 3% 0;
   & > *:first-child {
     margin-bottom: 6%;
+  }
+
+  @media(min-width: 768px){
+    ${(props) =>
+    (props.index==0) ?
+    `
+        padding: 15% 0 3% 0;
+    ` : `
+      padding: 3% 0 3% 0;
+    `};
   }
 `;
 
@@ -32,6 +42,7 @@ const StyledUl = styled.ul`
     flex-direction: column;
     & > * {
       margin-right: 0;
+      margin-bottom: 2%;
     }
   }
 `;
@@ -40,11 +51,12 @@ type Props = {
   list: string[];
   name: string;
   checkedList: string[];
+  index?: number;
 };
 
-const CheckboxList = ({ list, name, checkedList }: Props): JSX.Element => {
+const CheckboxList = ({ list, name, checkedList, index }: Props): JSX.Element => {
   return (
-    <StyledCheckBoxListDiv>
+    <StyledCheckBoxListDiv index={index!}>
       <StyledTitleH3>
         {capitalizeFirstLetter(name).replace(/([A-Z])/g, " $1")}
       </StyledTitleH3>

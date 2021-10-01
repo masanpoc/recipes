@@ -22,14 +22,18 @@ const StyledFilters = styled.form`
   height: fit-content;
   background: white;
   @media (min-width: 768px) {
-    border: 5px solid green;
-    width: 20%;
+    /* border: 5px solid green; */
+    margin-top: 2.5%;
+    box-shadow: 0px 0px 1px 0px rgb(0 0 0 / 75%);
+    width: 15%;
     padding: 2%;
+    position: relative;
   }
 `;
 
 const StyledDropdownDiv = styled.div`
   display: flex;
+  border: 1px solid gray;
   justify-content: flex-end;
   align-items: center;
   height: 6vh;
@@ -41,38 +45,68 @@ const StyledDropdownSVG = styled.svg`
 `;
 
 const StyledClearButton = styled.button`
-  width: fit-content;
-  height: auto;
-  background: white;
-  color: #4b4b4b;
-  border: 1px solid grey;
+  @media(min-width:768px){
+    width: fit-content;
+    height: auto;
+    background: white;
+    border: 1px solid grey;
+    cursor: pointer;
+    height: max-content;
+    font-size: 1em;
+    padding: 1.5% 3%;
+    border: none;
+    box-shadow: 0 0 1px 0px black;
+    border-radius: 6px;
+  }
 `;
 
 const StyledDesktopTitleDiv = styled.div`
   display: flex;
   justify-content: space-between;
+
 `;
 
 const StyledMobileTitleH2 = styled.h2`
   margin-right: 5%;
 `;
 
+const StyledHR = styled.hr`
+    box-shadow: 0px 0px 0.6px 0.1px black;
+    border: none;
+    background: none;
+    position: absolute;
+    width: 100%;
+    top: 7%;
+    left: 0;
+`
+
 const StyledDropdownButton = styled.button`
   ${flexColumnBox({})}
   margin-right: 4%;
 `;
 
-const StyledDesktopTitleH2 = styled.h2``;
+const StyledDesktopTitleH2 = styled.h2`
+  font-size: 1.8em;
+  
+`;
 
 const StyledApplyButton = styled.button`
-  color: #2c2c2c;
-  background: #f5f5f5;
-  border: 1px solid #6e6e6e;
-  font-size: 1.6em;
-  padding: 4% 0;
-  box-shadow: inset 3px 3px 10px -6px #faf0f0bf;
+  
   @media (min-width: 768px) {
+    color: #2c2c2c;
+    font-size: 1em;
+    padding: 4% 7%;
     width: 80%;
+    border: none;
+    border-radius: 6px;
+    height: max-content;
+    width: max-content;
+    box-shadow: inset 3px 3px 10px -6px #faf0f0bf;
+    background: #989898;
+    color: white;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    cursor: pointer;
   }
 `;
 
@@ -146,6 +180,7 @@ const Filters = ({ width }: Props): JSX.Element => {
         )}
         {/* clear all button */}
         {width > 767 && (
+          <>
           <StyledDesktopTitleDiv>
             <StyledDesktopTitleH2>Filters</StyledDesktopTitleH2>
             <StyledClearButton
@@ -165,10 +200,12 @@ const Filters = ({ width }: Props): JSX.Element => {
               Clear All
             </StyledClearButton>
           </StyledDesktopTitleDiv>
+          <StyledHR />
+          </>
         )}
-
+        
         {width > 767 &&
-          optionsList.map((el) => {
+          optionsList.map((el, i) => {
             if (typeof el.filter == "string") {
               return (
                 <CheckboxList
@@ -176,6 +213,7 @@ const Filters = ({ width }: Props): JSX.Element => {
                   list={el.options}
                   name={el.filter}
                   key={el.filter}
+                  index={i}
                 />
               );
             }

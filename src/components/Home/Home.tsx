@@ -17,12 +17,9 @@ const StyledHome = styled.div`
 `;
 
 const Wrapper = styled.div`
-  border: 2px solid black;
   @media (min-width: 768px) {
     width: 66%;
-    overflow-x: hidden;
     margin: 10% 0;
-    border: 5px solid black;
   }
 `;
 
@@ -31,7 +28,7 @@ const Home = (): JSX.Element => {
 
   const [width, setWidth] = useState<number>(window.innerWidth);
   useEffect(() => {
-    console.log("rerendered");
+    // console.log("rerendered");
     window.addEventListener("resize", () => setWidth(window.innerWidth));
     return () => {
       window.removeEventListener("resize", () => setWidth(window.innerWidth));

@@ -45,6 +45,7 @@ export const ItemCss = () => css`
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     padding: 0;
     background: none;
     box-shadow: none;
@@ -58,6 +59,10 @@ export const InputCss = () => css`
   @media (min-width: 768px) {
     opacity: 1;
     position: relative;
+    &:checked {
+      filter: grayscale() saturate(0%) brightness(70%) contrast(1000%);
+    
+    }
   }
 `;
 
@@ -90,7 +95,7 @@ export const CardStyle = ()=>css`
   }
   @media (min-width: 768px) {
     width: 17.5vw;
-    height: 70vh;
+    height: 69.5vh;
     overflow: hidden;
   }
 `;
@@ -98,13 +103,14 @@ export const CardStyle = ()=>css`
 export const UnorderedFeedList = () => css`
   --w: 90;
   --mb: 0.25;
+  --mbEnd: 0.5;
   width: calc(var(--w) * 1%);
   & > * {
     margin-bottom: calc(var(--mb) * var(--w) * 1vw);
     /* margin-bottom: 25%; */
   }
   & > *:last-child {
-    margin-bottom: 0;
+    margin-bottom: calc(var(--mbEnd) * var(--w) * 1vw);
   }
   @media (min-width: 768px) {
     margin: 0 1vw;
