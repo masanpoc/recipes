@@ -32,7 +32,7 @@ const App = (): JSX.Element | null => {
   const [loading, setLoading] = useState(true);
 
   const initialSearchValue = {
-    inputValue: "",
+    inputValue: "dd",
     filters: {
       mealType: [],
       dishType: [],
@@ -56,7 +56,7 @@ const App = (): JSX.Element | null => {
   return loading ? null : (
     <Router>
       <SearchContext.Provider value={{ state, dispatch }}>
-        <div>
+        <div id='scroll-ref'>
           <Header />
           <Suspense fallback={<div>Loading</div>}>
             <Switch>

@@ -19,7 +19,7 @@ const StyledHome = styled.div`
 const Wrapper = styled.div`
   @media (min-width: 768px) {
     width: 66%;
-    margin: 10% 0;
+    margin: 2.5% 0;
   }
 `;
 

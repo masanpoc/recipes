@@ -53,10 +53,10 @@ const StyledClearButton = styled.button`
     cursor: pointer;
     height: max-content;
     font-size: 1em;
-    padding: 1.5% 3%;
+    padding: 2.5% 4%;
     border: none;
-    box-shadow: 0 0 1px 0px black;
-    border-radius: 6px;
+    box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
+    border-radius: 5px;
   }
 `;
 
@@ -145,6 +145,11 @@ const Filters = ({ width }: Props): JSX.Element => {
     event.preventDefault();
     console.log(state);
     searchCntxt.dispatch({ type: "FILTERS", value: state.filters });
+    function executeScroll() {
+      const section = document.getElementById("scroll-ref");
+      section?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    executeScroll();
   }
 
   return (

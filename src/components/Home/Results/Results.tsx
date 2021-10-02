@@ -8,6 +8,7 @@ import { getFormattedQuery } from "../../../functions/getFormattedQuery";
 import getFormattedQueryOfFilters from "../../../functions/getFormattedQueryOfFilters";
 import { getRecipesArrFromResponse } from "../../../functions/getRecipesArrFromResponse";
 import getFetchedData from "../../../functions/getFetchedData";
+import { flexRowBox } from "../../../styles/mixins";
 
 const StyledWrapperDiv = styled.div`
   display: flex;
@@ -54,12 +55,56 @@ const StyledButtonsDiv = styled.div`
 `
 
 const PreviousButton = styled("button")<{ isActive: boolean }>`
-  display: ${(props) => (props.isActive ? "" : "none")};
+  display: ${(props) => (props.isActive && "none")};
+  @media(min-width: 768px){
+  ${flexRowBox({})};
+    box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
+    padding: 1% 1%;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0 1%;
+    & > * {
+      margin: 0 2.5px;
+    }
+  }
+ 
 `;
 
 const NextButton = styled("button")<{ isActive: boolean }>`
-  display: ${(props) => (props.isActive ? "" : "none")};
+  display: ${(props) => (!props.isActive && "none")};
+  @media(min-width: 768px){
+    ${flexRowBox({})};
+    box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
+    padding: 1% 1%;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0 1%;
+    & > * {
+      margin: 0 2.5px;
+    }
+  }
 `;
+
+const StyledSVG = styled.svg`
+      height: 12px;
+    width: 12px;
+`
+
+const StyledSVGRotated=styled(StyledSVG)`
+  transform: rotate(180deg);
+`
+
+const StyledButtonPreviousSpan = styled.span`
+      font-size: 1.2em;
+    
+`
+
+const StyledButtonNextSpan = styled(StyledButtonPreviousSpan)`
+  
+`
+
 const initialResults = {
   nextPage: undefined,
   previousPage: undefined,
@@ -181,13 +226,15 @@ const Results = (): JSX.Element => {
           isActive={results?.previousPage ? true : false}
           onClick={handlePreviousButton}
         >
-          Previous
+          <StyledSVGRotated xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></StyledSVGRotated>
+          <StyledButtonPreviousSpan>Previous</StyledButtonPreviousSpan>
         </PreviousButton>
         <NextButton
           isActive={results?.nextPage ? true : false}
           onClick={handleNextButton}
         >
-          Next
+          <StyledButtonNextSpan>Next</StyledButtonNextSpan>
+          <StyledSVG xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></StyledSVG>
         </NextButton>
       </StyledButtonsDiv>
     </StyledWrapperDiv>

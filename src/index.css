@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   background: white;
   padding: 0;
