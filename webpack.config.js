@@ -83,6 +83,10 @@ module.exports = (env) => {
       new HtmlWebPackPlugin({
         template: "src/index.html",
       }),
+      new webpack.DefinePlugin({
+        // 'process.env': JSON.stringify(dotenv.parsed),
+        'process.env.NODE_ENV': JSON.stringify(env.mode),
+      }),
     ],
     optimization: {
       minimizer: [
