@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import { alignTwoStart, CardStyle } from "../../styles/mixins";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 
 
 const StyledCard = styled.div`
@@ -76,10 +76,11 @@ type Props = {
   title: string;
   time: number;
   source: string;
+  id: string;
 };
 
 
-const RecipeCard = ({ image, title, time, source }: Props): JSX.Element => {
+const RecipeCard = ({ image, title, time, source, id }: Props): JSX.Element => {
 
   return (
      <StyledCard>
@@ -94,7 +95,8 @@ const RecipeCard = ({ image, title, time, source }: Props): JSX.Element => {
           <h4>{time} min</h4>
         </StyledTimeDiv>
         <StyledLinksDiv>
-          <a href="">Nutrition Analysis</a>
+          <Link to={`/recipes/${id.split('#')[1]}`} >Nutrition Analysis</Link>
+          {/* <a href="">Nutrition Analysis</a> */}
           <a href={source} rel="noreferrer" target="_blank">
             Go to Recipe
           </a>

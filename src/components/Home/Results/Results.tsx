@@ -212,6 +212,7 @@ const Results = (): JSX.Element => {
           return (
             <RecipeCard
               key={recipe.id}
+              id={recipe.id}
               title={recipe.title}
               image={recipe.image}
               source={recipe.source}

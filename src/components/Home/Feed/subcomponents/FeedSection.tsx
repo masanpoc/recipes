@@ -145,6 +145,7 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
                 return (
                   <RecipeCard
                     key={recipe.id}
+                    id={recipe.id}
                     title={recipe.title}
                     image={recipe.image}
                     source={recipe.source}
@@ -156,6 +157,7 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
                 return (
                   <RecipeCard
                     key={recipe.id}
+                    id={recipe.id}
                     title={recipe.title}
                     image={recipe.image}
                     source={recipe.source}
@@ -191,6 +193,7 @@ const FeedSection = ({ title, content, width }: Props): JSX.Element => {
                 return (
                   <RecipeCard
                     key={recipe.id}
+                    id={recipe.id}
                     title={recipe.title}
                     image={recipe.image}
                     source={recipe.source}

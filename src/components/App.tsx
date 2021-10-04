@@ -83,15 +83,12 @@ const App = (): JSX.Element | null => {
           <Header />
           <Suspense fallback={<div>Loading</div>}>
             <Switch>
-              <Route path="/home" component={Home}></Route>
-              <Route path="/details">
-                <Details data={state.inputValue} />
-              </Route>
+              <Route path="/home" component={Home} />
+              <Route path="/recipes/:id" component={Details} />
               <Redirect from="*" to="/home" />
             </Switch>
           </Suspense>
-          {/* <Link to="/details">Details page</Link>
-          <Link to="/home">Home page</Link> */}
+          
           <Footer />
           <CookieConsent
               enableDeclineButton
