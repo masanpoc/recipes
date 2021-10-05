@@ -14,7 +14,7 @@ export const formReducer = (
   state: { [key: string]: any },
   action: IActions
 ): any => {
-  if (action.type == "UPDATE_INPUT") {
+  if (action.type == "UPDATE_INPUT") { 
     const newState = { ...state };
     if (action.value.checked) {
       newState.filters[action.value.input].push(action.value.selected);
@@ -24,7 +24,7 @@ export const formReducer = (
       );
       newState.filters[action.value.input].splice(indexEl, 1);
     }
-    // console.log(newState);
+    console.log(newState);
     return newState;
   }
   if (action.type == "UPDATE_DISPLAY") {

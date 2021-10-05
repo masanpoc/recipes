@@ -41,12 +41,12 @@ const CheckboxElement = ({
     if (e.target.type === "checkbox" && e.target.checked) {
       dispatch({
         type: "UPDATE_INPUT",
-        value: { input: name, selected: option, checked: true },
+        value: { input: name, selected: option, checked: true, isActive: true },
       });
     } else {
       dispatch({
         type: "UPDATE_INPUT",
-        value: { input: name, selected: option, checked: false },
+        value: { input: name, selected: option, checked: false, isActive: true },
       });
     }
   }

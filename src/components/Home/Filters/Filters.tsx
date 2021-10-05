@@ -126,14 +126,21 @@ export const FormContext = createContext({} as IContextProps);
 const Filters = ({ width }: Props): JSX.Element => {
   const searchCntxt = useContext(SearchContext);
 
+  // might need to set initial filters value differentky
   const initialFormValues = {
-    filters: searchCntxt.state.filters,
+    filters: {
+      mealType: [],
+      dishType: [],
+      health: [],
+      cuisineType: [],
+      diet: [],
+    },
     isActive: false,
   };
 
   const [state, dispatch] = useReducer(formReducer, initialFormValues);
 
-  // const contextValue = useMemo(() => {
+  // const contextValue = useMemo(() => { 
   //     return { state, dispatch };
   //   }, [state, dispatch]);
 
@@ -143,7 +150,7 @@ const Filters = ({ width }: Props): JSX.Element => {
 
   function updateFilters(event: any) {
     event.preventDefault();
-    console.log(state);
+    // console.log(state.);
     searchCntxt.dispatch({ type: "FILTERS", value: state.filters });
     function executeScroll() {
       const section = document.getElementById("scroll-ref");
@@ -188,6 +195,7 @@ const Filters = ({ width }: Props): JSX.Element => {
           <StyledDesktopTitleDiv>
             <StyledDesktopTitleH2>Filters</StyledDesktopTitleH2>
             <StyledClearButton
+              id='clearButton'
               type="button"
               onClick={() =>
                 dispatch({
@@ -213,9 +221,9 @@ const Filters = ({ width }: Props): JSX.Element => {
             if (typeof el.filter == "string") {
               return (
                 <CheckboxList
-                  checkedList={searchCntxt.state.filters[el.filter]}
+                  checkedList={state.filters[el.filter]}
                   list={el.options}
-                  name={el.filter}
+                  name={el.filter} 
                   key={el.filter}
                   index={i}
                 />

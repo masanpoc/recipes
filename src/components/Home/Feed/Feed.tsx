@@ -13,7 +13,7 @@ import { Recipe } from "../../../types/types";
 const FlexyDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 30% 0 50% 0;
+  margin: 15% 0 50% 0;
 
   & > * {
     margin-bottom: 40%;
@@ -22,7 +22,7 @@ const FlexyDiv = styled.div`
     margin-bottom: 0;
   }
   @media (min-width: 768px) {
-    margin: 10% 0;
+    margin: 6% 0;
     & > * {
       margin-bottom: 10%;
     }

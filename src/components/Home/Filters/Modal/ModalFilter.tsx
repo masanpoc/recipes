@@ -124,8 +124,22 @@ const ModalFilter = ({ isActive }: Props): JSX.Element => {
   const formCntxt = useContext(FormContext);
   function updateFilters(event: any) {
     event.preventDefault();
-    console.log(formCntxt.state);
-    searchCntxt.dispatch({ type: "FILTERS", value: formCntxt.state });
+    // console.log(formCntxt.state);
+    formCntxt.dispatch({
+      type: "UPDATE_DISPLAY",
+      value: {
+        input: "",
+        selected: [],
+        checked: false,
+        isActive: false,
+      },
+    })
+    searchCntxt.dispatch({ type: "FILTERS", value: formCntxt.state.filters });
+    function executeScroll() {
+      const section = document.getElementById("scroll-ref");
+      section?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    executeScroll();
   }
 
   return (
@@ -189,7 +203,7 @@ const ModalFilter = ({ isActive }: Props): JSX.Element => {
                   if (typeof el.filter == "string") {
                     return (
                       <CheckboxList
-                        checkedList={searchCntxt.state.filters[el.filter]}
+                        checkedList={formCntxt.state.filters[el.filter]}
                         list={el.options}
                         name={el.filter}
                         key={el.filter}

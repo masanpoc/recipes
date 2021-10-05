@@ -29,7 +29,7 @@ const StyledTitle = styled.h2`
   --w: 90;
   --mb: 0.1;
   width: calc(var(--w) * 1%);
-  margin: calc(var(--mb) * var(--w) * 1vw) 0;
+  margin: calc(var(--mb) * var(--w) * 1vw) 0 calc(var(--mb) * var(--w) * 1vw) 5%;
   @media (min-width: 768px) {
     margin: calc(var(--mb) / 5 * var(--w) * 1vw) 0;
   }

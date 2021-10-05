@@ -3,87 +3,121 @@ import RecipeCard from "../../RecipeCard/RecipeCard";
 import { SearchContext } from "../../App";
 import mockResponse from "../../../data/searchResponse.json";
 import { IData, IPrevious } from "../../../types/types";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { getFormattedQuery } from "../../../functions/getFormattedQuery";
 import getFormattedQueryOfFilters from "../../../functions/getFormattedQueryOfFilters";
 import { getRecipesArrFromResponse } from "../../../functions/getRecipesArrFromResponse";
 import getFetchedData from "../../../functions/getFetchedData";
-import { flexRowBox } from "../../../styles/mixins";
+import { flexColumnBox, flexRowBox } from "../../../styles/mixins";
 
 const StyledWrapperDiv = styled.div`
+  ${flexColumnBox({})}
   display: flex;
   flex-direction: column;
+  margin: 15% 0 50% 0;
   background: white;
   box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
   width: 100%;
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
+    margin: 6% 0;
     
   }
 `
 
 const StyledTitle = styled.h2`
-  @media(min-width: 768px){
-    font-size: 2em;
-    margin: 4% 5% 6% 5%;
-    overflow: hidden;
-    width: max-content;
-    box-shadow: 0 4px 0px 0px black;
+  font-family: "MerriWeather";
+  /* border: 1px solid black; */
+  font-size: 2em;
+  --w: 90;
+  --mg-Y-Mobile: 0.15;
+  --mg-Y-Desktop: 0.04;
+  width: calc(var(--w) * 1%);
+  margin: calc(var(--mg-Y-Mobile) * var(--w) * 1vw) 0 calc(var(--mg-Y-Mobile) * var(--w) * 1vw) 5%;
+  @media (min-width: 768px) {
+    margin: calc(var(--mg-Y-Desktop) * var(--w) * 1vw) 0 calc(var(--mg-Y-Desktop) * var(--w) * 1vw) 5%;
   }
 `
 
-const StyledResultsDiv = styled.div`
-  display: flex;
-  flex-direction: column;
+const StyledResultsUl = styled.ul`
+  --w: 90;
+  --mb: 0.25;
+  --mbEnd: 0.5;
+  width: calc(var(--w) * 1%);
+  & > * {
+    margin-bottom: calc(var(--mb) * var(--w) * 1vw);
+    /* margin-bottom: 25%; */
+  }
+  & > *:last-child {
+    margin-bottom: 0;
+  }
   @media(min-width: 768px){
     display: grid;
     grid-gap: 3vw;
     grid-template-columns: repeat(auto-fit,minmax(min-content,17.5vw));
     justify-content: center;
     padding: 0;
+    &  > * {
+      margin-bottom: 0;
+      /* margin-bottom: 25%; */
+    }
+    & > *:last-child {
+    margin-bottom: 0;
+  }
   }
 `;
 
 const StyledButtonsDiv = styled.div`
+    margin: 20% 0 25% 0;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
   @media(min-width: 768px){
     margin: 9% 0 12.5% 0;
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items: center;
   }
 `
 
-const PreviousButton = styled("button")<{ isActive: boolean }>`
-  display: ${(props) => (props.isActive && "none")};
+const ButtonsStyle = ()=>css`
+  box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
+    padding: 2%;
+    border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 0 4%;
+    & > * {
+      margin: 0 5px;
+    }
   @media(min-width: 768px){
   ${flexRowBox({})};
-    box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
+    /* box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%); */
     padding: 1% 1%;
     border-radius: 5px;
     width: fit-content;
     cursor: pointer;
-    margin: 0 1%;
+    margin: 0 1.5%;
     & > * {
       margin: 0 2.5px;
     }
   }
- 
+`;
+
+const PreviousButton = styled("button")<{ isActive: boolean }>`
+  ${ButtonsStyle()}
+  display: ${(props) => (!props.isActive && "none")};
+  @media(min-width: 768px){
+    display: ${(props) => (!props.isActive && "none")};
+  }
 `;
 
 const NextButton = styled("button")<{ isActive: boolean }>`
+  ${ButtonsStyle()}
   display: ${(props) => (!props.isActive && "none")};
   @media(min-width: 768px){
-    ${flexRowBox({})};
-    box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
-    padding: 1% 1%;
-    border-radius: 5px;
-    width: fit-content;
-    cursor: pointer;
-    margin: 0 1%;
-    & > * {
-      margin: 0 2.5px;
-    }
+    display: ${(props) => (!props.isActive && "none")};
   }
 `;
 
@@ -114,7 +148,7 @@ const initialResults = {
 const Results = (): JSX.Element => {
   const { state } = useContext(SearchContext);
   const [currentUrl, setCurrentUrl] = useState<string>(
-    `https://api.edamam.com/api/recipes/v2?type=public&q=${getFormattedQuery(state.inputValue)}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300${getFormattedQueryOfFilters(state.filters)}&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`
+    `https://api.edamam.com/api/recipes/v2?type=public&q=${getFormattedQuery(state.inputValue)}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d${getFormattedQueryOfFilters(state.filters)}&time=1-500&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`
   );
   const [results, setResults] = useState<IData>(initialResults);
   const [previousLinks, setPreviousLinks] = useState<
@@ -123,9 +157,12 @@ const Results = (): JSX.Element => {
 
   useEffect(() => {
     const getData = async () => {
-      // console.log(currentUrl);
-      // const data = await getFetchedData(currentUrl)
-      const data = await mockResponse;
+      // console.log(currentUrl, 'new url');
+      // console.log(state.filters, 'filters')
+      console.log(getFormattedQueryOfFilters(state.filters), 'filters url')
+      const data = await getFetchedData(currentUrl);
+      console.log(data, 'data returned');
+      // const data = await mockResponse;
       const recipesArr = getRecipesArrFromResponse(data);
       // if we have next link --> set nextpage to url provided
       if (data._links.next) {
@@ -170,15 +207,17 @@ const Results = (): JSX.Element => {
       // const urls = ['', data._links.next.href]
     };
     getData();
+    console.log(currentUrl, 'changing url')
   }, [currentUrl]);
 
   useEffect(() => {
+    console.log(state.filters, 'new state filters')
     const keyword = getFormattedQuery(state.inputValue);
     const filterString = getFormattedQueryOfFilters(state.filters);
     setCurrentUrl(
-      `https://api.edamam.com/api/recipes/v2?type=public&q=${keyword}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d&time=1-300${filterString}&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`
+      `https://api.edamam.com/api/recipes/v2?type=public&q=${keyword}&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d${filterString}&time=1-500&imageSize=SMALL&random=false&field=uri&field=label&field=image&field=url&field=dietLabels&field=totalTime`
     );
-  }, [state.inputValue, state.filters]);
+  }, [state]);
 
   useEffect(() => {
     setResults({
@@ -188,25 +227,34 @@ const Results = (): JSX.Element => {
   }, [previousLinks]);
 
   // useEffect(() => {
-  //   console.log(results)
+  //   console.log(results, 'results')
   // }, [results])
+
+  function executeScroll() {
+    const section = document.getElementById("scroll-ref");
+    section?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   function handlePreviousButton() {
     if (typeof results?.previousPage == "string") {
       setCurrentUrl(results?.previousPage);
     }
+    
+    executeScroll();
   }
 
   function handleNextButton() {
     if (typeof results?.nextPage == "string") {
       setCurrentUrl(results?.nextPage);
     }
+    executeScroll();
+
   }
 
   return (
     <StyledWrapperDiv>
       <StyledTitle>Results for &#34;<i>{state.inputValue}</i>&#34;:</StyledTitle>
-    <StyledResultsDiv>
+    <StyledResultsUl>
       {results.recipes &&
         results?.recipes.map((recipe) => {
           return (
@@ -221,7 +269,7 @@ const Results = (): JSX.Element => {
           );
         })}
       
-    </StyledResultsDiv>
+    </StyledResultsUl>
     <StyledButtonsDiv>
         <PreviousButton
           isActive={results?.previousPage ? true : false}
