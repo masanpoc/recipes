@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import { PieChart, Pie, Cell, LabelList, ResponsiveContainer } from "recharts";
 
 type nutrient = {
     label: string;
@@ -30,17 +31,39 @@ export const emptyMacro = {
     },
 }
 
-const PieChart = ({data}:Props):JSX.Element => {
+const colors = [ 'grey', 'red', 'blue' ];
+
+const PieChartComponent = ({data}:Props):JSX.Element => {
+
+    const [dataVisuals, setDataVisuals] = useState<{[key: string]: any}[]>([{}])
 
     useEffect(() => {
-        console.log(data, 'passed data to pie chart')
+        console.log(Object.values(data), 'passed data to pie chart')
+        setDataVisuals(Object.values(data));
     }, [data])
     
     return (
-        <div>
-            
-        </div>
+            <PieChart width={400} height={400} 
+            style={{border: '1px solid'}}
+            >
+                <Pie
+                    dataKey="quantity"
+                    data={dataVisuals}
+                    outerRadius={100}
+                    label={true}
+                >
+                    {
+                    dataVisuals.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={colors[index]}/>
+                    ))
+                    }
+                    <LabelList dataKey='label' stroke='black' />
+                </Pie>
+            </PieChart>
     )
 }
 
-export default PieChart
+export default PieChartComponent
+
+
+

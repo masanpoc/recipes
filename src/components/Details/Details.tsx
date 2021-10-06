@@ -3,11 +3,12 @@ import {Link} from 'react-router-dom'
 import styled from "styled-components";
 import { flexColumnBox, flexRowBox } from "../../styles/mixins";
 import BarChart, { emptyNutrients, Nutrients } from "./subcomponents/BarChart";
-import PieChart, { emptyMacro, Macro } from "./subcomponents/PieChart";
+import PieChartComponent, { emptyMacro, Macro } from "./subcomponents/PieChart";
 import { nordicNutrientRecommendations } from "./data/nordicNutrientRecommendations";
 import getFetchedData from "../../functions/getFetchedData";
 import { getPieChartData } from "../../functions/getPieChartData";
 import { getBarChartData } from "../../functions/getBarChartData";
+import specificRecipe from '../../data/specificRecipe.json';
 
 // the component takes the id from route params and fetches that recipe to render it
 // to go back means to fetch results from specific query and page (again) --> go to home
@@ -54,8 +55,9 @@ const Details = ({match}:Props): JSX.Element => {
 
   useEffect(() => {
     const getData = async () => {
-      const data = await getFetchedData(`https://api.edamam.com/api/recipes/v2/${match.params.id}?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d`);
-      console.log(data, 'data returned');
+      // const data = await getFetchedData(`https://api.edamam.com/api/recipes/v2/${match.params.id}?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d`);
+      // console.log(data, 'data returned');
+      const data =  specificRecipe; 
       const dataForPieChart = getPieChartData(data);
       console.log(dataForPieChart);
       setPieChartData(dataForPieChart);
@@ -72,8 +74,8 @@ const Details = ({match}:Props): JSX.Element => {
       <StyledH2>Nutrition Analysis per serve of &#34;<i>{title}</i>&#34;:</StyledH2>
       <BarChart data={barChartData} />
       <PieWrapperDiv>
-        <PieChart data={pieChartData} />
-        <PieChart data={nordicNutrientRecommendations} />
+        <PieChartComponent data={pieChartData} />
+        <PieChartComponent data={nordicNutrientRecommendations} />
       </PieWrapperDiv>
       <WrapperButtonsDiv>
         <StyledButton><Link to="/home">Go Back</Link></StyledButton>
