@@ -21,7 +21,10 @@ const StyledH2 = styled.h2`
 `
 
 const PieWrapperDiv = styled.div`
-  ${flexRowBox({})}
+  ${flexColumnBox({})};
+  @media(min-width: 768px){
+    ${flexRowBox({})}
+  }
 `
 
 const WrapperButtonsDiv = styled.div`
