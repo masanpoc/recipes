@@ -32,6 +32,7 @@ type RecipeStored = {
   };
 };
 export interface Response {
+  recipe: any;
   from: number;
   _links: {
     next?: {
