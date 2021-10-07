@@ -14,6 +14,7 @@ export interface Macro {
 
 type Props = {
     data: Macro;
+    box?:boolean;
 }
 
 export const emptyMacro = {
@@ -31,9 +32,9 @@ export const emptyMacro = {
     },
 }
 
-const colors = [ 'grey', 'red', 'blue' ];
+const colors = [ '#00008B', '#1F75FE', '#74BBFB' ];
 
-const PieChartComponent = ({data}:Props):JSX.Element => {
+const PieChartComponent = ({data, box}:Props):JSX.Element => {
 
     const [dataVisuals, setDataVisuals] = useState<{[key: string]: any}[]>([{}])
 
@@ -43,21 +44,56 @@ const PieChartComponent = ({data}:Props):JSX.Element => {
     }, [data])
     
     return (
-            <PieChart width={400} height={400} 
-            style={{border: '1px solid'}}
+            <PieChart width={400} height={350} 
+            style={box ? {'box-shadow': '0px 1px 1px 0.25px rgb(0 0 0 / 50%)', padding: '10% 0 5% 0', border: 'none'} : {padding: '10% 0 5% 0', border:'none'}}
             >
                 <Pie
                     dataKey="quantity"
                     data={dataVisuals}
-                    outerRadius={100}
-                    label={true}
+                    outerRadius={70}
+                    cy='55%'
+                    label={({
+                        cx,
+                        cy,
+                        midAngle,
+                        innerRadius,
+                        outerRadius,
+                        value,
+                        index
+                      }) => {
+                        const RADIAN = Math.PI / 180;
+                        // eslint-disable-next-line
+                        const radius = 25 + innerRadius + (outerRadius - innerRadius);
+                        // eslint-disable-next-line
+                        const x = cx + radius * Math.cos(-midAngle * RADIAN);
+                        // eslint-disable-next-line
+                        const y = cy + radius * Math.sin(-midAngle * RADIAN);
+              
+                        return (
+                          <text
+                            x={x}
+                            y={y}
+                            fill="#000000"
+                            textAnchor={x > cx ? "start" : "end"}
+                            dominantBaseline="central"
+                            style={{'fontWeight': 'bold'}}
+                          >
+                              {index == 0 
+                              ? `${dataVisuals[index].label} (${value} %)`
+                                : <>  
+                                <tspan>{dataVisuals[index].label}</tspan> 
+                                <tspan x={x} y={y+20}>({`${value} %`})</tspan>
+                                </>
+                            }
+                          </text>
+                        );
+                      }}
                 >
                     {
                     dataVisuals.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={colors[index]}/>
                     ))
                     }
-                    <LabelList dataKey='label' stroke='black' />
                 </Pie>
             </PieChart>
     )

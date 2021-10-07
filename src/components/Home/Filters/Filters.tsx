@@ -190,7 +190,7 @@ const Filters = ({ width }: Props): JSX.Element => {
           </StyledDropdownDiv>
         )}
         {/* clear all button */}
-        {width > 767 && (
+        {width >= 768 && (
           <>
           <StyledDesktopTitleDiv>
             <StyledDesktopTitleH2>Filters</StyledDesktopTitleH2>
@@ -216,7 +216,7 @@ const Filters = ({ width }: Props): JSX.Element => {
           </>
         )}
         
-        {width > 767 &&
+        {width >= 768 &&
           optionsList.map((el, i) => {
             if (typeof el.filter == "string") {
               return (
@@ -230,7 +230,7 @@ const Filters = ({ width }: Props): JSX.Element => {
               );
             }
           })}
-        {width > 767 && (
+        {width >= 768 && (
           <StyledApplyButton type="submit" onClick={updateFilters}>
             Show Results
           </StyledApplyButton>

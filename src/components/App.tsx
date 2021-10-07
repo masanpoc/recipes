@@ -20,6 +20,7 @@ import GA4React from 'ga-4-react'
 import CookieConsent, { Cookies, getCookieConsentValue, resetCookieConsentValue  } from "react-cookie-consent";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
+import ScrollToTop from "./ScrollToTop/ScrollToTop";
 const Home = lazy(() => import("./Home/Home"));
 const Details = lazy(() => import("./Details/Details"));
 
@@ -82,6 +83,7 @@ const App = (): JSX.Element | null => {
         <div id='scroll-ref'>
           <Header />
           <Suspense fallback={<div>Loading</div>}>
+            <ScrollToTop />
             <Switch>
               <Route path="/home" component={Home} />
               <Route path="/recipes/:id" component={Details} />

@@ -1,28 +1,6 @@
 import React, { useEffect } from 'react'
-
-type nutrient = {
-    label: string;
-    quantity: number;
-}
-
-export interface Nutrients {
-    ENERC_KCAL: nutrient;
-    CHOCDF: nutrient;
-    PROCNT: nutrient;
-    FAT: nutrient;
-    FIBTG: nutrient;
-    CA: nutrient;
-    FE: nutrient;
-    ZN: nutrient;
-    VITC: nutrient;
-    FOLDFE: nutrient;
-    VITB12: nutrient;
-    VITD: nutrient;
-}
-
-type Props = {
-    data: Nutrients;
-}
+import styled from 'styled-components'
+import { flexColumnBox } from '../../../styles/mixins'
 
 export const emptyNutrients = {
     ENERC_KCAL: { 
@@ -75,6 +53,37 @@ export const emptyNutrients = {
     },
 }
 
+const StyledWrapperDiv = styled.div`
+    min-height: 100vh;
+    border: 1px solid;
+    width: 100%;
+    ${flexColumnBox({})}
+`
+
+type nutrient = {
+    label: string;
+    quantity: number;
+}
+
+export interface Nutrients {
+    ENERC_KCAL: nutrient;
+    CHOCDF: nutrient;
+    PROCNT: nutrient;
+    FAT: nutrient;
+    FIBTG: nutrient;
+    CA: nutrient;
+    FE: nutrient;
+    ZN: nutrient;
+    VITC: nutrient;
+    FOLDFE: nutrient;
+    VITB12: nutrient;
+    VITD: nutrient;
+}
+
+type Props = {
+    data: Nutrients;
+}
+
 const BarChart = ({data}: Props):JSX.Element => {
 
     useEffect(() => {
@@ -82,9 +91,9 @@ const BarChart = ({data}: Props):JSX.Element => {
     }, [data])
     
     return (
-        <div>
-            
-        </div>
+        <StyledWrapperDiv>
+            BAR CHART
+        </StyledWrapperDiv>
     )
 }
 

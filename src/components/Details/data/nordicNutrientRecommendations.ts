@@ -1,14 +1,14 @@
 export const nordicNutrientRecommendations = {
     CHOCDF: {
         label: 'Carbs',
-        quantity: 32.50
+        quantity: 52.50
     },
     PROCNT: {
         label: 'Protein',
-        quantity: 32.50
+        quantity: 15.00
     },
     FAT: {
         label: 'Fat',
-        quantity: 35.00
+        quantity: 32.50
     }
 }

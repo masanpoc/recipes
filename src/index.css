@@ -3,7 +3,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 html {
@@ -38,6 +38,10 @@ li {
 
 a {
   color: black;
+}
+
+#scroll-ref {
+  overflow-x: hidden;
 }
 
 #modal {

@@ -49,7 +49,7 @@ const StyledFooter = styled.footer`
 const Footer = (): JSX.Element => {
   return (
     <StyledFooter>
-      <h3 style={{ color: "white" }}>Contact info</h3>
+      <h3 style={{ color: "#cecbcb" }}>Contact info</h3>
       <a
         href="https://www.edamam.com"
         title="Powered by Edamam"

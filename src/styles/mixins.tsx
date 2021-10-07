@@ -18,6 +18,7 @@ export const flexRowBox = ({ height, width }: flexColProps) => css`
   display: flex;
   height: ${height};
   width: ${width};
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 `;
