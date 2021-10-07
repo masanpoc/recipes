@@ -21,6 +21,7 @@ import CookieConsent, { Cookies, getCookieConsentValue, resetCookieConsentValue 
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import ScrollToTop from "./ScrollToTop/ScrollToTop";
+import Fallback from "./Fallback/Fallback";
 const Home = lazy(() => import("./Home/Home"));
 const Details = lazy(() => import("./Details/Details"));
 
@@ -82,7 +83,7 @@ const App = (): JSX.Element | null => {
       <SearchContext.Provider value={{ state, dispatch }}>
         <div id='scroll-ref'>
           <Header />
-          <Suspense fallback={<div>Loading</div>}>
+          <Suspense fallback={<Fallback />}>
             <ScrollToTop />
             <Switch>
               <Route path="/home" component={Home} />

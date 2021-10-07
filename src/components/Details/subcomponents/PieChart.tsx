@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { PieChart, Pie, Cell, LabelList, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
 type nutrient = {
     label: string;
@@ -14,7 +14,7 @@ export interface Macro {
 
 type Props = {
     data: Macro;
-    box?:boolean;
+    width?:number;
 }
 
 export const emptyMacro = {
@@ -34,7 +34,7 @@ export const emptyMacro = {
 
 const colors = [ '#00008B', '#1F75FE', '#74BBFB' ];
 
-const PieChartComponent = ({data, box}:Props):JSX.Element => {
+const PieChartComponent = ({data, width}:Props):JSX.Element => {
 
     const [dataVisuals, setDataVisuals] = useState<{[key: string]: any}[]>([{}])
 
@@ -44,8 +44,13 @@ const PieChartComponent = ({data, box}:Props):JSX.Element => {
     }, [data])
     
     return (
-            <PieChart width={400} height={350} 
-            style={box ? {'box-shadow': '0px 1px 1px 0.25px rgb(0 0 0 / 50%)', padding: '10% 0 5% 0', border: 'none'} : {padding: '10% 0 5% 0', border:'none'}}
+        <ResponsiveContainer width='100%' height={350}>
+            <PieChart 
+            style={width 
+                ? (width<768 ?
+                {'box-shadow': '0px 1px 1px 0.25px rgb(0 0 0 / 50%)', padding: '10% 0 5% 0', border: 'none'}
+                :  {border: 'none', 'border-right': '1px solid gray', padding: '10% 0 5% 0'})
+                : {padding: '10% 0 5% 0', border:'none'}}
             >
                 <Pie
                     dataKey="quantity"
@@ -96,6 +101,7 @@ const PieChartComponent = ({data, box}:Props):JSX.Element => {
                     }
                 </Pie>
             </PieChart>
+        </ResponsiveContainer>
     )
 }
 
