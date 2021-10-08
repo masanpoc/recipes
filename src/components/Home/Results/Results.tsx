@@ -66,6 +66,28 @@ const StyledResultsUl = styled.ul`
   }
 `;
 
+const StyledNoResultsDiv = styled.div`
+  
+    grid-column: 1 / span 3;
+    margin: 0 3%;
+    ${flexColumnBox({})};
+    & > * {
+      width: 100%;
+      font-family: 'Merriweather';
+      font-size: 1.1em;
+    } 
+    & > *:first-child {
+      margin-bottom: 4%;
+    }
+    @media(min-width: 768px) {
+      & > * {
+      width: 100%;
+      font-family: 'Merriweather';
+      font-size: 1.3em;
+    } 
+    }
+`
+
 const StyledButtonsDiv = styled.div`
     margin: 20% 0 25% 0;
     display: flex;
@@ -80,6 +102,8 @@ const StyledButtonsDiv = styled.div`
     align-items: center;
   }
 `
+
+
 
 const ButtonsStyle = ()=>css`
   box-shadow: inset 0px 0px 1px 1px rgb(0 0 0 / 50%);
@@ -255,7 +279,8 @@ const Results = (): JSX.Element => {
     <StyledWrapperDiv>
       <StyledTitle>Results for &#34;<i>{state.inputValue}</i>&#34;:</StyledTitle>
     <StyledResultsUl>
-      {results.recipes &&
+      {results?.recipes &&
+        (results.recipes.length> 0 ?
         results?.recipes.map((recipe) => {
           return (
             <RecipeCard
@@ -267,7 +292,12 @@ const Results = (): JSX.Element => {
               time={recipe.time}
             />
           );
-        })}
+        })
+        :  <StyledNoResultsDiv>
+            <h4>Your search did not match any recipes.</h4>
+            <h4>Try different keywords or filters.</h4>
+          </StyledNoResultsDiv>)
+      }
       
     </StyledResultsUl>
     <StyledButtonsDiv>

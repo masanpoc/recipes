@@ -48,8 +48,10 @@ const PieChartComponent = ({data, width}:Props):JSX.Element => {
             <PieChart 
             style={width 
                 ? (width<768 ?
-                {'box-shadow': '0px 1px 1px 0.25px rgb(0 0 0 / 50%)', padding: '10% 0 5% 0', border: 'none'}
-                :  {border: 'none', 'border-right': '1px solid gray', padding: '10% 0 5% 0'})
+                {boxShadow: '0px 1px 1px 0.25px rgb(0 0 0 / 50%)', padding: '10% 0 5% 0', border: 'none'}
+                :  {borderStyle: 'none solid none none',
+                    borderWidth: '1px',
+                    borderColor: 'gray', padding: '10% 0 5% 0'})
                 : {padding: '10% 0 5% 0', border:'none'}}
             >
                 <Pie

@@ -156,9 +156,9 @@ const Details = ({match}:Props): JSX.Element => {
 
   useEffect(() => {
     const getData = async () => {
-      // const data = await getFetchedData(`https://api.edamam.com/api/recipes/v2/${match.params.id}?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d`);
-      // console.log(data, 'data returned');
-      const data =  specificRecipe; 
+      const data = await getFetchedData(`https://api.edamam.com/api/recipes/v2/${match.params.id}?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d`);
+      console.log(data, 'data returned');
+      // const data =  specificRecipe; 
       const dataForPieChart = getPieChartData(data);
       console.log(dataForPieChart);
       setPieChartData(dataForPieChart);

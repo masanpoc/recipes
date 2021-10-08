@@ -24,6 +24,7 @@ const StyledFilters = styled.form`
   @media (min-width: 768px) {
     /* border: 5px solid green; */
     margin-top: 2.5%;
+    margin-bottom: 5%;
     box-shadow: 0px 0px 1px 1px rgb(0 0 0 / 50%);
     width: 15%;
     padding: 2%;
