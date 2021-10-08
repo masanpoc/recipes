@@ -44,6 +44,8 @@ const PieChartComponent = ({data, width}:Props):JSX.Element => {
     }, [data])
     
     return (
+        <>
+        {dataVisuals[0].quantity>0 &&
         <ResponsiveContainer width='100%' height={350}>
             <PieChart 
             style={width 
@@ -59,6 +61,7 @@ const PieChartComponent = ({data, width}:Props):JSX.Element => {
                     data={dataVisuals}
                     outerRadius={70}
                     cy='55%'
+                    isAnimationActive={false}
                     label={({
                         cx,
                         cy,
@@ -104,6 +107,8 @@ const PieChartComponent = ({data, width}:Props):JSX.Element => {
                 </Pie>
             </PieChart>
         </ResponsiveContainer>
+        }
+        </>
     )
 }
 
