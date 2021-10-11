@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Link} from 'react-router-dom'
 import styled from "styled-components";
 import { flexColumnBox, flexRowBox } from "../../styles/mixins";
-import BarChart, { emptyNutrients, Nutrients } from "./subcomponents/BarChart";
+import HorizontalBarChart, { emptyNutrients, Nutrients } from "./subcomponents/HorizontalBarChart";
 import PieChartComponent, { emptyMacro, Macro } from "./subcomponents/PieChart";
 import { nordicNutrientRecommendations } from "./data/nordicNutrientRecommendations";
 import getFetchedData from "../../functions/getFetchedData";
@@ -96,20 +96,27 @@ const StyledATag = styled.a`
 
 const PieWrapperDiv = styled.div`
   ${flexColumnBox({})};
+  border-bottom: 1px solid grey;
+  width: 100%;
+  --chartHeight: 350;
+  --chartPaddingY: 52.5;
+  --total: calc(var(--chartHeight)+var(--chartPaddingY));
+  height: calc(var(--total)*1px);
   @media(min-width: 768px){
     ${flexRowBox({})};
-    width: 100%;
     --chartHeight: 350;
     --chartPaddingY: 52.5;
     --total: calc(var(--chartHeight)+var(--chartPaddingY));
     height: calc(var(--total)*1px);
-    box-shadow: rgb(0 0 0 / 50%) 0px 1px 1px 0.25px;
     overflow: hidden;
   }
 `
 
 const TitleChartWrapperDiv = styled.div`
   position: relative;
+  width: 100%;
+  /* from container (see above variables) */
+  height: 402.5px;
   @media(min-width: 768px){
     width: 50%;
     /* from container (see above variables) */
@@ -157,10 +164,10 @@ const Details = ({match}:Props): JSX.Element => {
   useEffect(() => {
     const getData = async () => {
       const data = await getFetchedData(`https://api.edamam.com/api/recipes/v2/${match.params.id}?type=public&app_id=5c0fb7a3&app_key=ed3ef53124d5aeca35f2143b29cb363d`);
-      console.log(data, 'data returned');
+      // console.log(data, 'data returned');
       // const data =  specificRecipe; 
       const dataForPieChart = getPieChartData(data);
-      console.log(dataForPieChart);
+      // console.log(dataForPieChart);
       setPieChartData(dataForPieChart);
       const dataForBarChart = getBarChartData(data);
       setBarChartData(dataForBarChart);
@@ -199,18 +206,18 @@ const Details = ({match}:Props): JSX.Element => {
 
 
         </StyledDiv>
-        <BarChart data={barChartData} />
+        <HorizontalBarChart data={barChartData} screenWidth={width} />
 
         <PieWrapperDiv>
 
           <TitleChartWrapperDiv>
             <StyledH3>Energy Allocation REAL</StyledH3>
-            <PieChartComponent data={pieChartData} width={width} />
+            <PieChartComponent data={pieChartData} width={width} border={true} />
           </TitleChartWrapperDiv>
 
           <TitleChartWrapperDiv>
             <StyledH3>Energy Allocation IDEAL</StyledH3>
-            <PieChartComponent data={nordicNutrientRecommendations} />
+            <PieChartComponent data={nordicNutrientRecommendations} width={width} border={false} />
           </TitleChartWrapperDiv>
 
         </PieWrapperDiv>

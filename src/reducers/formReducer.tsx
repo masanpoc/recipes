@@ -24,7 +24,7 @@ export const formReducer = (
       );
       newState.filters[action.value.input].splice(indexEl, 1);
     }
-    console.log(newState);
+    // console.log(newState);
     return newState;
   }
   if (action.type == "UPDATE_DISPLAY") {

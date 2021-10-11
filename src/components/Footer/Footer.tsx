@@ -6,10 +6,18 @@ const StyledFooter = styled.footer`
   width: 100%;
   background: #000000;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
+  & > * {
+    padding-right: 35%;
+    padding-bottom: 15%;
+  }
   @media (min-width: 480px) {
     height: 20vh;
+    & > * {
+      padding-bottom: 0;
+      padding-right: 5%;
+    }
   }
 `;
 
@@ -49,7 +57,6 @@ const StyledFooter = styled.footer`
 const Footer = (): JSX.Element => {
   return (
     <StyledFooter>
-      <h3 style={{ color: "#cecbcb" }}>Contact info</h3>
       <a
         href="https://www.edamam.com"
         title="Powered by Edamam"
@@ -58,7 +65,7 @@ const Footer = (): JSX.Element => {
       >
         <img
           alt="Powered by Edamam"
-          src="https://developer.edamam.com/images/white.png"
+          src="https://developer.edamam.com/images/transparent.png"
           height="40"
           width="200"
         />

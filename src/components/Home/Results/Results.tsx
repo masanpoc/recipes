@@ -183,9 +183,9 @@ const Results = (): JSX.Element => {
     const getData = async () => {
       // console.log(currentUrl, 'new url');
       // console.log(state.filters, 'filters')
-      console.log(getFormattedQueryOfFilters(state.filters), 'filters url')
+      // console.log(getFormattedQueryOfFilters(state.filters), 'filters url')
       const data = await getFetchedData(currentUrl);
-      console.log(data, 'data returned');
+      // console.log(data, 'data returned');
       // const data = await mockResponse;
       const recipesArr = getRecipesArrFromResponse(data);
       // if we have next link --> set nextpage to url provided
@@ -231,11 +231,11 @@ const Results = (): JSX.Element => {
       // const urls = ['', data._links.next.href]
     };
     getData();
-    console.log(currentUrl, 'changing url')
+    // console.log(currentUrl, 'changing url')
   }, [currentUrl]);
 
   useEffect(() => {
-    console.log(state.filters, 'new state filters')
+    // console.log(state.filters, 'new state filters')
     const keyword = getFormattedQuery(state.inputValue);
     const filterString = getFormattedQueryOfFilters(state.filters);
     setCurrentUrl(

@@ -93,7 +93,7 @@ const App = (): JSX.Element | null => {
           </Suspense>
           
           <Footer />
-          {/* <CookieConsent
+          <CookieConsent
               enableDeclineButton
               onAccept={handleAcceptCookie}
               onDecline={handleDeclineCookie}
@@ -116,7 +116,7 @@ const App = (): JSX.Element | null => {
               }}
           >        
           This website uses cookies to enhance the user experience.
-          </CookieConsent> */}
+          </CookieConsent>
         </div>
       </SearchContext.Provider>
     </Router>

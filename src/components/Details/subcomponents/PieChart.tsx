@@ -14,7 +14,8 @@ export interface Macro {
 
 type Props = {
     data: Macro;
-    width?:number;
+    width:number;
+    border:boolean;
 }
 
 export const emptyMacro = {
@@ -34,12 +35,12 @@ export const emptyMacro = {
 
 const colors = [ '#00008B', '#1F75FE', '#74BBFB' ];
 
-const PieChartComponent = ({data, width}:Props):JSX.Element => {
+const PieChartComponent = ({data, width, border}:Props):JSX.Element => {
 
     const [dataVisuals, setDataVisuals] = useState<{[key: string]: any}[]>([{}])
 
     useEffect(() => {
-        console.log(Object.values(data), 'passed data to pie chart')
+        // console.log(Object.values(data), 'passed data to pie chart')
         setDataVisuals(Object.values(data));
     }, [data])
     
@@ -48,18 +49,17 @@ const PieChartComponent = ({data, width}:Props):JSX.Element => {
         {dataVisuals[0].quantity>0 &&
         <ResponsiveContainer width='100%' height={350}>
             <PieChart 
-            style={width 
-                ? (width<768 ?
-                {boxShadow: '0px 1px 1px 0.25px rgb(0 0 0 / 50%)', padding: '10% 0 5% 0', border: 'none'}
-                :  {borderStyle: 'none solid none none',
-                    borderWidth: '1px',
-                    borderColor: 'gray', padding: '10% 0 5% 0'})
-                : {padding: '10% 0 5% 0', border:'none'}}
+                style={ 
+                    {padding: '10% 0 5% 0',
+                    borderRight: (width>=768 && border) && '1px solid grey',
+                    borderBottom: (width<768 && border) && '1px solid grey',   
+                    }
+                }
             >
                 <Pie
                     dataKey="quantity"
                     data={dataVisuals}
-                    outerRadius={70}
+                    outerRadius={width<768 ? 50 : 70}
                     cy='55%'
                     isAnimationActive={false}
                     label={({
